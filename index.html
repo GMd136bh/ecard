@@ -6,8 +6,10 @@
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0b1017">
 <meta name="description" content="کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی — سردفتر: گوهر بحرینی | ثبت و تنظیم اسناد رسمی، املاک، وکالت، وصیت | شهر دالکی، استان بوشهر">
+<meta property="og:title" content="دفتر اسناد رسمی ۱۳۶ دالکی | کارت ویزیت هوشمند">
+<meta property="og:description" content="ثبت و تنظیم اسناد رسمی، املاک، وکالت، وصیت — شهر دالکی، استان بوشهر">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https://image.qwenlm.ai; media-src 'self' https://www.aparat.com; connect-src 'self'; frame-src 'self' https://www.aparat.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https://image.qwenlm.ai https://uploadkon.ir; media-src 'self' https://www.aparat.com; connect-src 'self'; frame-src 'self' https://www.aparat.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
 <title>دفتر اسناد رسمی ۱۳۶ دالکی | کارت ویزیت هوشمند</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ccircle%20cx='50'%20cy='50'%20r='48'%20fill='%230b1017'/%3E%3Ccircle%20cx='50'%20cy='50'%20r='44'%20fill='none'%20stroke='%23d3a95c'%20stroke-width='4'/%3E%3Ctext%20x='50'%20y='62'%20font-size='34'%20text-anchor='middle'%20fill='%23d3a95c'%3E%E2%9A%96%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -15,8 +17,14 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/vazirmatn@latest/700.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/vazirmatn@latest/800.css">
 <script>
-/* تعیین تم پیش از رندر (جلوگیری از پرش تصویر) */
-(function(){try{var savedTheme=localStorage.getItem('n136-theme');var sysLight=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches;document.documentElement.setAttribute('data-theme',savedTheme||(sysLight?'light':'dark'));}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+/* تعیین تم پیش از رندر — بدون پرش تصویر (پایدار: خودکار + دستی) */
+(function(){
+  try{
+    var savedTheme = localStorage.getItem('n136-theme');
+    var sysLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    document.documentElement.setAttribute('data-theme', savedTheme || (sysLight ? 'light' : 'dark'));
+  }catch(e){ document.documentElement.setAttribute('data-theme','dark'); }
+})();
 </script>
 <style>
 /* ===================== متغیرها و تم‌ها ===================== */
@@ -56,32 +64,35 @@ svg{display:block}
 [hidden]{display:none!important}
 .ltr{direction:ltr;unicode-bidi:isolate}
 .wrap{max-width:1100px;margin-inline:auto;padding-inline:clamp(14px,4vw,28px)}
-/* ===================== لودینگ ===================== */
-#preloader{position:fixed;inset:0;background:var(--bg);z-index:300;display:grid;place-items:center;transition:opacity .55s ease,visibility .55s}
+/* ===================== لودینگ حرفه‌ای ===================== */
+#preloader{position:fixed;inset:0;background:var(--bg);z-index:300;display:grid;place-items:center;transition:opacity .6s ease,visibility .6s}
 #preloader.done{opacity:0;visibility:hidden;pointer-events:none}
 .pre-inner{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
-.pre-ring{position:relative;width:112px;height:112px;display:grid;place-items:center}
+.pre-ring{position:relative;width:116px;height:116px;display:grid;place-items:center}
 .pre-ring::before{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid transparent;border-top-color:var(--gold);border-inline-end-color:var(--gold-2);animation:spin 1.1s linear infinite}
-.pre-ring::after{content:"";position:absolute;inset:10px;border-radius:50%;border:2px dashed var(--line);animation:spin 6s linear infinite reverse}
+.pre-ring::after{content:"";position:absolute;inset:10px;border-radius:50%;border:2px dashed var(--line);animation:spin 7s linear infinite reverse}
 .pre-logo{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid rgba(211,169,92,.5);animation:breathe 1.6s ease-in-out infinite}
-.pre-inner h2{margin:4px 0 0;font-size:1.05rem;font-weight:800}
-.pre-inner p{margin:0;color:var(--muted);font-size:.78rem}
-.pre-bar{width:180px;height:4px;border-radius:99px;background:var(--line-soft);overflow:hidden}
+.pre-inner h2{margin:4px 0 0;font-size:1.05rem;font-weight:800;animation:fadeUp .8s .1s var(--ease) both}
+.pre-inner p{margin:0;color:var(--muted);font-size:.78rem;animation:fadeUp .8s .2s var(--ease) both}
+.pre-bar{width:190px;height:4px;border-radius:99px;background:var(--line-soft);overflow:hidden}
 .pre-bar span{display:block;height:100%;width:40%;border-radius:99px;background:linear-gradient(90deg,var(--gold-2),var(--gold-deep));animation:slideBar 1.2s var(--ease) infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes slideBar{0%{transform:translateX(120%)}100%{transform:translateX(-320%)}}
 /* ===================== دکمه تم ===================== */
 .theme-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));inset-inline-end:14px;z-index:90;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--gold);box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
-.theme-btn:hover{transform:translateY(-2px);border-color:var(--gold)}
-.theme-btn svg{width:19px;height:19px}
+.theme-btn:hover{transform:translateY(-2px) rotate(8deg);border-color:var(--gold)}
+.theme-btn svg{width:19px;height:19px;transition:transform .4s var(--ease)}
 html[data-theme="dark"] .ic-moon{display:none}
 html[data-theme="light"] .ic-sun{display:none}
 /* ===================== کارت و پنل ===================== */
 .card{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r-lg);transition:background-color .4s,border-color .4s}
-.panel{margin-block:16px;padding:clamp(18px,4.5vw,28px);background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r-lg);transition:background-color .4s,border-color .4s}
+.panel{margin-block:16px;padding:clamp(18px,4.5vw,28px);background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r-lg);transition:background-color .4s,border-color .4s,box-shadow .4s;position:relative;overflow:hidden}
+.panel::before{content:"";position:absolute;top:0;inset-inline:0;height:1px;background:linear-gradient(90deg,transparent,rgba(211,169,92,.35),transparent);opacity:0;transition:opacity .5s}
+.panel:hover::before{opacity:1}
 .panel-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-.head-icon{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#241505;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));box-shadow:0 6px 16px rgba(211,169,92,.25)}
+.head-icon{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#241505;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));box-shadow:0 6px 16px rgba(211,169,92,.25);transition:transform .3s var(--ease)}
+.panel-head:hover .head-icon{transform:rotate(-8deg) scale(1.06)}
 .head-icon svg{width:22px;height:22px}
 .panel-head h2{margin:0;font-size:clamp(1.05rem,2.6vw,1.3rem);font-weight:800}
 .panel-sub{margin:4px 0 0;color:var(--muted);font-size:.82rem}
@@ -89,19 +100,31 @@ html[data-theme="light"] .ic-sun{display:none}
 .hero{margin-top:18px;padding:clamp(26px,6vw,52px) clamp(18px,4vw,32px);text-align:center;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 50% 0%,rgba(211,169,92,.13),transparent 70%);pointer-events:none}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:999px;border:1px solid rgba(211,169,92,.45);color:var(--gold-2);font-size:.78rem;font-weight:700;background:rgba(211,169,92,.08);animation:fadeUp .7s var(--ease) both}
-.hero .logo{width:clamp(88px,22vw,128px);height:clamp(88px,22vw,128px);border-radius:50%;object-fit:cover;margin:18px auto 14px;border:2px solid rgba(211,169,92,.55);box-shadow:0 0 0 6px rgba(211,169,92,.08),var(--shadow);animation:fadeUp .7s .08s var(--ease) both}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulseDot 2s infinite}
+.logo-ring{position:relative;width:clamp(106px,24vw,146px);height:clamp(106px,24vw,146px);margin:18px auto 14px;display:grid;place-items:center;animation:fadeUp .7s .08s var(--ease) both}
+.logo-ring::before{content:"";position:absolute;inset:0;border-radius:50%;border:2.5px solid transparent;border-top-color:var(--gold-2);border-inline-end-color:var(--gold);animation:spin 5s linear infinite}
+.logo-ring::after{content:"";position:absolute;inset:7px;border-radius:50%;border:1.5px dashed rgba(211,169,92,.35);animation:spin 14s linear infinite reverse}
+.hero .logo{width:clamp(88px,20vw,122px);height:clamp(88px,20vw,122px);border-radius:50%;object-fit:cover;border:2px solid rgba(211,169,92,.55);box-shadow:0 0 0 6px rgba(211,169,92,.08),var(--shadow);animation:breathe 4s ease-in-out infinite}
 .hero h1{margin:0 0 8px;font-size:clamp(1.25rem,4.6vw,1.9rem);font-weight:800;animation:fadeUp .7s .16s var(--ease) both}
+.hero h1 span{background:linear-gradient(90deg,var(--gold-2),var(--gold),var(--gold-2));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:goldText 4s linear infinite}
+@keyframes goldText{to{background-position:200% center}}
 .hero .sub{margin:0 0 14px;color:var(--muted);font-size:clamp(.82rem,2.6vw,.95rem);animation:fadeUp .7s .22s var(--ease) both}
-.status{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:.8rem;color:var(--muted);animation:fadeUp .7s .28s var(--ease) both}
+.status{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:.8rem;color:var(--muted);animation:fadeUp .7s .28s var(--ease) both;transition:border-color .3s}
+.status:hover{border-color:var(--gold)}
 .status .dot{width:9px;height:9px;border-radius:50%;background:var(--muted-2);flex:0 0 auto}
 .status .dot.open{background:var(--green);animation:pulseDot 1.8s infinite}
 .status .dot.wait{background:var(--amber);animation:pulseDot 1.8s infinite}
 .status .dot.closed{background:var(--red)}
 @keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(57,217,138,.45)}70%{box-shadow:0 0 0 9px rgba(57,217,138,0)}100%{box-shadow:0 0 0 0 rgba(57,217,138,0)}}
 .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;animation:fadeUp .7s .34s var(--ease) both}
-.chip{padding:7px 14px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:.75rem;color:var(--muted);transition:transform .2s,border-color .2s}
-.chip:hover{transform:translateY(-2px);border-color:var(--gold)}
-.hero-profile{margin-top:16px;animation:fadeUp .7s .4s var(--ease) both}
+.chip{padding:7px 14px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:.75rem;color:var(--muted);transition:transform .2s,border-color .2s,color .2s}
+.chip:hover{transform:translateY(-3px);border-color:var(--gold);color:var(--gold-2)}
+.hero-profile{margin-top:18px;animation:fadeUp .7s .4s var(--ease) both}
+/* انیمیشن حرفه‌ای دکمه پروفایل */
+.btn-profile{position:relative;overflow:hidden;animation:glowPulse 3s ease-in-out infinite}
+.btn-profile::after{content:"";position:absolute;top:0;bottom:0;width:45%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.4),transparent);inset-inline-start:-70%;animation:shine 3.6s ease infinite}
+@keyframes shine{0%{inset-inline-start:-70%}55%,100%{inset-inline-start:135%}}
+@keyframes glowPulse{0%,100%{box-shadow:0 8px 20px rgba(211,169,92,.25)}50%{box-shadow:0 8px 30px rgba(211,169,92,.55)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 /* ===================== دکمه‌ها ===================== */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:12px 20px;font-size:.88rem;font-weight:700;transition:transform .18s,box-shadow .18s,border-color .18s;border:1px solid transparent}
@@ -113,9 +136,10 @@ html[data-theme="light"] .ic-sun{display:none}
 .btn-ghost:hover{border-color:var(--gold);transform:translateY(-2px)}
 /* ===================== ارسال سریع مدارک ===================== */
 .mess-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-.mess-item{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);transition:border-color .2s,transform .2s;text-align:right}
-.mess-item:hover{border-color:var(--gold);transform:translateY(-3px)}
-.mess-item .m-ico{flex:0 0 auto;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff}
+.mess-item{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);transition:border-color .2s,transform .2s,box-shadow .2s;text-align:right}
+.mess-item:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:var(--shadow)}
+.mess-item .m-ico{flex:0 0 auto;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff;transition:transform .3s var(--ease)}
+.mess-item:hover .m-ico{transform:scale(1.1) rotate(-6deg)}
 .mess-item .m-ico svg{width:21px;height:21px}
 .mess-item .m-title{font-weight:700;font-size:.88rem}
 .mess-item .m-note{color:var(--muted);font-size:.72rem;margin-top:3px}
@@ -129,33 +153,42 @@ html[data-theme="light"] .ic-sun{display:none}
 .grid-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
 .link-card{display:block;padding:20px 12px 16px;text-align:center;border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);transition:border-color .2s,transform .2s,box-shadow .2s}
 .link-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:var(--shadow)}
-.lc-icon{width:52px;height:52px;border-radius:16px;margin:0 auto 12px;display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.25);transition:transform .25s var(--ease)}
-.link-card:hover .lc-icon{transform:scale(1.08) rotate(-4deg)}
+.lc-icon{width:52px;height:52px;border-radius:16px;margin:0 auto 12px;display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.25);transition:transform .3s var(--ease)}
+.link-card:hover .lc-icon{transform:scale(1.1) rotate(-5deg)}
 .lc-icon svg{width:23px;height:23px}
 .bg-save{background:linear-gradient(135deg,#8ed64a,#3f9a1d)}
 .bg-call{background:linear-gradient(135deg,#5cb3f0,#1f7dc9)}
 .bg-mob{background:linear-gradient(135deg,#e7c98b,#b98a3e);color:#241505}
 .bg-insta{background:radial-gradient(circle at 30% 110%,#fdc468 0%,#f26d4f 45%,#d42e8c 80%)}
+.bg-tg{background:linear-gradient(135deg,#37bbfe,#1e96c8)}
 .bg-web{background:linear-gradient(135deg,#2ec4a5,#149b80)}
 .bg-mail{background:linear-gradient(135deg,#93a1b3,#5c6875)}
 .lc-title{font-weight:700;font-size:.88rem}
 .lc-sub{color:var(--muted);font-size:.72rem;margin-top:5px;word-break:break-all}
 .banner-link{margin-top:14px;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:18px;background:var(--card2);border:1px solid var(--line);transition:border-color .2s,transform .2s;position:relative;overflow:hidden}
-.banner-link::after{content:"";position:absolute;top:0;bottom:0;width:60px;background:linear-gradient(105deg,transparent,rgba(231,201,139,.14),transparent);inset-inline-start:-80px;animation:shimmer 3.2s ease infinite}
+.banner-link::after{content:"";position:absolute;top:0;bottom:0;width:60px;background:linear-gradient(105deg,transparent,rgba(231,201,139,.16),transparent);inset-inline-start:-80px;animation:shimmer 3.2s ease infinite}
 @keyframes shimmer{0%{inset-inline-start:-80px}60%,100%{inset-inline-start:110%}}
 .banner-link:hover{border-color:var(--gold);transform:translateY(-2px)}
-.bl-icon{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#241505;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep))}
+.bl-icon{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#241505;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));transition:transform .3s var(--ease)}
+.banner-link:hover .bl-icon{transform:rotate(-8deg) scale(1.08)}
 .bl-icon svg{width:21px;height:21px}
 .bl-text{display:flex;flex-direction:column;gap:4px;min-width:0}
 .bl-title{font-weight:800;font-size:.9rem}
 .bl-sub{color:var(--muted);font-size:.74rem}
-.bl-chev{margin-inline-start:auto;color:var(--muted-2)}
+.bl-chev{margin-inline-start:auto;color:var(--muted-2);transition:transform .3s}
+.banner-link:hover .bl-chev{transform:translateX(-5px);color:var(--gold)}
 .bl-chev svg{width:20px;height:20px}
-/* ===================== آدرس ===================== */
+/* ===================== آدرس و نقشه ===================== */
 .addr-box{padding:16px;border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line)}
 .addr-row{display:flex;gap:10px;align-items:flex-start;padding:10px 4px;font-size:.86rem;line-height:1.9}
 .addr-row + .addr-row{border-top:1px dashed var(--line)}
 .addr-row svg{width:19px;height:19px;color:var(--gold);flex:0 0 auto;margin-top:4px}
+.map-frame{position:relative;margin-top:14px;border-radius:var(--r-md);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.map-frame iframe{width:100%;height:230px;border:none;display:block;filter:grayscale(30%);opacity:.85;transition:filter .5s ease,opacity .5s ease}
+.map-frame:hover iframe{filter:grayscale(0);opacity:1}
+.map-btn{position:absolute;bottom:12px;left:12px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));color:#241505;font-size:.72rem;font-weight:800;padding:10px 16px;border-radius:12px;box-shadow:0 8px 18px rgba(0,0,0,.35);transition:transform .2s}
+.map-btn:hover{transform:scale(1.06)}
+.map-btn svg{width:14px;height:14px}
 .addr-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
 /* ===================== خدمات (آکاردئونی) ===================== */
 .search{position:relative;margin-bottom:14px}
@@ -164,8 +197,8 @@ html[data-theme="light"] .ic-sun{display:none}
 .search input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(211,169,92,.12)}
 .search input::placeholder{color:var(--muted-2)}
 .cats{display:grid;gap:12px}
-.cat-card{border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);overflow:hidden;transition:border-color .25s}
-.cat-card.open{border-color:rgba(211,169,92,.5)}
+.cat-card{border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);overflow:hidden;transition:border-color .25s,box-shadow .25s}
+.cat-card.open{border-color:rgba(211,169,92,.5);box-shadow:var(--shadow)}
 .cat-head{width:100%;display:flex;align-items:center;gap:10px;padding:15px 16px;text-align:right}
 .cat-head:hover .cat-title{color:var(--gold-2)}
 .cat-title{flex:1;font-size:.92rem;font-weight:800;transition:color .2s}
@@ -177,11 +210,11 @@ html[data-theme="light"] .ic-sun{display:none}
 .cat-card.open .cat-body{grid-template-rows:1fr}
 .cat-body .svc-list{overflow:hidden;min-height:0;display:grid;gap:8px;padding:0 16px}
 .cat-card.open .cat-body .svc-list{padding-bottom:16px}
-.svc-item{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:right;padding:12px 14px;border-radius:12px;background:var(--bg);border:1px solid var(--line-soft);font-size:.83rem;color:var(--text);transition:border-color .2s,transform .2s}
-.svc-item:hover{border-color:var(--gold);transform:translateX(-4px)}
+.svc-item{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:right;padding:12px 14px;border-radius:12px;background:var(--bg);border:1px solid var(--line-soft);font-size:.83rem;color:var(--text);transition:border-color .2s,transform .2s,background .2s}
+.svc-item:hover{border-color:var(--gold);transform:translateX(-4px);background:var(--card)}
 .svc-item svg{width:16px;height:16px;color:var(--muted-2);flex:0 0 auto}
 .empty{display:none;padding:26px;text-align:center;color:var(--muted);background:var(--card2);border:1px dashed var(--line);border-radius:var(--r-md);font-size:.85rem}
-.empty.show{display:block}
+.empty.show{display:block;animation:fadeUp .4s var(--ease)}
 /* ===================== معرفی / ویدیو ===================== */
 .intro-text{font-size:.9rem;line-height:2;color:var(--muted);margin:0 0 16px}
 .video-frame{position:relative;padding-bottom:56.25%;height:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#000}
@@ -193,7 +226,7 @@ html[data-theme="light"] .ic-sun{display:none}
 /* ===================== بارکد ===================== */
 .qr-zone{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
 .qr-card{background:#fff;padding:14px;border-radius:18px;box-shadow:var(--shadow);transition:transform .25s var(--ease)}
-.qr-card:hover{transform:scale(1.03)}
+.qr-card:hover{transform:scale(1.04) rotate(-1deg)}
 .qr-card>div{width:180px;height:180px;display:grid;place-items:center}
 .qr-note{color:var(--muted);font-size:.78rem;line-height:1.9;max-width:420px;margin:0}
 /* ===================== پاورقی ===================== */
@@ -211,15 +244,15 @@ footer a{color:var(--gold)}
 /* ===================== مودال‌ها ===================== */
 .overlay{position:fixed;inset:0;background:rgba(4,8,14,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:18px;z-index:100}
 .overlay.open{display:flex}
-.modal{width:min(94vw,480px);max-height:86vh;overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;animation:pop .28s var(--ease)}
-@keyframes pop{from{transform:translateY(18px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.modal{width:min(94vw,480px);max-height:86vh;overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;animation:pop .3s var(--ease)}
+@keyframes pop{from{transform:translateY(20px) scale(.96);opacity:0}to{transform:none;opacity:1}}
 .modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
-.modal-head h3{margin:0;font-size:.98rem;font-weight:800}
-.modal-close{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:var(--card2);border:1px solid var(--line);color:var(--muted);transition:border-color .2s,color .2s,transform .2s}
+.modal-head h3{margin:0;font-size:.98rem;font-weight:800;color:var(--gold-2)}
+.modal-close{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:var(--card2);border:1px solid var(--line);color:var(--muted);transition:border-color .2s,color .2s,transform .25s}
 .modal-close:hover{border-color:var(--red);color:var(--red);transform:rotate(90deg)}
 .modal-close svg{width:16px;height:16px}
 .docs-list{list-style:none;margin:0 0 12px;padding:0}
-.docs-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 2px;font-size:.83rem;line-height:1.8;border-bottom:1px dashed var(--line-soft)}
+.docs-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 2px;font-size:.83rem;line-height:1.8;border-bottom:1px dashed var(--line-soft);animation:fadeUp .4s var(--ease) both}
 .docs-list li:last-child{border-bottom:none}
 .docs-list svg{width:17px;height:17px;color:var(--gold);flex:0 0 auto;margin-top:4px}
 .modal-note{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--muted);font-size:.76rem;line-height:1.9}
@@ -243,6 +276,7 @@ footer a{color:var(--gold)}
   .mess-grid{grid-template-columns:1fr}
   .fab span{display:none}
   .fab{padding:11px 14px}
+  .map-frame iframe{height:200px}
 }
 @media (min-width:1200px){.wrap{max-width:1160px}}
 @media (prefers-reduced-motion:reduce){
@@ -254,15 +288,12 @@ footer a{color:var(--gold)}
 <body>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     ⚙️ تنظیمات سریع (همهٔ لینک‌ها در آبجکت CONFIG انتهای فایل):
-       APARAT_VIDEO_URL   ← لینک ویدیوی آپارات
-       OFFICE_PROFILE_URL ← لینک پروفایل رسمی دفتر
-       QR_TARGET_URL      ← نشانی مقصد بارکد QR (وب‌سایت دفتر)
+     ⚙️ تنظیمات سریع (همهٔ لینک‌ها و شماره‌ها در آبجکت CONFIG انتهای فایل)
      ═══════════════════════════════════════════════════════════════ -->
 
 <div id="preloader" aria-hidden="true">
   <div class="pre-inner">
-    <div class="pre-ring"><img class="pre-logo" src="https://image.qwenlm.ai/public_source/4f6a977c-6853-4e2b-ac10-4579aa8ea5e4/1aa63356f-8f8c-408a-a24c-3b762f39b487.png" alt=""></div>
+    <div class="pre-ring"><img class="pre-logo" src="https://uploadkon.ir/uploads/a1cb11_26g136bhl5.png" alt=""></div>
     <h2>دفتر اسناد رسمی ۱۳۶ دالکی</h2>
     <p>کارت ویزیت هوشمند</p>
     <div class="pre-bar"><span></span></div>
@@ -279,8 +310,8 @@ footer a{color:var(--gold)}
   <!-- ===================== سربرگ ===================== -->
   <header class="hero card">
     <span class="badge">کارت ویزیت هوشمند</span>
-    <img class="logo" src="https://image.qwenlm.ai/public_source/4f6a977c-6853-4e2b-ac10-4579aa8ea5e4/1aa63356f-8f8c-408a-a24c-3b762f39b487.png" alt="نشان دفتر اسناد رسمی ۱۳۶ دالکی">
-    <h1>دفتر اسناد رسمی ۱۳۶ دالکی</h1>
+    <div class="logo-ring"><img class="logo" src="https://uploadkon.ir/uploads/a1cb11_26g136bhl5.png" alt="نشان دفتر اسناد رسمی ۱۳۶ دالکی"></div>
+    <h1>دفتر اسناد رسمی <span>۱۳۶ دالکی</span></h1>
     <p class="sub">دفتر اسناد رسمی ۱۳۶ شهر دالکی — سردفتر: گوهر بحرینی</p>
     <div class="status" role="status" aria-live="polite">
       <span class="dot" id="officeDot"></span>
@@ -293,7 +324,7 @@ footer a{color:var(--gold)}
       <span class="chip">وصیت</span>
     </div>
     <div class="hero-profile">
-      <a class="btn btn-gold" id="profileBtn" data-link="profile" hidden target="_blank" rel="noopener noreferrer">
+      <a class="btn btn-gold btn-profile" id="profileBtn" data-link="profile" hidden target="_blank" rel="noopener noreferrer">
         <i data-icon="idcard"></i> پروفایل رسمی دفتر
       </a>
     </div>
@@ -344,10 +375,10 @@ footer a{color:var(--gold)}
         <div class="lc-title">موبایل</div>
         <div class="lc-sub" id="mobileNum">۰۹۳۹۱۷۹۳۱۱۲</div>
       </a>
-      <a class="link-card" data-link="tel">
+      <a class="link-card" data-link="officetel">
         <span class="lc-icon bg-call"><i data-icon="phone"></i></span>
         <div class="lc-title">تلفن دفتر</div>
-        <div class="lc-sub">تماس مستقیم با دفتر</div>
+        <div class="lc-sub" id="officeNum">۰۷۷۳۴۳۴۳۳۴۹</div>
       </a>
       <button class="link-card" type="button" id="saveContactBtn">
         <span class="lc-icon bg-save"><i data-icon="userplus"></i></span>
@@ -359,16 +390,21 @@ footer a{color:var(--gold)}
         <div class="lc-title">اینستاگرام</div>
         <div class="lc-sub ltr">@notary136bh</div>
       </a>
+      <a class="link-card" data-link="telegram" target="_blank" rel="noopener noreferrer">
+        <span class="lc-icon bg-tg"><i data-icon="telegram"></i></span>
+        <div class="lc-title">تلگرام</div>
+        <div class="lc-sub ltr">@Notary136bh</div>
+      </a>
       <a class="link-card" data-link="website" target="_blank" rel="noopener noreferrer">
         <span class="lc-icon bg-web"><i data-icon="globe"></i></span>
         <div class="lc-title">وب‌سایت</div>
         <div class="lc-sub ltr">daftar136dalaki.ir</div>
       </a>
-      <button class="link-card" type="button" id="emailBtn">
+      <a class="link-card" data-link="email">
         <span class="lc-icon bg-mail"><i data-icon="mail"></i></span>
         <div class="lc-title">ایمیل</div>
-        <div class="lc-sub">استعلام از طریق پیام‌رسان‌ها</div>
-      </button>
+        <div class="lc-sub ltr" id="emailSub">d136bh@gmail.com</div>
+      </a>
     </div>
     <a class="banner-link" data-link="banner" target="_blank" rel="noopener noreferrer">
       <span class="bl-icon"><i data-icon="globe"></i></span>
@@ -393,8 +429,15 @@ footer a{color:var(--gold)}
       <div class="addr-row"><i data-icon="pin"></i><div><b>نشانی دفتر:</b> استان بوشهر، شهر دالکی، خیابان شهدا، جنب نانوایی.</div></div>
       <div class="addr-row"><i data-icon="clock"></i><div><b>ساعات کاری دفتر:</b> شنبه تا چهارشنبه: ۷ صبح تا ۱۴ — پنجشنبه و جمعه: تعطیل</div></div>
     </div>
+    <div class="map-frame">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1030.500537683835!2d51.2890555!3d29.4296738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb401d2383294b5%3A0x1bcf532d563ce821!2z2K_Zgdiq2LEg2KfYs9mG2KfYryDYsdiz2YXbjCDbsduz27Y!5e1!3m2!1sen!2s!4v1748949562278!5m2!1sen!2s"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="نقشه گوگل — دفتر اسناد رسمی ۱۳۶ دالکی"></iframe>
+      <a class="map-btn" data-link="map" target="_blank" rel="noopener noreferrer">مسیریابی دقیق <i data-icon="external"></i></a>
+    </div>
     <div class="addr-actions">
-      <a class="btn btn-gold" data-link="map" target="_blank" rel="noopener noreferrer"><i data-icon="nav"></i> مسیریابی دقیق</a>
       <a class="btn btn-ghost" href="#send"><i data-icon="send"></i> ارسال سریع مدارک</a>
     </div>
   </section>
@@ -405,7 +448,7 @@ footer a{color:var(--gold)}
       <span class="head-icon"><i data-icon="filetext"></i></span>
       <div>
         <h2>خدمات حقوقی ثبتی</h2>
-        <p class="panel-sub">دسته موردنظر را انتخاب کنید تا فهرست خدمات آن باز شود</p>
+        <p class="panel-sub">دسته موردنظر را انتخاب کنید تا فهرست خدمات و مدارک مورد نیاز آن باز شود</p>
       </div>
     </div>
     <div class="search">
@@ -485,7 +528,7 @@ footer a{color:var(--gold)}
     </div>
     <div class="share-grid">
       <button class="share-item" type="button" data-share="whatsapp"><i data-icon="whatsapp"></i>واتساپ</button>
-      <button class="share-item" type="button" data-share="telegram"><i data-icon="send"></i>تلگرام</button>
+      <button class="share-item" type="button" data-share="telegram"><i data-icon="telegram"></i>تلگرام</button>
       <button class="share-item" type="button" data-share="sms"><i data-icon="sms"></i>پیامک</button>
       <button class="share-item" type="button" data-share="email"><i data-icon="mail"></i>ایمیل</button>
       <button class="share-item" type="button" data-share="copy"><i data-icon="copy"></i>کپی لینک</button>
@@ -506,29 +549,29 @@ footer a{color:var(--gold)}
 (function(){
 'use strict';
 
-/* ═══════════ ⚙️ تنظیمات کاربر — فقط همین‌جا را ویرایش کنید ═══════════ */
+/* ═══════════ ⚙️ تنظیمات کاربر ═══════════ */
 var CONFIG = {
-  /* 🔴 لینک ویدیوی آپارات خود را اینجا قرار دهید (مثل: https://www.aparat.com/v/abc123 ) — اگر خالی بماند، پوستر نمایش داده می‌شود */
-  APARAT_VIDEO_URL: 'https://www.aparat.com/video/video/embed/videohash/gqqsuxn/vt/frame',
-  /* 🔗 لینک پروفایل رسمی دفتر (ایتا/روبیکا/اینستاگرام) — اگر خالی بماند، دکمه پروفایل پنهان می‌شود */
+  APARAT_VIDEO_URL: 'https://www.aparat.com/video/video/embed/videohash/gqqsuxn/vt/frame', /* لینک ویدیوی آپارات — خالی = پوستر */
   OFFICE_PROFILE_URL: 'https://uploadkon.ir/uploads/a1cb11_26g136bhl5.png',
-  /*  نشانی مقصد بارکد QR — با اسکن، کاربر مستقیم به این آدرس می‌رود؛ اگر خالی بماند، نشانی همین صفحه استفاده می‌شود */
   QR_TARGET_URL: 'https://gmd136bh.github.io/ecard/',
-  MOBILE_DISPLAY: '۰۹۳۱۷۹۳۱۱۲',
-  TEL_E164: '+989391793112',
+  EMAIL: 'd136bh@gmail.com',
+  MOBILE_DISPLAY: '۰۹۳۹۱۷۹۳۱۱۲',
+  MOBILE_TEL_E164: '+989391793112',
+  OFFICE_TEL_DISPLAY: '۰۷۳۴۳۴۳۳۴۹',
+  OFFICE_TEL_E164: '+987734343349',
   LINKS: {
     whatsapp: 'https://wa.me/989391793112',
     eitaa: 'https://eitaa.com/Notary136bh',
     rubika: 'https://rubika.ir/Notary136bh',
     soroush: 'https://splus.ir/Notary136bh',
     instagram: 'https://www.instagram.com/notary136bh',
+    telegram: 'https://t.me/Notary136bh',
     website: 'https://daftar136dalaki.ir',
-    map: 'https://maps.app.goo.gl/LsL1w5RowcAGgFEeA',
+    map: 'https://maps.app.goo.gl/LwdjDDoFV9YozdVn6',
     banner: 'https://mahzarchi.ir/category/document/notary-service/'
   },
   POSTER_IMG: 'https://image.qwenlm.ai/public_source/4f6a977c-6853-4e2b-ac10-4579aa8ea5e4/19412fb36-ee40-4516-983e-1a13e0a813db.png'
 };
-/* ═══════════════════════════ پایان تنظیمات ═══════════════════════════ */
 
 var qs = function(sel){ return document.querySelector(sel); };
 var qsa = function(sel){ return Array.prototype.slice.call(document.querySelectorAll(sel)); };
@@ -542,10 +585,12 @@ var STROKE_ICONS = {
   mobile:'<rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>',
   userplus:'<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>',
   instagram:'<rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>',
+  telegram:'<path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9 22 2"/>',
   globe:'<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
   mail:'<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
   chevleft:'<polyline points="15 18 9 12 15 6"/>',
   chevdown:'<polyline points="6 9 12 15 18 9"/>',
+  external:'<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>',
   pin:'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
   clock:'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
   search:'<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>',
@@ -557,7 +602,6 @@ var STROKE_ICONS = {
   copy:'<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
   appsgrid:'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>',
   filetext:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>',
-  nav:'<polygon points="3 11 22 2 13 21 11 13 3 11"/>',
   pen:'<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 4 1-4L16.5 3.5z"/>',
   qr:'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><line x1="14" y1="14" x2="14" y2="21"/><line x1="14" y1="17" x2="21" y2="17"/>',
   sun:'<circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.07" y2="4.93"/>',
@@ -585,7 +629,7 @@ function showToast(msg){
   setTimeout(function(){ if (t.parentNode) t.parentNode.removeChild(t); }, 2700);
 }
 
-/* ---------- تم روشن/تاریک ---------- */
+/* ---------- تم روشن/تاریک (خودکار + دستی، پایدار) ---------- */
 function bindTheme(){
   var toggleBtn = qs('#themeToggle');
   var mediaQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: light)') : null;
@@ -608,33 +652,60 @@ function bindTheme(){
 function bindPreloader(){
   var preBox = qs('#preloader');
   var hidePre = function(){ preBox.classList.add('done'); };
-  window.addEventListener('load', function(){ setTimeout(hidePre, 700); });
+  window.addEventListener('load', function(){ setTimeout(hidePre, 650); });
   setTimeout(hidePre, 5000);
 }
 
-/* ---------- وضعیت دفتر ---------- */
+/* ---------- وضعیت باز/تعطیل دفتر (دقیق، به وقت تهران، ۷ تا ۱۴) ---------- */
+function tehranNow(){
+  var fmt = new Intl.DateTimeFormat('en-US', { timeZone:'Asia/Tehran', weekday:'short', hour:'numeric', minute:'numeric', hourCycle:'h23' });
+  var parts = fmt.formatToParts(new Date());
+  var wd='', h=0, m=0;
+  parts.forEach(function(p){ if(p.type==='weekday') wd=p.value; if(p.type==='hour') h=parseInt(p.value,10); if(p.type==='minute') m=parseInt(p.value,10); });
+  return { wd: wd, mins: h*60+m };
+}
+function faDuration(mins){
+  var hh = Math.floor(mins/60), mm = mins%60;
+  if (hh>0 && mm>0) return faNum(hh)+' ساعت و '+faNum(mm)+' دقیقه';
+  if (hh>0) return faNum(hh)+' ساعت';
+  return faNum(mm)+' دقیقه';
+}
 function computeOfficeStatus(){
-  try {
-    var fmt = new Intl.DateTimeFormat('en-US', { timeZone:'Asia/Tehran', weekday:'short', hour:'numeric', hourCycle:'h23' });
-    var parts = fmt.formatToParts(new Date());
-    var weekDay = '', hourNum = 0;
-    parts.forEach(function(p){ if (p.type==='weekday') weekDay = p.value; if (p.type==='hour') hourNum = parseInt(p.value,10); });
-    var isWorkDay = ['Sat','Sun','Mon','Tue','Wed'].indexOf(weekDay) > -1;
+  try{
+    var now = tehranNow();
+    var OPEN_START = 7*60, OPEN_END = 14*60;
+    var workDays = ['Sat','Sun','Mon','Tue','Wed'];
+    var isWork = workDays.indexOf(now.wd) > -1;
     var dotEl = qs('#officeDot'), txtEl = qs('#officeStatusText');
     dotEl.className = 'dot';
-    if (isWorkDay && hourNum >= 7 && hourNum < 14) { dotEl.classList.add('open'); txtEl.textContent = 'وضعیت دفتر: باز — تا ساعت ۱۴:۰۰'; }
-    else if (isWorkDay && hourNum < 7) { dotEl.classList.add('wait'); txtEl.textContent = 'وضعیت دفتر: امروز ساعت ۷ صبح باز می‌شود'; }
-    else { dotEl.classList.add('closed'); txtEl.textContent = 'وضعیت دفتر: تعطیل — شنبه تا چهارشنبه ۷ صبح تا ۱۴'; }
-  } catch (err) { qs('#officeStatusText').textContent = 'ساعات کاری: شنبه تا چهارشنبه ۷ صبح تا ۱۴'; }
+    if (isWork && now.mins >= OPEN_START && now.mins < OPEN_END) {
+      dotEl.classList.add('open');
+      txtEl.textContent = 'وضعیت دفتر: باز — ' + faDuration(OPEN_END - now.mins) + ' تا پایان کار';
+    } else if (isWork && now.mins < OPEN_START) {
+      dotEl.classList.add('wait');
+      txtEl.textContent = 'وضعیت دفتر: بسته — امروز ساعت ۷:۰۰ باز می‌شود';
+    } else {
+      dotEl.classList.add('closed');
+      if (now.wd === 'Thu' || now.wd === 'Fri' || (now.wd === 'Wed' && now.mins >= OPEN_END)) {
+        txtEl.textContent = 'وضعیت دفتر: تعطیل — بازگشایی شنبه ساعت ۷:۰۰ صبح';
+      } else {
+        txtEl.textContent = 'وضعیت دفتر: بسته — فردا ساعت ۷:۰۰ صبح باز می‌شود';
+      }
+    }
+  }catch(err){ qs('#officeStatusText').textContent = 'ساعات کاری: شنبه تا چهارشنبه ۷ صبح تا ۱۴'; }
 }
 
-/* ---------- لینک‌ها از CONFIG ---------- */
+/* ---------- لینک‌ها ---------- */
 function applyLinks(){
   qs('#mobileNum').textContent = CONFIG.MOBILE_DISPLAY;
+  qs('#officeNum').textContent = CONFIG.OFFICE_TEL_DISPLAY;
+  if (CONFIG.EMAIL) qs('#emailSub').textContent = CONFIG.EMAIL;
   qsa('[data-link]').forEach(function(el){
     var keyName = el.getAttribute('data-link');
     var url = '';
-    if (keyName === 'tel') url = 'tel:' + CONFIG.TEL_E164;
+    if (keyName === 'tel') url = 'tel:' + CONFIG.MOBILE_TEL_E164;
+    else if (keyName === 'officetel') url = 'tel:' + CONFIG.OFFICE_TEL_E164;
+    else if (keyName === 'email') url = CONFIG.EMAIL ? 'mailto:' + CONFIG.EMAIL : '';
     else if (keyName === 'profile') url = CONFIG.OFFICE_PROFILE_URL || '';
     else url = CONFIG.LINKS[keyName] || '';
     if (!url) { if (keyName === 'profile') el.hidden = true; return; }
@@ -648,7 +719,7 @@ function aparatEmbedSrc(rawUrl){
   if (!rawUrl) return '';
   if (rawUrl.indexOf('embed') > -1) return rawUrl;
   var m = rawUrl.match(/aparat\.com\/(?:v|video\/video\/embed\/videohash)\/([A-Za-z0-9]+)/);
-  if (m) return 'https://www.aparat.com/video/video/embed/videohash/gqqsuxn/vt/frame' + m[1] + '/vt/frame';
+  if (m) return 'https://www.aparat.com/video/video/embed/videohash/' + m[1] + '/vt/frame';
   return rawUrl;
 }
 function buildVideoZone(){
@@ -662,19 +733,38 @@ function buildVideoZone(){
   }
 }
 
-/* ---------- خدمات (آکاردئونی + جستجو) ---------- */
+/* ---------- داده‌های مدارک مورد نیاز هر خدمت ---------- */
+var docsData = {
+  'v-kari': { title: 'مدارک وکالتنامه کاری', items: ['اصل شناسنامه و کارت ملی موکل', 'کپی یا اطلاعات دقیق هویتی وکیل (نام، نام خانوادگی، کدملی، تاریخ تولد)', 'در صورت وکالت برای ارگان خاص، نام دقیق ارگان یا شعبه', 'حضور موکل در دفترخانه جهت امضا الزامی است'] },
+  'v-forosh': { title: 'مدارک وکالتنامه فروش (ملک/خودرو)', items: ['اصل شناسنامه و کارت ملی مالک (موکل)', 'کپی کارت ملی و شناسنامه وکیل', 'برای ملک: اصل سند تک‌برگ یا منگوله‌دار ملک', 'برای خودرو: اصل برگ سبز خودرو و سند کمپانی', 'حضور موکل جهت ثبت اثر انگشت و امضا'] },
+  'q-melk': { title: 'مدارک انتقال قطعی ملک', items: ['اصل سند مالکیت (تک برگ یا بنچاق)', 'اصل شناسنامه و کارت ملی خریدار و فروشنده', 'پاسخ استعلام ثبت (توسط دفترخانه اخذ می‌شود)', 'مفاصا حساب دارایی (مالیات نقل و انتقال)', 'مفاصا حساب شهرداری (پایان‌کار یا عدم خلاف)', 'در صورت تجاری بودن: مفاصا حساب تامین اجتماعی'] },
+  'q-khodro': { title: 'مدارک انتقال قطعی خودرو', items: ['برگ سبز جدید صادر شده توسط مرکز تعویض پلاک بنام خریدار', 'تاییدیه نقل و انتقال (صادره از مرکز تعویض پلاک)', 'اصل شناسنامه و کارت ملی خریدار و فروشنده', 'بیمه‌نامه شخص ثالث معتبر', 'مفاصا حساب عوارض سالانه شهرداری خودرو', 'رسید پرداخت مالیات نقل و انتقال خودرو'] },
+  'taahod-daneshjoo': { title: 'مدارک تعهدنامه دانشجویی', items: ['اصل شناسنامه و کارت ملی دانشجو', 'اصل شناسنامه و کارت ملی ضامن', 'آخرین حکم کارگزینی ضامن (اگر کارمند است) یا جواز کسب معتبر / فیش حقوقی بازنشستگی', 'فرم مخصوص تعهدنامه دریافت شده از دانشگاه', 'حضور همزمان دانشجو و ضامن'] },
+  'taahod-general': { title: 'مدارک تعهدنامه/رضایت‌نامه', items: ['اصل شناسنامه و کارت ملی شخص متعهد/رضایت دهنده', 'متن دقیق تعهد یا نام ارگانی که تعهد به آن داده می‌شود', 'حضور شخص متعهد در دفترخانه'] },
+  'eqrar-mehrie': { title: 'مدارک اقرارنامه وصول/بذل مهریه', items: ['اصل شناسنامه و کارت ملی زوجه (زن)', 'اصل سند ازدواج (عقدنامه) یا رونوشت برابر اصل آن', 'شناسنامه و کارت ملی زوج (مرد) - جهت درج مشخصات', 'نامه از دفتر ازدواج تنظیم‌کننده سند مبنی بر عدم صدور اجراییه', 'حضور زوجه در دفترخانه الزامی است'] },
+  'eqrar-general': { title: 'مدارک انواع اقرارنامه', items: ['اصل شناسنامه و کارت ملی شخص اقرار کننده', 'اسناد مرتبط با موضوع اقرار (در صورت وجود)', 'حضور شخص اقرار کننده'] },
+  'govahi-emza': { title: 'مدارک گواهی امضاء', items: ['اصل شناسنامه و کارت ملی متقاضی', 'متن یا فرمی که قرار است امضا در ذیل آن گواهی شود', 'حضور شخص امضا کننده (برای اسناد مالی گواهی امضا انجام نمی‌شود)'] },
+  'copy-barabar': { title: 'مدارک تصدیق کپی (برابر اصل)', items: ['اصل مدرکی که قصد برابر اصل کردن آن را دارید (شناسنامه، کارت ملی، مدارک تحصیلی و...)', 'کپی خوانا از مدرک مربوطه'] },
+  'rahni': { title: 'مدارک تنظیم سند رهنی بانکی', items: ['اصل سند مالکیت ملک', 'اصل شناسنامه و کارت ملی وام‌گیرنده و راهن (مالک ملک)', 'قرارداد یا معرفی‌نامه رسمی از بانک مربوطه', 'پاسخ استعلام ثبت و مفاصا حساب دارایی و شهرداری (همانند قطعی)'] },
+  'sarghofli': { title: 'مدارک صلح‌نامه سرقفلی', items: ['اصل مدارک هویتی انتقال دهنده و انتقال گیرنده', 'سند اجاره‌نامه قبلی', 'رضایت‌نامه کتبی مالکیت (ارباب قلم) در صورت نیاز طبق قرارداد', 'مفاصا حساب مالیات بر درآمد مشاغل و نقل و انتقال', 'مفاصا حساب بیمه تامین اجتماعی'] },
+  'vesayat': { title: 'مدارک تنظیم وصیت‌نامه', items: ['اصل شناسنامه و کارت ملی وصیت‌کننده (موصی)', 'اطلاعات هویتی دقیق شخص یا اشخاصی که به نفع آنها وصیت می‌شود (موصی‌له)', 'اصل اسناد مالکیت اموالی که مورد وصیت قرار می‌گیرد', 'حضور موصی در کمال سلامت عقل'] },
+  'vaghf': { title: 'مدارک تنظیم وقف‌نامه', items: ['اصل مدارک هویتی واقف', 'اصل سند مالکیت ملک مورد وقف', 'تاییدیه و مجوز از اداره اوقاف (در صورت نیاز)', 'تعیین دقیق متولی و موقوف‌علیهم'] },
+  'hothoot': { title: 'مدارک صدور اجرائیه', items: ['اصل سند رسمی که تعهد در آن قید شده (مانند عقدنامه برای مهریه یا سند رهنی)', 'اصل شناسنامه و کارت ملی متقاضی (بستانکار)', 'تکمیل فرم تقاضای صدور اجراییه'] },
+  'sana': { title: 'مدارک دریافت کد ثنا', items: ['اصل کارت ملی هوشمند یا شناسنامه جدید', 'شماره موبایل روشن و فعال به نام شخص متقاضی', 'حضور شخص جهت اخذ تصویر و اثر انگشت الکترونیک'] },
+  'mobaye': { title: 'مدارک مبایعه‌نامه / قولنامه', items: ['اصل مدارک هویتی خریدار و فروشنده', 'اصل اسناد مالکیت مورد معامله', 'تعیین دقیق شرایط پرداخت و تحویل'] },
+  'ejare': { title: 'مدارک تنظیم اجاره‌نامه رسمی', items: ['اصل شناسنامه و کارت ملی موجر و مستاجر', 'اصل سند مالکیت ملک مورد اجاره', 'تعیین مبلغ دقیق رهن و اجاره و مدت زمان قرارداد'] },
+  'tarikhe-sanad': { title: 'مدارک گواهی عدم انجام معامله', items: ['اصل شناسنامه و کارت ملی متقاضی', 'اصل مبایعه‌نامه یا قراردادی که تاریخ محضر در آن قید شده', 'حضور در روز مقرر در قرارداد به همراه چک بانکی یا مانده حساب (برای خریدار) یا استعلامات آماده (برای فروشنده)'] },
+  'solh': { title: 'مدارک اسناد صلح (عمری/محاباتی)', items: ['اصل شناسنامه و کارت ملی مصالح (صلح کننده) و متصالح (صلح گیرنده)', 'اصل سند مالکیت ملک', 'استعلامات ثبت، دارایی و شهرداری (مشابه انتقال قطعی)'] }
+};
+var FALLBACK_DOCS = { title: 'مدارک مورد نیاز این خدمت', items: ['اصل و کپی شناسنامه و کارت ملی طرفین', 'سند مالکیت / برگ سبز خودرو / مدارک مورد معامله', 'حضور دو شاهد همراه با مدارک شناسایی', 'کارت بانکی جهت پرداخت هزینه‌های ثبتی'] };
+
+/* ---------- فهرست خدمات با کلید مدارک ---------- */
 var svcCatalog = [
-  { cat:'وکالت‌نامه‌ها', items:['تنظیم وکالتنامه کاری','وکالتنامه فروش ملک / خودرو'] },
-  { cat:'انتقال و معاملات', items:['انتقال قطعی ملک','انتقال قطعی خودرو','تنظیم مبایعه‌نامه / قولنامه','تنظیم اجاره‌نامه رسمی','گواهی عدم انجام معامله'] },
-  { cat:'تعهد، اقرار و رضایت‌نامه', items:['تعهدنامه دانشجویی','تعهدنامه و رضایت‌نامه عمومی','اقرارنامه وصول / بذل مهریه','انواع اقرارنامه'] },
-  { cat:'صلح، وصیت و وقف', items:['صلح‌نامه سرقفلی','اسناد صلح (عمری / محاباتی)','تنظیم وصیت‌نامه','تنظیم وقف‌نامه'] },
-  { cat:'اسناد بانکی، گواهی و تصدیق', items:['تنظیم سند رهنی بانکی','گواهی امضاء','تصدیق کپی (برابر اصل)','صدور اجرائیه','دریافت کد ثنا'] }
-];
-var REQUIRED_DOCS = [
-  'اصل و کپی شناسنامه و کارت ملی طرفین',
-  'سند مالکیت / برگ سبز خودرو / مدارک مورد معامله',
-  'حضور دو شاهد همراه با مدارک شناسایی',
-  'کارت بانکی جهت پرداخت هزینه‌های ثبتی'
+  { cat:'وکالت‌نامه‌ها', items:[ {t:'تنظیم وکالتنامه کاری',k:'v-kari'}, {t:'وکالتنامه فروش ملک / خودرو',k:'v-forosh'} ] },
+  { cat:'انتقال و معاملات', items:[ {t:'انتقال قطعی ملک',k:'q-melk'}, {t:'انتقال قطعی خودرو',k:'q-khodro'}, {t:'تنظیم مبایعه‌نامه / قولنامه',k:'mobaye'}, {t:'تنظیم اجاره‌نامه رسمی',k:'ejare'}, {t:'گواهی عدم انجام معامله',k:'tarikhe-sanad'} ] },
+  { cat:'تعهد، اقرار و رضایت‌نامه', items:[ {t:'تعهدنامه دانشجویی',k:'taahod-daneshjoo'}, {t:'تعهدنامه و رضایت‌نامه عمومی',k:'taahod-general'}, {t:'اقرارنامه وصول / بذل مهریه',k:'eqrar-mehrie'}, {t:'انواع اقرارنامه',k:'eqrar-general'} ] },
+  { cat:'صلح، وصیت و وقف', items:[ {t:'صلح‌نامه سرقفلی',k:'sarghofli'}, {t:'اسناد صلح (عمری / محاباتی)',k:'solh'}, {t:'تنظیم وصیت‌نامه',k:'vesayat'}, {t:'تنظیم وقف‌نامه',k:'vaghf'} ] },
+  { cat:'اسناد بانکی، گواهی و تصدیق', items:[ {t:'تنظیم سند رهنی بانکی',k:'rahni'}, {t:'گواهی امضاء',k:'govahi-emza'}, {t:'تصدیق کپی (برابر اصل)',k:'copy-barabar'}, {t:'صدور اجرائیه',k:'hothoot'}, {t:'دریافت کد ثنا',k:'sana'} ] }
 ];
 function toggleCat(catCard){
   var wasOpen = catCard.classList.contains('open');
@@ -687,9 +777,9 @@ function renderServices(filterText){
   var query = normalizeFa(filterText);
   var totalFound = 0;
   svcCatalog.forEach(function(group){
-    var matched = group.items.filter(function(itemName){
+    var matched = group.items.filter(function(item){
       if (!query) return true;
-      return normalizeFa(itemName).indexOf(query) > -1 || normalizeFa(group.cat).indexOf(query) > -1;
+      return normalizeFa(item.t).indexOf(query) > -1 || normalizeFa(group.cat).indexOf(query) > -1;
     });
     if (!matched.length) return;
     totalFound += matched.length;
@@ -705,12 +795,12 @@ function renderServices(filterText){
     });
     var body = document.createElement('div'); body.className = 'cat-body';
     var list = document.createElement('div'); list.className = 'svc-list';
-    matched.forEach(function(itemName){
+    matched.forEach(function(item){
       var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'svc-item';
-      var label = document.createElement('span'); label.textContent = itemName;
+      var label = document.createElement('span'); label.textContent = item.t;
       var arrow = document.createElement('span'); arrow.innerHTML = svgFor('chevleft');
       btn.appendChild(label); btn.appendChild(arrow);
-      btn.addEventListener('click', function(){ openServiceModal(itemName); });
+      btn.addEventListener('click', function(){ openServiceModal(item.k); });
       list.appendChild(btn);
     });
     body.appendChild(list);
@@ -723,11 +813,13 @@ function renderServices(filterText){
 /* ---------- مودال‌ها ---------- */
 function openOverlay(overlayId){ qs('#'+overlayId).classList.add('open'); document.body.classList.add('no-scroll'); }
 function closeOverlay(overlayId){ qs('#'+overlayId).classList.remove('open'); if (!qsa('.overlay.open').length) document.body.classList.remove('no-scroll'); }
-function openServiceModal(serviceTitle){
-  qs('#svcModalTitle').textContent = serviceTitle;
+function openServiceModal(docKey){
+  var docs = docsData[docKey] || FALLBACK_DOCS;
+  qs('#svcModalTitle').textContent = docs.title;
   var listEl = qs('#svcDocsList'); listEl.innerHTML = '';
-  REQUIRED_DOCS.forEach(function(docLine){
+  docs.items.forEach(function(docLine, idx){
     var li = document.createElement('li');
+    li.style.animationDelay = (idx * 60) + 'ms';
     li.innerHTML = svgFor('check');
     var spanTxt = document.createElement('span'); spanTxt.textContent = docLine;
     li.appendChild(spanTxt); listEl.appendChild(li);
@@ -737,8 +829,10 @@ function openServiceModal(serviceTitle){
 
 /* ---------- ذخیره مخاطب ---------- */
 function downloadVcard(){
-  var vcfLines = ['BEGIN:VCARD','VERSION:3.0','FN:دفتر اسناد رسمی ۱۳۶ دالکی','ORG:دفتر اسناد رسمی ۱۳۶ دالکی','TITLE:سردفتر اسناد رسمی — گوهر بحرینی','TEL;TYPE=CELL,VOICE:' + CONFIG.TEL_E164,'ADR;TYPE=WORK:;;خیابان شهدا، جنب نانوایی;دالکی;بوشهر;;ایران','URL:https://daftar136dalaki.ir','NOTE:کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی','END:VCARD'].join('\r\n');
-  var blob = new Blob([vcfLines], { type:'text/vcard;charset=utf-8' });
+  var vcfLines = ['BEGIN:VCARD','VERSION:3.0','FN:دفتر اسناد رسمی ۱۳۶ دالکی','ORG:دفتر اسناد رسمی ۱۳۶ دالکی','TITLE:سردفتر اسناد رسمی — گوهر بحرینی','TEL;TYPE=CELL,VOICE:' + CONFIG.MOBILE_TEL_E164,'TEL;TYPE=WORK,VOICE:' + CONFIG.OFFICE_TEL_E164];
+  if (CONFIG.EMAIL) vcfLines.push('EMAIL;TYPE=WORK:' + CONFIG.EMAIL);
+  vcfLines = vcfLines.concat(['ADR;TYPE=WORK:;;خیابان شهدا، جنب نانوایی;دالکی;بوشهر;;ایران','URL:https://daftar136dalaki.ir','NOTE:کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی','END:VCARD']);
+  var blob = new Blob([vcfLines.join('\r\n')], { type:'text/vcard;charset=utf-8' });
   var tempLink = document.createElement('a');
   tempLink.href = URL.createObjectURL(blob);
   tempLink.download = 'notary-136-dalaki.vcf';
@@ -772,7 +866,7 @@ function handleShareAction(kind){
   }
 }
 
-/* ---------- بارکد QR (با مقصد قابل تنظیم در CONFIG) ---------- */
+/* ---------- بارکد QR ---------- */
 function qrTargetUrl(){ return CONFIG.QR_TARGET_URL || pageUrl(); }
 function buildQr(){
   var holderEl = qs('#qrHolder');
@@ -811,7 +905,9 @@ function bindSecurityLayers(){
 function bindEvents(){
   qs('#serviceSearch').addEventListener('input', function(ev){ renderServices(ev.target.value); });
   qs('#saveContactBtn').addEventListener('click', downloadVcard);
-  qs('#emailBtn').addEventListener('click', function(){ showToast('نشانی ایمیل دفتر از طریق پیام‌رسان‌ها قابل استعلام است'); });
+  qs('[data-link="email"]').addEventListener('click', function(ev){
+    if (!CONFIG.EMAIL) { ev.preventDefault(); showToast('نشانی ایمیل دفتر از طریق پیام‌رسان‌ها قابل استعلام است'); }
+  });
   qs('#shareOpenBtn').addEventListener('click', function(){ openOverlay('shareOverlay'); });
   qs('#fabShareBtn').addEventListener('click', function(){ openOverlay('shareOverlay'); });
   qsa('[data-close]').forEach(function(btn){ btn.addEventListener('click', function(){ closeOverlay(btn.getAttribute('data-close')); }); });
@@ -827,7 +923,7 @@ document.addEventListener('DOMContentLoaded', function(){
   bindTheme();
   bindPreloader();
   computeOfficeStatus();
-  setInterval(computeOfficeStatus, 60000);
+  setInterval(computeOfficeStatus, 30000);
   renderServices('');
   buildVideoZone();
   bindEvents();
