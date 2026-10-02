@@ -1,936 +1,1437 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" data-theme="dark">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="#0b1017">
-<meta name="description" content="کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی — سردفتر: گوهر بحرینی | ثبت و تنظیم اسناد رسمی، املاک، وکالت، وصیت | شهر دالکی، استان بوشهر">
-<meta property="og:title" content="دفتر اسناد رسمی ۱۳۶ دالکی | کارت ویزیت هوشمند">
-<meta property="og:description" content="ثبت و تنظیم اسناد رسمی، املاک، وکالت، وصیت — شهر دالکی، استان بوشهر">
-<meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https://image.qwenlm.ai https://uploadkon.ir; media-src 'self' https://www.aparat.com; connect-src 'self'; frame-src 'self' https://www.aparat.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self';">
 <title>دفتر اسناد رسمی ۱۳۶ دالکی | کارت ویزیت هوشمند</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ccircle%20cx='50'%20cy='50'%20r='48'%20fill='%230b1017'/%3E%3Ccircle%20cx='50'%20cy='50'%20r='44'%20fill='none'%20stroke='%23d3a95c'%20stroke-width='4'/%3E%3Ctext%20x='50'%20y='62'%20font-size='34'%20text-anchor='middle'%20fill='%23d3a95c'%3E%E2%9A%96%3C/text%3E%3C/svg%3E">
+<meta name="description" content="کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی — ثبت و تنظیم اسناد رسمی، املاک، وکالت، وصیت — سردفتر: گوهر بحرینی">
+<meta name="theme-color" content="#150e07">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%231e140b' stroke='%23cfa25a' stroke-width='4'/><text x='50' y='64' font-size='36' text-anchor='middle' fill='%23cfa25a' font-family='serif'>۱۳۶</text></svg>">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/vazirmatn@latest/400.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/vazirmatn@latest/700.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/vazirmatn@latest/800.css">
-<script>
-/* تعیین تم پیش از رندر — بدون پرش تصویر (پایدار: خودکار + دستی) */
-(function(){
-  try{
-    var savedTheme = localStorage.getItem('n136-theme');
-    var sysLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-    document.documentElement.setAttribute('data-theme', savedTheme || (sysLight ? 'light' : 'dark'));
-  }catch(e){ document.documentElement.setAttribute('data-theme','dark'); }
-})();
-</script>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/400.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/500.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/700.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/800.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5/900.css" rel="stylesheet">
 <style>
-/* ===================== متغیرها و تم‌ها ===================== */
+/* ===================== base ===================== */
 :root{
-  --bg:#0b1017; --card:#151d29; --card2:#0d141d;
-  --line:#233043; --line-soft:#1b2635;
-  --gold:#d3a95c; --gold-2:#e7c98b; --gold-deep:#b98a3e;
-  --text:#e9eef6; --muted:#94a2b4; --muted-2:#6d7b8d;
-  --green:#39d98a; --red:#ff6b6b; --amber:#ffc857;
-  --r-lg:22px; --r-md:16px;
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-  --ease:cubic-bezier(.22,1,.36,1);
-  --fab-h:76px;
+  --bg0:#150e07; --bg1:#1e140b;
+  --ink:#f3ead9; --muted:#b7a288; --dim:#8d7355;
+  --gold:#cfa25a; --gold2:#f0dcaa; --gold3:#7c5f2a;
+  --ok:#8fc79a; --bad:#d3806c;
+  --line:rgba(240,222,180,.11);
+  --panel:rgba(255,240,215,.032);
+  --ease:cubic-bezier(.22,.7,.25,1);
 }
-html[data-theme="light"]{
-  --bg:#f2f5fa; --card:#ffffff; --card2:#f7f9fc;
-  --line:#dfe6ef; --line-soft:#e8edf4;
-  --gold:#a97b2f; --gold-2:#c99a4b; --gold-deep:#8f6526;
-  --text:#1a2430; --muted:#5c6b7c; --muted-2:#8a97a6;
-  --shadow:0 10px 30px rgba(23,36,54,.10);
-}
-*,*::before,*::after{box-sizing:border-box}
+@property --ringA{syntax:'<angle>';initial-value:0deg;inherits:false;}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  margin:0; font-family:'Vazirmatn',system-ui,sans-serif; background:var(--bg); color:var(--text);
-  background-image:radial-gradient(1200px 500px at 85% -10%, rgba(211,169,92,.08), transparent 60%),
-                   radial-gradient(900px 420px at 10% 0%, rgba(64,120,255,.05), transparent 60%);
-  padding-bottom:calc(var(--fab-h) + env(safe-area-inset-bottom) + 26px);
-  -webkit-tap-highlight-color:transparent; user-select:none; -webkit-user-select:none; overflow-x:clip;
-  transition:background-color .4s ease,color .4s ease;
+  font-family:'Vazirmatn',system-ui,-apple-system,sans-serif;
+  background:#150e07;color:var(--ink);min-height:100vh;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
 }
-input,textarea{user-select:text;-webkit-user-select:text}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-button{font-family:inherit;border:none;background:none;color:inherit;cursor:pointer}
-svg{display:block}
-[hidden]{display:none!important}
-.ltr{direction:ltr;unicode-bidi:isolate}
-.wrap{max-width:1100px;margin-inline:auto;padding-inline:clamp(14px,4vw,28px)}
-/* ===================== لودینگ حرفه‌ای ===================== */
-#preloader{position:fixed;inset:0;background:var(--bg);z-index:300;display:grid;place-items:center;transition:opacity .6s ease,visibility .6s}
-#preloader.done{opacity:0;visibility:hidden;pointer-events:none}
-.pre-inner{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
-.pre-ring{position:relative;width:116px;height:116px;display:grid;place-items:center}
-.pre-ring::before{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid transparent;border-top-color:var(--gold);border-inline-end-color:var(--gold-2);animation:spin 1.1s linear infinite}
-.pre-ring::after{content:"";position:absolute;inset:10px;border-radius:50%;border:2px dashed var(--line);animation:spin 7s linear infinite reverse}
-.pre-logo{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid rgba(211,169,92,.5);animation:breathe 1.6s ease-in-out infinite}
-.pre-inner h2{margin:4px 0 0;font-size:1.05rem;font-weight:800;animation:fadeUp .8s .1s var(--ease) both}
-.pre-inner p{margin:0;color:var(--muted);font-size:.78rem;animation:fadeUp .8s .2s var(--ease) both}
-.pre-bar{width:190px;height:4px;border-radius:99px;background:var(--line-soft);overflow:hidden}
-.pre-bar span{display:block;height:100%;width:40%;border-radius:99px;background:linear-gradient(90deg,var(--gold-2),var(--gold-deep));animation:slideBar 1.2s var(--ease) infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
-@keyframes slideBar{0%{transform:translateX(120%)}100%{transform:translateX(-320%)}}
-/* ===================== دکمه تم ===================== */
-.theme-btn{position:fixed;top:calc(14px + env(safe-area-inset-top));inset-inline-end:14px;z-index:90;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--gold);box-shadow:var(--shadow);transition:transform .2s,border-color .2s}
-.theme-btn:hover{transform:translateY(-2px) rotate(8deg);border-color:var(--gold)}
-.theme-btn svg{width:19px;height:19px;transition:transform .4s var(--ease)}
-html[data-theme="dark"] .ic-moon{display:none}
-html[data-theme="light"] .ic-sun{display:none}
-/* ===================== کارت و پنل ===================== */
-.card{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r-lg);transition:background-color .4s,border-color .4s}
-.panel{margin-block:16px;padding:clamp(18px,4.5vw,28px);background:var(--card);border:1px solid var(--line-soft);border-radius:var(--r-lg);transition:background-color .4s,border-color .4s,box-shadow .4s;position:relative;overflow:hidden}
-.panel::before{content:"";position:absolute;top:0;inset-inline:0;height:1px;background:linear-gradient(90deg,transparent,rgba(211,169,92,.35),transparent);opacity:0;transition:opacity .5s}
-.panel:hover::before{opacity:1}
-.panel-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-.head-icon{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#241505;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));box-shadow:0 6px 16px rgba(211,169,92,.25);transition:transform .3s var(--ease)}
-.panel-head:hover .head-icon{transform:rotate(-8deg) scale(1.06)}
-.head-icon svg{width:22px;height:22px}
-.panel-head h2{margin:0;font-size:clamp(1.05rem,2.6vw,1.3rem);font-weight:800}
-.panel-sub{margin:4px 0 0;color:var(--muted);font-size:.82rem}
-/* ===================== سربرگ ===================== */
-.hero{margin-top:18px;padding:clamp(26px,6vw,52px) clamp(18px,4vw,32px);text-align:center;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 50% 0%,rgba(211,169,92,.13),transparent 70%);pointer-events:none}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:999px;border:1px solid rgba(211,169,92,.45);color:var(--gold-2);font-size:.78rem;font-weight:700;background:rgba(211,169,92,.08);animation:fadeUp .7s var(--ease) both}
-.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulseDot 2s infinite}
-.logo-ring{position:relative;width:clamp(106px,24vw,146px);height:clamp(106px,24vw,146px);margin:18px auto 14px;display:grid;place-items:center;animation:fadeUp .7s .08s var(--ease) both}
-.logo-ring::before{content:"";position:absolute;inset:0;border-radius:50%;border:2.5px solid transparent;border-top-color:var(--gold-2);border-inline-end-color:var(--gold);animation:spin 5s linear infinite}
-.logo-ring::after{content:"";position:absolute;inset:7px;border-radius:50%;border:1.5px dashed rgba(211,169,92,.35);animation:spin 14s linear infinite reverse}
-.hero .logo{width:clamp(88px,20vw,122px);height:clamp(88px,20vw,122px);border-radius:50%;object-fit:cover;border:2px solid rgba(211,169,92,.55);box-shadow:0 0 0 6px rgba(211,169,92,.08),var(--shadow);animation:breathe 4s ease-in-out infinite}
-.hero h1{margin:0 0 8px;font-size:clamp(1.25rem,4.6vw,1.9rem);font-weight:800;animation:fadeUp .7s .16s var(--ease) both}
-.hero h1 span{background:linear-gradient(90deg,var(--gold-2),var(--gold),var(--gold-2));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:goldText 4s linear infinite}
-@keyframes goldText{to{background-position:200% center}}
-.hero .sub{margin:0 0 14px;color:var(--muted);font-size:clamp(.82rem,2.6vw,.95rem);animation:fadeUp .7s .22s var(--ease) both}
-.status{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:.8rem;color:var(--muted);animation:fadeUp .7s .28s var(--ease) both;transition:border-color .3s}
-.status:hover{border-color:var(--gold)}
-.status .dot{width:9px;height:9px;border-radius:50%;background:var(--muted-2);flex:0 0 auto}
-.status .dot.open{background:var(--green);animation:pulseDot 1.8s infinite}
-.status .dot.wait{background:var(--amber);animation:pulseDot 1.8s infinite}
-.status .dot.closed{background:var(--red)}
-@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(57,217,138,.45)}70%{box-shadow:0 0 0 9px rgba(57,217,138,0)}100%{box-shadow:0 0 0 0 rgba(57,217,138,0)}}
-.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;animation:fadeUp .7s .34s var(--ease) both}
-.chip{padding:7px 14px;border-radius:999px;background:var(--card2);border:1px solid var(--line);font-size:.75rem;color:var(--muted);transition:transform .2s,border-color .2s,color .2s}
-.chip:hover{transform:translateY(-3px);border-color:var(--gold);color:var(--gold-2)}
-.hero-profile{margin-top:18px;animation:fadeUp .7s .4s var(--ease) both}
-/* انیمیشن حرفه‌ای دکمه پروفایل */
-.btn-profile{position:relative;overflow:hidden;animation:glowPulse 3s ease-in-out infinite}
-.btn-profile::after{content:"";position:absolute;top:0;bottom:0;width:45%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.4),transparent);inset-inline-start:-70%;animation:shine 3.6s ease infinite}
-@keyframes shine{0%{inset-inline-start:-70%}55%,100%{inset-inline-start:135%}}
-@keyframes glowPulse{0%,100%{box-shadow:0 8px 20px rgba(211,169,92,.25)}50%{box-shadow:0 8px 30px rgba(211,169,92,.55)}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-/* ===================== دکمه‌ها ===================== */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;padding:12px 20px;font-size:.88rem;font-weight:700;transition:transform .18s,box-shadow .18s,border-color .18s;border:1px solid transparent}
-.btn:active{transform:scale(.97)}
-.btn svg{width:18px;height:18px}
-.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));color:#241505;box-shadow:0 8px 20px rgba(211,169,92,.25)}
-.btn-gold:hover{box-shadow:0 10px 26px rgba(211,169,92,.4);transform:translateY(-2px)}
-.btn-ghost{border-color:var(--line);color:var(--text);background:var(--card2)}
-.btn-ghost:hover{border-color:var(--gold);transform:translateY(-2px)}
-/* ===================== ارسال سریع مدارک ===================== */
-.mess-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-.mess-item{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);transition:border-color .2s,transform .2s,box-shadow .2s;text-align:right}
-.mess-item:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:var(--shadow)}
-.mess-item .m-ico{flex:0 0 auto;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:#fff;transition:transform .3s var(--ease)}
-.mess-item:hover .m-ico{transform:scale(1.1) rotate(-6deg)}
-.mess-item .m-ico svg{width:21px;height:21px}
-.mess-item .m-title{font-weight:700;font-size:.88rem}
-.mess-item .m-note{color:var(--muted);font-size:.72rem;margin-top:3px}
-.mess-item.primary{border-color:rgba(211,169,92,.55);background:linear-gradient(180deg,rgba(211,169,92,.10),rgba(211,169,92,.03));position:relative}
-.mess-item.primary .tag{position:absolute;top:-10px;inset-inline-start:14px;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));color:#241505;font-size:.66rem;font-weight:800;padding:3px 10px;border-radius:999px}
-.bg-eitaa{background:linear-gradient(135deg,#f2933c,#e06a1c)}
-.bg-whats{background:linear-gradient(135deg,#40d67a,#1da851)}
-.bg-rubi{background:linear-gradient(135deg,#7a8cff,#a24bf3)}
-.bg-soru{background:linear-gradient(135deg,#4fc3f7,#1e88d0)}
-/* ===================== پل‌های ارتباطی ===================== */
-.grid-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-.link-card{display:block;padding:20px 12px 16px;text-align:center;border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);transition:border-color .2s,transform .2s,box-shadow .2s}
-.link-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:var(--shadow)}
-.lc-icon{width:52px;height:52px;border-radius:16px;margin:0 auto 12px;display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.25);transition:transform .3s var(--ease)}
-.link-card:hover .lc-icon{transform:scale(1.1) rotate(-5deg)}
-.lc-icon svg{width:23px;height:23px}
-.bg-save{background:linear-gradient(135deg,#8ed64a,#3f9a1d)}
-.bg-call{background:linear-gradient(135deg,#5cb3f0,#1f7dc9)}
-.bg-mob{background:linear-gradient(135deg,#e7c98b,#b98a3e);color:#241505}
-.bg-insta{background:radial-gradient(circle at 30% 110%,#fdc468 0%,#f26d4f 45%,#d42e8c 80%)}
-.bg-tg{background:linear-gradient(135deg,#37bbfe,#1e96c8)}
-.bg-web{background:linear-gradient(135deg,#2ec4a5,#149b80)}
-.bg-mail{background:linear-gradient(135deg,#93a1b3,#5c6875)}
-.lc-title{font-weight:700;font-size:.88rem}
-.lc-sub{color:var(--muted);font-size:.72rem;margin-top:5px;word-break:break-all}
-.banner-link{margin-top:14px;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:18px;background:var(--card2);border:1px solid var(--line);transition:border-color .2s,transform .2s;position:relative;overflow:hidden}
-.banner-link::after{content:"";position:absolute;top:0;bottom:0;width:60px;background:linear-gradient(105deg,transparent,rgba(231,201,139,.16),transparent);inset-inline-start:-80px;animation:shimmer 3.2s ease infinite}
-@keyframes shimmer{0%{inset-inline-start:-80px}60%,100%{inset-inline-start:110%}}
-.banner-link:hover{border-color:var(--gold);transform:translateY(-2px)}
-.bl-icon{flex:0 0 auto;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#241505;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));transition:transform .3s var(--ease)}
-.banner-link:hover .bl-icon{transform:rotate(-8deg) scale(1.08)}
-.bl-icon svg{width:21px;height:21px}
-.bl-text{display:flex;flex-direction:column;gap:4px;min-width:0}
-.bl-title{font-weight:800;font-size:.9rem}
-.bl-sub{color:var(--muted);font-size:.74rem}
-.bl-chev{margin-inline-start:auto;color:var(--muted-2);transition:transform .3s}
-.banner-link:hover .bl-chev{transform:translateX(-5px);color:var(--gold)}
-.bl-chev svg{width:20px;height:20px}
-/* ===================== آدرس و نقشه ===================== */
-.addr-box{padding:16px;border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line)}
-.addr-row{display:flex;gap:10px;align-items:flex-start;padding:10px 4px;font-size:.86rem;line-height:1.9}
-.addr-row + .addr-row{border-top:1px dashed var(--line)}
-.addr-row svg{width:19px;height:19px;color:var(--gold);flex:0 0 auto;margin-top:4px}
-.map-frame{position:relative;margin-top:14px;border-radius:var(--r-md);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
-.map-frame iframe{width:100%;height:230px;border:none;display:block;filter:grayscale(30%);opacity:.85;transition:filter .5s ease,opacity .5s ease}
-.map-frame:hover iframe{filter:grayscale(0);opacity:1}
-.map-btn{position:absolute;bottom:12px;left:12px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));color:#241505;font-size:.72rem;font-weight:800;padding:10px 16px;border-radius:12px;box-shadow:0 8px 18px rgba(0,0,0,.35);transition:transform .2s}
-.map-btn:hover{transform:scale(1.06)}
-.map-btn svg{width:14px;height:14px}
-.addr-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-/* ===================== خدمات (آکاردئونی) ===================== */
-.search{position:relative;margin-bottom:14px}
-.search svg{position:absolute;inset-inline-start:14px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted-2);pointer-events:none}
-.search input{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:14px;color:var(--text);padding:13px 44px 13px 16px;font-family:inherit;font-size:.86rem;outline:none;transition:border-color .2s,box-shadow .2s}
-.search input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(211,169,92,.12)}
-.search input::placeholder{color:var(--muted-2)}
-.cats{display:grid;gap:12px}
-.cat-card{border-radius:var(--r-md);background:var(--card2);border:1px solid var(--line);overflow:hidden;transition:border-color .25s,box-shadow .25s}
-.cat-card.open{border-color:rgba(211,169,92,.5);box-shadow:var(--shadow)}
-.cat-head{width:100%;display:flex;align-items:center;gap:10px;padding:15px 16px;text-align:right}
-.cat-head:hover .cat-title{color:var(--gold-2)}
-.cat-title{flex:1;font-size:.92rem;font-weight:800;transition:color .2s}
-.cat-count{font-size:.68rem;color:var(--gold-2);border:1px solid rgba(211,169,92,.4);background:rgba(211,169,92,.08);padding:4px 10px;border-radius:999px;white-space:nowrap}
-.cat-head .chev{color:var(--muted-2);transition:transform .35s var(--ease)}
-.cat-head .chev svg{width:18px;height:18px}
-.cat-card.open .chev{transform:rotate(180deg);color:var(--gold)}
-.cat-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
-.cat-card.open .cat-body{grid-template-rows:1fr}
-.cat-body .svc-list{overflow:hidden;min-height:0;display:grid;gap:8px;padding:0 16px}
-.cat-card.open .cat-body .svc-list{padding-bottom:16px}
-.svc-item{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:right;padding:12px 14px;border-radius:12px;background:var(--bg);border:1px solid var(--line-soft);font-size:.83rem;color:var(--text);transition:border-color .2s,transform .2s,background .2s}
-.svc-item:hover{border-color:var(--gold);transform:translateX(-4px);background:var(--card)}
-.svc-item svg{width:16px;height:16px;color:var(--muted-2);flex:0 0 auto}
-.empty{display:none;padding:26px;text-align:center;color:var(--muted);background:var(--card2);border:1px dashed var(--line);border-radius:var(--r-md);font-size:.85rem}
-.empty.show{display:block;animation:fadeUp .4s var(--ease)}
-/* ===================== معرفی / ویدیو ===================== */
-.intro-text{font-size:.9rem;line-height:2;color:var(--muted);margin:0 0 16px}
-.video-frame{position:relative;padding-bottom:56.25%;height:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#000}
-.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
-.video-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
-.video-cap{position:absolute;bottom:0;inset-inline:0;padding:14px 16px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78));color:#fff;z-index:2}
-.video-cap b{font-size:.9rem}
-.video-cap span{display:block;color:#d7dee8;font-size:.73rem;margin-top:3px}
-/* ===================== بارکد ===================== */
-.qr-zone{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
-.qr-card{background:#fff;padding:14px;border-radius:18px;box-shadow:var(--shadow);transition:transform .25s var(--ease)}
-.qr-card:hover{transform:scale(1.04) rotate(-1deg)}
-.qr-card>div{width:180px;height:180px;display:grid;place-items:center}
-.qr-note{color:var(--muted);font-size:.78rem;line-height:1.9;max-width:420px;margin:0}
-/* ===================== پاورقی ===================== */
-footer{padding:26px 16px 10px;text-align:center;color:var(--muted-2);font-size:.75rem;line-height:2}
-footer a{color:var(--gold)}
-/* ===================== نوار شناور ===================== */
-.fab-bar{position:fixed;bottom:0;inset-inline:0;display:flex;justify-content:center;padding:12px 14px calc(12px + env(safe-area-inset-bottom));pointer-events:none;z-index:60}
-.fab-inner{pointer-events:auto;display:flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 10px;box-shadow:var(--shadow);animation:fabUp .8s .5s var(--ease) both}
-@keyframes fabUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-.fab{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-size:.78rem;font-weight:700;border:1px solid var(--line);color:var(--text);background:transparent;transition:border-color .18s,transform .18s}
-.fab:hover{border-color:var(--gold);transform:translateY(-2px)}
-.fab svg{width:17px;height:17px}
-.fab.fab-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold-deep));color:#241505;border-color:transparent}
-.fab.fab-wa{background:linear-gradient(135deg,#40d67a,#1da851);color:#fff;border-color:transparent}
-/* ===================== مودال‌ها ===================== */
-.overlay{position:fixed;inset:0;background:rgba(4,8,14,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:18px;z-index:100}
-.overlay.open{display:flex}
-.modal{width:min(94vw,480px);max-height:86vh;overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;animation:pop .3s var(--ease)}
-@keyframes pop{from{transform:translateY(20px) scale(.96);opacity:0}to{transform:none;opacity:1}}
-.modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
-.modal-head h3{margin:0;font-size:.98rem;font-weight:800;color:var(--gold-2)}
-.modal-close{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:var(--card2);border:1px solid var(--line);color:var(--muted);transition:border-color .2s,color .2s,transform .25s}
-.modal-close:hover{border-color:var(--red);color:var(--red);transform:rotate(90deg)}
-.modal-close svg{width:16px;height:16px}
-.docs-list{list-style:none;margin:0 0 12px;padding:0}
-.docs-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 2px;font-size:.83rem;line-height:1.8;border-bottom:1px dashed var(--line-soft);animation:fadeUp .4s var(--ease) both}
-.docs-list li:last-child{border-bottom:none}
-.docs-list svg{width:17px;height:17px;color:var(--gold);flex:0 0 auto;margin-top:4px}
-.modal-note{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--muted);font-size:.76rem;line-height:1.9}
-.modal-actions{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
-.modal-actions .btn{flex:1;min-width:140px}
-.share-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.share-item{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 6px;border-radius:14px;background:var(--card2);border:1px solid var(--line);font-size:.72rem;font-weight:700;transition:border-color .18s,transform .18s}
-.share-item:hover{border-color:var(--gold);transform:translateY(-3px)}
-.share-item svg{width:21px;height:21px}
-/* ===================== توست ===================== */
-.toast-root{position:fixed;bottom:calc(var(--fab-h) + env(safe-area-inset-bottom) + 14px);inset-inline:0;display:flex;flex-direction:column;align-items:center;gap:8px;z-index:120;pointer-events:none;padding-inline:16px}
-.toast{background:var(--card);border:1px solid var(--line);color:var(--text);border-radius:14px;padding:11px 18px;font-size:.78rem;box-shadow:var(--shadow);animation:tin .3s var(--ease);max-width:92vw;text-align:center}
-@keyframes tin{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}
-.no-scroll{overflow:hidden}
-/* ===================== ریویل اسکرول ===================== */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s var(--ease)}
-.reveal.in{opacity:1;transform:none}
-/* ===================== رسپانسیو ===================== */
-@media (max-width:560px){
-  .grid-links{grid-template-columns:repeat(2,1fr)}
-  .mess-grid{grid-template-columns:1fr}
-  .fab span{display:none}
-  .fab{padding:11px 14px}
-  .map-frame iframe{height:200px}
+body.is-loading{overflow:hidden}
+::selection{background:rgba(207,162,90,.32)}
+a{color:inherit}
+img{max-width:100%}
+button{font-family:inherit;touch-action:manipulation}
+section{scroll-margin-top:18px}
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:#170f08}
+::-webkit-scrollbar-thumb{background:#3d2a16;border-radius:99px;border:2px solid #170f08}
+::-webkit-scrollbar-thumb:hover{background:#574024}
+
+/* ===================== protection layer ===================== */
+body{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-touch-callout:none}
+input,textarea{-webkit-user-select:text;-moz-user-select:text;user-select:text}
+img{-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none;pointer-events:auto}
+
+/* ===================== LOADING SCREEN ===================== */
+.loader{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;
+  background:
+   radial-gradient(1000px 560px at 50% -14%, rgba(207,162,90,.15), transparent 62%),
+   radial-gradient(840px 560px at 50% 114%, rgba(126,78,42,.24), transparent 62%),
+   linear-gradient(180deg,#1d1309,#120b05 55%,#150e07);
+  transition:opacity .65s ease,visibility .65s ease}
+.loader.done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-grid{position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(207,162,90,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(207,162,90,.05) 1px,transparent 1px);
+  background-size:52px 52px;
+  -webkit-mask-image:radial-gradient(ellipse 80% 62% at 50% 44%,#000 0%,transparent 80%);
+  mask-image:radial-gradient(ellipse 80% 62% at 50% 44%,#000 0%,transparent 80%)}
+.loader::before,.loader::after{content:'';position:absolute;width:26px;height:26px;border:1.5px solid rgba(207,162,90,.45);pointer-events:none}
+.loader::before{top:18px;right:18px;border-left:0;border-bottom:0;border-radius:0 8px 0 0}
+.loader::after{bottom:18px;left:18px;border-right:0;border-top:0;border-radius:0 0 0 8px}
+.loader-inner{position:relative;text-align:center;padding:24px 22px;animation:loaderIn .8s var(--ease) both}
+@keyframes loaderIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
+.l-rule{width:120px;height:1px;margin:0 auto 22px;position:relative;
+  background:linear-gradient(90deg,transparent,rgba(207,162,90,.7),transparent)}
+.l-rule::after{content:'';position:absolute;top:-2px;left:50%;transform:translateX(-50%) rotate(45deg);
+  width:5px;height:5px;background:var(--gold)}
+.l-logo{position:relative;width:112px;height:112px;margin:0 auto 22px}
+.l-halo{position:absolute;inset:-24px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(207,162,90,.24),transparent 70%);animation:haloPulse 2.4s ease-in-out infinite}
+@keyframes haloPulse{0%,100%{transform:scale(.9);opacity:.55}50%{transform:scale(1.08);opacity:1}}
+.l-ring{position:absolute;border-radius:50%;pointer-events:none}
+.l-ring.r1{inset:-4px;border:1.5px dashed rgba(207,162,90,.5);animation:spinR 9s linear infinite}
+.l-ring.r2{inset:-13px;border:1px solid rgba(207,162,90,.18);animation:spinL 15s linear infinite}
+@keyframes spinR{to{transform:rotate(360deg)}}
+@keyframes spinL{to{transform:rotate(-360deg)}}
+.l-disc{position:absolute;inset:6px;border-radius:50%;overflow:hidden;border:3px solid transparent;
+  background:linear-gradient(#241709,#241709) padding-box,
+    conic-gradient(from var(--ringA),#f0dcaa,#7c5f2a,#cfa25a,#f7ecc9,#cfa25a,#f0dcaa) border-box;
+  box-shadow:0 16px 36px -12px rgba(207,162,90,.55);animation:ringSpin 3.6s linear infinite}
+@keyframes ringSpin{to{--ringA:360deg}}
+.l-disc img{width:100%;height:100%;object-fit:cover;display:block}
+.l-fb{display:none;place-items:center;width:100%;height:100%;
+  font-size:26px;font-weight:900;color:var(--gold2);text-shadow:0 2px 12px rgba(207,162,90,.5)}
+.l-fb.show{display:grid}
+.l-title{font-size:19px;font-weight:900;line-height:1.7}
+.l-title .gnum{background:linear-gradient(90deg,#f0dcaa,#cfa25a 30%,#f9f0d6 50%,#cfa25a 70%,#f0dcaa);
+  background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shine 4s linear infinite}
+.l-sub{display:inline-flex;align-items:center;gap:6px;margin-top:9px;font-size:11px;font-weight:800;color:#241505;
+  padding:5px 14px;border-radius:6px;background:linear-gradient(135deg,#f0dcaa,#cfa25a);
+  box-shadow:0 8px 20px -10px rgba(207,162,90,.6),inset 0 1px 0 rgba(255,255,255,.5);letter-spacing:.4px}
+.l-bar{width:min(250px,72vw);height:4px;border-radius:99px;background:rgba(240,222,180,.13);
+  margin:24px auto 13px;overflow:hidden;position:relative}
+.l-fill{position:absolute;top:0;bottom:0;right:0;width:0%;border-radius:99px;
+  background:linear-gradient(90deg,#f0dcaa,#cfa25a);
+  transition:width .4s var(--ease);box-shadow:0 0 13px rgba(207,162,90,.75)}
+.l-fill::after{content:'';position:absolute;inset:0;border-radius:99px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);
+  transform:translateX(-100%);animation:fillShine 1.4s ease-in-out infinite}
+@keyframes fillShine{to{transform:translateX(100%)}}
+.l-status{font-size:11.5px;color:var(--muted);display:flex;gap:7px;justify-content:center;align-items:center;min-height:20px}
+.l-pct{color:var(--gold2);font-weight:800;font-size:12.5px;direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
+.l-dots{display:inline-flex;gap:3px;align-items:center}
+.l-dots i{width:3.5px;height:3.5px;border-radius:50%;background:var(--gold);animation:blink 1.15s ease-in-out infinite}
+.l-dots i:nth-child(2){animation-delay:.18s}
+.l-dots i:nth-child(3){animation-delay:.36s}
+@keyframes blink{0%,100%{opacity:.2;transform:translateY(0)}50%{opacity:1;transform:translateY(-2px)}}
+.loader-foot{position:absolute;bottom:calc(26px + env(safe-area-inset-bottom));left:0;right:0;
+  text-align:center;font-size:11px;color:var(--dim);line-height:2;padding:0 20px}
+
+/* ===================== ambient background ===================== */
+.bg{position:fixed;inset:0;z-index:-2;overflow:hidden;
+  background:
+   radial-gradient(1000px 560px at 86% -14%, rgba(207,162,90,.13), transparent 62%),
+   radial-gradient(840px 560px at 6% 114%, rgba(126,78,42,.22), transparent 62%),
+   linear-gradient(180deg,#1d1309,#120b05 55%,#150e07);
 }
-@media (min-width:1200px){.wrap{max-width:1160px}}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .reveal{opacity:1;transform:none}
+.bg-grid{position:absolute;inset:0;
+  background-image:linear-gradient(rgba(207,162,90,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(207,162,90,.05) 1px,transparent 1px);
+  background-size:52px 52px;
+  -webkit-mask-image:radial-gradient(ellipse 90% 62% at 50% 0%,#000 0%,transparent 80%);
+  mask-image:radial-gradient(ellipse 90% 62% at 50% 0%,#000 0%,transparent 80%);
+  opacity:.75;
+}
+#fx{position:absolute;inset:0;width:100%;height:100%;display:block}
+.seal{position:absolute;left:50%;top:42%;width:min(640px,94vw);height:min(640px,94vw);
+  transform:translate(-50%,-50%);opacity:.055;color:#cfa25a;animation:spinSlow 110s linear infinite;pointer-events:none}
+@keyframes spinSlow{to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+/* ===================== layout ===================== */
+.page{max-width:560px;margin:0 auto;padding:16px 15px calc(112px + env(safe-area-inset-bottom))}
+@media(min-width:640px){.page{max-width:620px;padding-top:30px}}
+
+[data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s var(--ease)}
+[data-reveal].in{opacity:1;transform:none}
+.stagger>*:nth-child(1){transition-delay:.04s}.stagger>*:nth-child(2){transition-delay:.1s}
+.stagger>*:nth-child(3){transition-delay:.16s}.stagger>*:nth-child(4){transition-delay:.22s}
+.stagger>*:nth-child(5){transition-delay:.28s}.stagger>*:nth-child(6){transition-delay:.34s}
+.stagger>*:nth-child(7){transition-delay:.4s}.stagger>*:nth-child(8){transition-delay:.46s}
+
+.ripple{position:relative;overflow:hidden}
+.ripple-ink{position:absolute;border-radius:50%;background:rgba(240,220,170,.3);transform:scale(0);
+  animation:ripple .65s ease-out forwards;pointer-events:none;z-index:1}
+@keyframes ripple{to{transform:scale(1);opacity:0}}
+
+.ic{width:19px;height:19px;flex:0 0 auto;display:block}
+.ic.sm{width:16px;height:16px}
+
+.noscript-bar{background:#33240f;border-bottom:1px solid rgba(207,162,90,.5);color:#f0dcaa;
+  text-align:center;padding:10px 14px;font-size:13px;font-weight:700}
+
+/* ===================== hero (letterhead) ===================== */
+.hero{position:relative;border-radius:22px;overflow:hidden;
+  background:linear-gradient(165deg,rgba(255,240,215,.05),rgba(255,240,215,.012)),linear-gradient(165deg,#2a1c0f,#1c1208 62%,#231709);
+  border:1px solid rgba(207,162,90,.3);
+  box-shadow:0 34px 70px -34px rgba(0,0,0,.78),inset 0 1px 0 rgba(255,240,215,.06);
+  padding:0 16px 28px;
+}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;
+  background:linear-gradient(90deg,transparent 6%,#7c5f2a 22%,#f0dcaa 50%,#7c5f2a 78%,transparent 94%);opacity:.95}
+.hero::after{content:'';position:absolute;top:-20%;bottom:-20%;width:50%;left:-85%;pointer-events:none;
+  background:linear-gradient(105deg,transparent,rgba(255,240,215,.045),transparent);
+  transform:skewX(-18deg);animation:sweep 9s ease-in-out infinite}
+@keyframes sweep{0%,60%{left:-85%}100%{left:135%}}
+.hero-rule{position:absolute;top:8px;left:18px;right:18px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(207,162,90,.55),transparent)}
+.hero-corn{position:absolute;width:24px;height:24px;border:1.5px solid rgba(207,162,90,.5);pointer-events:none}
+.hero-corn.c1{top:16px;right:14px;border-left:0;border-bottom:0;border-radius:0 8px 0 0}
+.hero-corn.c2{bottom:14px;left:14px;border-right:0;border-top:0;border-radius:0 0 0 8px}
+
+.top-strip{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;
+  padding:24px 4px 13px;position:relative;z-index:2;
+  border-bottom:1px solid rgba(207,162,90,.24);box-shadow:0 3px 0 -2px rgba(207,162,90,.1)}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;
+  padding:6px 12px;border-radius:6px;border:1px solid var(--line);color:var(--muted);
+  transition:all .5s ease;background:rgba(255,240,215,.03)}
+.status-dot{width:7px;height:7px;border-radius:50%;background:#93836b;flex:0 0 auto;transition:all .5s ease}
+.status.open{color:#dcf0de;border-color:rgba(143,199,154,.45);background:rgba(143,199,154,.1)}
+.status.open .status-dot{background:var(--ok);box-shadow:0 0 0 0 rgba(143,199,154,.5);animation:pulse 2s ease-out infinite}
+.status.closed{color:#f4d9cf;border-color:rgba(211,128,108,.42);background:rgba(211,128,108,.09)}
+.status.closed .status-dot{background:var(--bad);box-shadow:0 0 9px rgba(211,128,108,.6)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(143,199,154,.5)}70%{box-shadow:0 0 0 8px rgba(143,199,154,0)}100%{box-shadow:0 0 0 0 rgba(143,199,154,0)}}
+.datetime{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.dt-item{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+.dt-item .ic{width:13px;height:13px;color:var(--gold)}
+.dt-time{font-weight:800;font-size:14px;color:var(--gold2);direction:ltr;unicode-bidi:isolate;
+  font-variant-numeric:tabular-nums;min-width:72px;text-align:center;letter-spacing:1px}
+.dt-sep{width:3px;height:3px;border-radius:50%;background:var(--gold);opacity:.7}
+
+.hero-body{text-align:center;position:relative;z-index:2}
+.logo-wrap{position:relative;width:120px;height:120px;margin:26px auto 16px}
+.logo-disc{position:absolute;inset:6px;border-radius:50%;overflow:hidden;
+  border:3px solid transparent;
+  background:linear-gradient(#241709,#241709) padding-box,
+    conic-gradient(from var(--ringA),#f0dcaa,#7c5f2a,#cfa25a,#f7ecc9,#cfa25a,#f0dcaa) border-box;
+  box-shadow:0 16px 38px -14px rgba(207,162,90,.42);animation:ringSpin 7s linear infinite}
+.logo-disc img{width:100%;height:100%;object-fit:cover;display:block}
+.logo-fb{display:none;place-items:center;width:100%;height:100%;
+  background:radial-gradient(circle at 32% 28%,#3d2a16,#180f07);
+  font-size:29px;font-weight:900;color:var(--gold2);text-shadow:0 2px 14px rgba(207,162,90,.5)}
+.logo-fb.show{display:grid}
+.ring{position:absolute;border-radius:50%;pointer-events:none}
+.ring.r1{inset:-4px;border:1.5px dashed rgba(207,162,90,.42);animation:spinR 18s linear infinite}
+.ring.r2{inset:-12px;border:1px solid rgba(207,162,90,.16);animation:spinL 28s linear infinite}
+.logo-chip{position:absolute;bottom:4px;left:2px;width:30px;height:30px;border-radius:50%;z-index:3;
+  display:grid;place-items:center;background:linear-gradient(135deg,#f0dcaa,#a3762f);color:#241505;
+  border:2px solid #1c1208;box-shadow:0 4px 12px rgba(0,0,0,.45)}
+.logo-chip .ic{width:14px;height:14px;stroke-width:3.2}
+.hero h1{font-size:clamp(23px,6.2vw,32px);font-weight:900;line-height:1.55;letter-spacing:-.2px}
+.gnum{background:linear-gradient(90deg,#f0dcaa,#cfa25a 30%,#f9f0d6 50%,#cfa25a 70%,#f0dcaa);
+  background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shine 5.5s linear infinite}
+@keyframes shine{to{background-position:-200% 0}}
+.hero .sub{font-size:12.5px;color:var(--muted);margin-top:9px;line-height:2.1}
+.badge-smart{display:inline-flex;align-items:center;gap:7px;margin-top:13px;
+  font-size:12px;font-weight:800;color:#241505;padding:7px 19px;border-radius:6px;
+  background:linear-gradient(135deg,#f0dcaa,#cfa25a);
+  box-shadow:0 10px 26px -12px rgba(207,162,90,.6),inset 0 1px 0 rgba(255,255,255,.5);
+  animation:glowPulse 3.4s ease-in-out infinite;letter-spacing:.3px}
+@keyframes glowPulse{0%,100%{box-shadow:0 10px 26px -12px rgba(207,162,90,.6),inset 0 1px 0 rgba(255,255,255,.5)}
+ 50%{box-shadow:0 10px 34px -8px rgba(207,162,90,.85),inset 0 1px 0 rgba(255,255,255,.5)}}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:17px}
+.chip{font-size:11.5px;font-weight:600;color:#e6d9c2;padding:6px 13px;border-radius:6px;
+  border:1px solid rgba(207,162,90,.26);background:rgba(207,162,90,.06);transition:all .35s var(--ease);cursor:default}
+.chip:hover{background:rgba(207,162,90,.15);border-color:rgba(207,162,90,.5);transform:translateY(-2px)}
+
+/* ===================== sections ===================== */
+.sec{margin-top:24px}
+.sec-card{background:linear-gradient(165deg,rgba(255,240,215,.045),rgba(255,240,215,.015));
+  border:1px solid var(--line);border-radius:18px;padding:20px 17px;position:relative;
+  box-shadow:0 22px 46px -30px rgba(0,0,0,.72);transition:border-color .4s ease;min-width:0}
+.sec-card::before{content:'';position:absolute;top:0;right:22px;width:52px;height:1.5px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.8}
+.sec-card:hover{border-color:rgba(207,162,90,.25)}
+.sec-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:17px}
+.sec-ico{width:46px;height:46px;flex:0 0 46px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(150deg,rgba(207,162,90,.18),rgba(207,162,90,.04));
+  border:1px solid rgba(207,162,90,.32);color:var(--gold2);
+  box-shadow:inset 0 1px 0 rgba(255,240,215,.1)}
+.sec-ico .ic{width:21px;height:21px;stroke-width:1.8}
+.sec-head h2{font-size:18px;font-weight:800}
+.sec-head p{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.9}
+
+.btn-gold,.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:13px 18px;border-radius:11px;cursor:pointer;font-size:13.5px;font-weight:800;
+  text-decoration:none;transition:all .3s var(--ease);border:1px solid transparent;max-width:100%}
+.btn-gold{color:#241505;background:linear-gradient(135deg,#f0dcaa,#cfa25a 55%,#a3762f);
+  box-shadow:0 12px 28px -14px rgba(207,162,90,.55),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-gold:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:0 16px 34px -14px rgba(207,162,90,.7),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-gold:active{transform:translateY(0) scale(.98)}
+.btn-ghost{color:var(--gold2);background:rgba(207,162,90,.06);border-color:rgba(207,162,90,.38)}
+.btn-ghost:hover{background:rgba(207,162,90,.14);transform:translateY(-2px)}
+.btn-block{width:100%}
+
+/* ===================== map ===================== */
+.map-frame{position:relative;border:1px solid rgba(207,162,90,.38);border-radius:14px;overflow:hidden;
+  background:#0d0905;box-shadow:0 18px 40px -22px rgba(0,0,0,.7);margin-bottom:4px}
+.map-frame::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;z-index:2;pointer-events:none;
+  background:linear-gradient(90deg,transparent,#cfa25a,transparent);opacity:.85}
+.map-frame iframe{display:block;width:100%;height:250px;border:0;filter:sepia(.28) saturate(.82) contrast(.96)}
+@media(min-width:540px){.map-frame iframe{height:300px}}
+.map-cap{font-size:11px;color:var(--dim);text-align:center;margin:10px 0 2px}
+
+/* ===================== tract (flyer) ===================== */
+.tract-frame{position:relative;display:block;border:1px solid rgba(207,162,90,.35);border-radius:14px;
+  overflow:hidden;background:rgba(0,0,0,.28);transition:all .4s var(--ease);text-decoration:none}
+.tract-frame::before,.tract-frame::after{content:'';position:absolute;width:26px;height:26px;z-index:2;
+  border:2px solid rgba(207,162,90,.7);pointer-events:none}
+.tract-frame::before{top:9px;right:9px;border-left:0;border-bottom:0;border-radius:0 9px 0 0}
+.tract-frame::after{bottom:9px;left:9px;border-right:0;border-top:0;border-radius:0 0 0 9px}
+.tract-frame:hover{transform:translateY(-3px);border-color:rgba(207,162,90,.6);
+  box-shadow:0 22px 44px -20px rgba(207,162,90,.5)}
+.tract-frame img{width:100%;height:auto;display:block}
+.tract-zoom{position:absolute;bottom:14px;right:14px;z-index:2;width:40px;height:40px;border-radius:50%;
+  display:grid;place-items:center;color:#241505;background:linear-gradient(135deg,#f0dcaa,#cfa25a);
+  box-shadow:0 8px 20px -6px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.5);
+  transition:transform .35s var(--ease)}
+.tract-frame:hover .tract-zoom{transform:scale(1.1)}
+.tract-fb{display:none;place-items:center;gap:12px;flex-direction:column;padding:52px 18px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:2.2}
+.tract-fb.show{display:flex}
+.tract-fb .ic{width:34px;height:34px;color:var(--gold)}
+.tract-cap{margin-top:12px;font-size:11.5px;color:var(--dim);text-align:center;line-height:2}
+.tract-actions{margin-top:14px}
+
+/* ===================== send ===================== */
+.msg-list{display:flex;flex-direction:column;gap:10px;min-width:0}
+.msg-card{display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:13px;
+  border:1px solid var(--line);background:var(--panel);text-decoration:none;min-width:0;
+  transition:all .4s var(--ease);position:relative;overflow:hidden}
+.msg-card.featured{border-color:rgba(207,162,90,.5);background:linear-gradient(135deg,rgba(207,162,90,.1),rgba(207,162,90,.03))}
+.msg-card::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.05) 50%,transparent 70%);
+  transform:translateX(120%);transition:transform .9s ease;pointer-events:none}
+.msg-card:hover::after{transform:translateX(-120%)}
+.msg-card:hover{transform:translateY(-2px);border-color:rgba(207,162,90,.42);background:rgba(207,162,90,.05);
+  box-shadow:0 16px 32px -20px rgba(207,162,90,.45)}
+.msg-card.featured:hover{border-color:rgba(207,162,90,.65);background:linear-gradient(135deg,rgba(207,162,90,.14),rgba(207,162,90,.05))}
+.msg-tile{width:46px;height:46px;flex:0 0 46px;border-radius:11px;display:grid;place-items:center;
+  font-weight:900;font-size:18px;color:#fff;background:linear-gradient(150deg,var(--c1),var(--c2));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 8px 18px -8px rgba(0,0,0,.5)}
+.msg-body{flex:1;min-width:0}
+.msg-name{font-weight:800;font-size:13.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.msg-sub{font-size:11px;color:var(--muted);margin-top:3px}
+.msg-flag{font-size:9.5px;font-weight:900;color:#241505;background:linear-gradient(135deg,#f0dcaa,#cfa25a);
+  padding:2.5px 9px;border-radius:5px;animation:glowPulse 3s ease-in-out infinite}
+.msg-arrow{color:var(--dim);transition:all .35s var(--ease);flex:0 0 auto}
+.msg-card:hover .msg-arrow{color:var(--gold2);transform:translateX(-5px)}
+
+/* ===================== contact ===================== */
+.c-grid{display:grid;grid-template-columns:1fr;gap:10px;min-width:0}
+@media(min-width:560px){.c-grid{grid-template-columns:1fr 1fr}}
+.c-item{display:flex;align-items:center;gap:10px;padding:12px;border-radius:13px;
+  border:1px solid var(--line);background:var(--panel);min-width:0;overflow:hidden;
+  transition:all .35s var(--ease);position:relative}
+.c-item::before{content:'';position:absolute;top:8px;bottom:8px;right:0;width:2.5px;border-radius:99px;
+  background:linear-gradient(180deg,transparent,rgba(207,162,90,.75),transparent);opacity:0;transition:opacity .35s ease}
+.c-item:hover{border-color:rgba(207,162,90,.4);background:rgba(207,162,90,.05);transform:translateY(-2px)}
+.c-item:hover::before{opacity:1}
+.c-item.wide{grid-column:1/-1}
+.c-ico{width:40px;height:40px;flex:0 0 40px;border-radius:10px;display:grid;place-items:center;
+  background:rgba(207,162,90,.12);color:var(--gold2);transition:all .35s ease}
+.c-item:hover .c-ico{background:linear-gradient(135deg,#f0dcaa,#a3762f);color:#241505}
+.c-info{flex:1 1 auto;min-width:0}
+.c-label{display:block;font-size:10.5px;color:var(--dim);font-weight:700;margin-bottom:3px}
+.c-val{display:block;font-size:13px;font-weight:700;line-height:1.75;color:var(--ink);
+  direction:ltr;unicode-bidi:plaintext;text-align:right;
+  overflow-wrap:anywhere;word-break:break-word;max-width:100%}
+.c-acts{display:flex;gap:6px;flex:0 0 auto}
+.icobtn{width:34px;height:34px;border-radius:8px;display:grid;place-items:center;
+  border:1px solid var(--line);background:rgba(255,240,215,.04);color:var(--muted);
+  cursor:pointer;text-decoration:none;transition:all .3s var(--ease);flex:0 0 auto}
+.icobtn:hover{color:#241505;background:linear-gradient(135deg,#f0dcaa,#a3762f);border-color:transparent;transform:translateY(-2px)}
+.icobtn:active{transform:scale(.92)}
+@media(max-width:355px){
+  .c-ico{width:36px;height:36px;flex-basis:36px}
+  .icobtn{width:31px;height:31px}
+  .c-val{font-size:12px}
+  .c-item{gap:8px;padding:11px 10px}
+}
+.web-banner{margin-top:14px;display:flex;align-items:center;gap:12px;padding:14px 15px;border-radius:13px;
+  text-decoration:none;border:1px solid rgba(207,162,90,.4);position:relative;overflow:hidden;min-width:0;
+  background:linear-gradient(135deg,rgba(207,162,90,.16),rgba(207,162,90,.03));transition:all .35s var(--ease)}
+.web-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.08) 50%,transparent 70%);
+  transform:translateX(130%);animation:bannerSweep 5.5s ease-in-out infinite;pointer-events:none}
+@keyframes bannerSweep{0%,62%{transform:translateX(130%)}100%{transform:translateX(-130%)}}
+.web-banner:hover{transform:translateY(-2px);box-shadow:0 18px 36px -20px rgba(207,162,90,.55)}
+.web-banner .wb-txt{flex:1;min-width:0}
+.web-banner b{display:block;font-size:13.5px;font-weight:800;color:var(--gold2);overflow-wrap:anywhere}
+.web-banner span{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;
+  direction:ltr;unicode-bidi:plaintext;text-align:right;overflow-wrap:anywhere}
+.web-banner .ic{color:var(--gold2);margin-inline-start:auto;flex:0 0 auto}
+
+/* ===================== location ===================== */
+.loc-row{display:flex;gap:11px;align-items:flex-start;padding:12px 4px;border-bottom:1px dashed rgba(207,162,90,.2)}
+.loc-row:last-of-type{border-bottom:none}
+.loc-row .c-ico{width:36px;height:36px;flex-basis:36px}
+.loc-row .txt{font-size:13px;line-height:2.2;color:#e4d7c0;min-width:0;overflow-wrap:anywhere}
+.loc-row .txt b{color:var(--gold2)}
+.loc-actions{display:flex;gap:10px;margin-top:15px;flex-wrap:wrap}
+.loc-actions .btn-gold,.loc-actions .btn-ghost{flex:1;min-width:150px}
+
+/* ===================== services ===================== */
+.svc-search{position:relative;margin-bottom:14px}
+.svc-search input{width:100%;padding:13px 46px 13px 14px;border-radius:11px;
+  border:1px solid var(--line);background:rgba(0,0,0,.32);color:var(--ink);
+  font-family:inherit;font-size:13.5px;transition:all .3s ease}
+.svc-search input::placeholder{color:var(--dim)}
+.svc-search input:focus{outline:none;border-color:rgba(207,162,90,.55);box-shadow:0 0 0 3px rgba(207,162,90,.13)}
+.svc-search .ic{position:absolute;top:50%;right:15px;transform:translateY(-50%);color:var(--dim);pointer-events:none}
+.svc-cat{border:1px solid var(--line);border-radius:13px;overflow:hidden;
+  background:rgba(255,240,215,.022);margin-bottom:10px;transition:border-color .4s ease}
+.svc-cat.open{border-color:rgba(207,162,90,.4)}
+.svc-head{display:flex;align-items:center;gap:11px;width:100%;padding:12px 13px;
+  background:none;border:none;cursor:pointer;color:var(--ink);text-align:right;min-width:0}
+.svc-head:hover{background:rgba(207,162,90,.05)}
+.svc-emoji{width:44px;height:44px;flex:0 0 44px;border-radius:10px;display:grid;place-items:center;
+  font-size:19px;background:rgba(207,162,90,.11);transition:transform .4s var(--ease)}
+.svc-head:hover .svc-emoji{transform:scale(1.07) rotate(-4deg)}
+.svc-title{display:block;font-weight:800;font-size:14px}
+.svc-count{display:block;font-size:10.5px;color:var(--dim);margin-top:2px;font-weight:600}
+.svc-chev{margin-inline-start:auto;color:var(--dim);transition:transform .45s var(--ease);flex:0 0 auto}
+.svc-cat.open .svc-chev{transform:rotate(180deg);color:var(--gold2)}
+.svc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.svc-cat.open>.svc-body{grid-template-rows:1fr}
+.svc-body-in{overflow:hidden;min-height:0}
+.svc-item{display:flex;align-items:center;gap:10px;width:100%;padding:12px 14px;border:none;
+  border-top:1px solid rgba(255,240,215,.06);background:none;color:#e4d7c0;font-family:inherit;
+  font-size:13px;font-weight:600;cursor:pointer;text-align:right;transition:all .3s ease;min-width:0}
+.svc-item:hover{background:rgba(207,162,90,.08);color:var(--gold2)}
+.svc-dot{width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,#f0dcaa,#a3762f);
+  flex:0 0 auto;box-shadow:0 0 8px rgba(207,162,90,.6)}
+.svc-name{flex:1;min-width:0;overflow-wrap:anywhere}
+.svc-item small{color:var(--dim);font-size:10.5px;white-space:nowrap;font-weight:600;flex:0 0 auto}
+#svcResults{display:none;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:rgba(255,240,215,.022)}
+#svcResults .svc-item:first-child{border-top:none}
+.svc-empty{display:none;text-align:center;padding:28px 14px;border:1.5px dashed rgba(207,162,90,.38);
+  border-radius:13px;color:var(--muted);font-size:13.5px;line-height:2}
+.svc-empty .big{font-size:30px;display:block;margin-bottom:8px;filter:grayscale(.35)}
+
+/* ===================== QR ===================== */
+.qr-flex{display:flex;gap:20px;align-items:center;justify-content:center;flex-wrap:wrap}
+.qr-frame{position:relative;padding:14px}
+.qr-box{position:relative;width:186px;height:186px;background:#fff;border-radius:12px;padding:11px;
+  box-shadow:0 22px 48px -18px rgba(207,162,90,.5);overflow:hidden}
+.qr-box img{width:100%;height:100%;display:block}
+.qr-fallback{display:grid;place-items:center;width:100%;height:100%;color:#1c1208;font-weight:800;
+  font-size:13px;text-align:center;text-decoration:none;direction:ltr;line-height:2}
+.qr-scan{position:absolute;left:7%;right:7%;height:2px;top:12%;
+  background:linear-gradient(90deg,transparent,#cfa25a,transparent);
+  box-shadow:0 0 13px rgba(207,162,90,.85);animation:scanY 3.4s ease-in-out infinite;pointer-events:none}
+@keyframes scanY{0%,100%{top:10%}50%{top:88%}}
+.qr-corn{position:absolute;width:20px;height:20px;border:2px solid var(--gold);pointer-events:none}
+.qr-corn.t1{top:0;right:0;border-left:0;border-bottom:0;border-radius:0 7px 0 0}
+.qr-corn.t2{top:0;left:0;border-right:0;border-bottom:0;border-radius:7px 0 0 0}
+.qr-corn.b1{bottom:0;right:0;border-left:0;border-top:0;border-radius:0 0 7px 0}
+.qr-corn.b2{bottom:0;left:0;border-right:0;border-top:0;border-radius:0 0 0 7px}
+.qr-info{flex:1;min-width:225px}
+.qr-info p{font-size:12.5px;color:var(--muted);line-height:2.2;margin-top:6px}
+.qr-info .lead{font-size:12.5px;color:var(--muted)}
+
+/* ===================== footer ===================== */
+footer{text-align:center;padding:30px 10px 8px;font-size:12px;color:var(--dim);line-height:2.3}
+footer a{color:var(--gold2);text-decoration:none;font-weight:700;direction:ltr;display:inline-block;unicode-bidi:isolate}
+footer a:hover{text-decoration:underline}
+footer .line{width:76px;height:1px;margin:0 auto 16px;position:relative;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+footer .line::after{content:'';position:absolute;top:-2.5px;left:50%;transform:translateX(-50%) rotate(45deg);
+  width:6px;height:6px;background:var(--gold)}
+
+/* ===================== dockbar ===================== */
+.dock{position:fixed;bottom:calc(12px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
+  z-index:50;display:flex;gap:7px;padding:9px;border-radius:17px;width:min(430px,calc(100% - 22px));
+  background:rgba(21,14,7,.86);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(207,162,90,.3);box-shadow:0 20px 46px -14px rgba(0,0,0,.78)}
+body.loaded .dock{animation:dockIn .8s var(--ease) backwards}
+@keyframes dockIn{from{transform:translate(-50%,90px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
+.dock a,.dock button{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:9px 4px;border-radius:11px;background:none;border:none;color:var(--muted);
+  font-size:10.5px;font-weight:700;text-decoration:none;cursor:pointer;transition:all .3s var(--ease)}
+.dock a:hover,.dock button:hover{color:var(--gold2);transform:translateY(-2px)}
+.dock .primary{background:linear-gradient(135deg,#f0dcaa,#cfa25a);color:#241505;
+  box-shadow:0 8px 20px -8px rgba(207,162,90,.65)}
+.dock .primary:hover{color:#241505;filter:brightness(1.06)}
+.dock .ic{width:20px;height:20px}
+
+/* ===================== modals ===================== */
+.overlay{position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end;justify-content:center;
+  background:rgba(10,6,3,.72);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);
+  opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s}
+.overlay.open{opacity:1;visibility:visible}
+.sheet{width:min(540px,100%);max-height:86vh;overflow-y:auto;
+  background:linear-gradient(170deg,#2a1c10,#180f07 72%);
+  border:1px solid rgba(207,162,90,.32);border-bottom:none;border-radius:22px 22px 0 0;
+  padding:14px 20px calc(26px + env(safe-area-inset-bottom));
+  transform:translateY(40px);transition:transform .45s var(--ease)}
+.overlay.open .sheet{transform:none}
+@media(min-width:640px){
+  .overlay{align-items:center;padding:20px}
+  .sheet{border-radius:20px;border-bottom:1px solid rgba(207,162,90,.32)}
+}
+.sheet-handle{width:44px;height:4px;border-radius:99px;background:rgba(255,240,215,.18);margin:2px auto 14px}
+@media(min-width:640px){.sheet-handle{display:none}}
+.m-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px}
+.m-overline{font-size:10px;font-weight:800;color:var(--gold);letter-spacing:1px;margin-bottom:6px}
+.m-title{font-size:16px;font-weight:800;line-height:1.9}
+.m-close{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;flex:0 0 auto;
+  border:1px solid var(--line);background:rgba(255,240,215,.035);color:var(--muted);cursor:pointer;transition:all .3s ease}
+.m-close:hover{color:#241505;background:linear-gradient(135deg,#f0dcaa,#a3762f);border-color:transparent;transform:rotate(90deg)}
+.m-cat-chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;
+  color:var(--gold2);background:rgba(207,162,90,.09);border:1px solid rgba(207,162,90,.3);
+  padding:6px 13px;border-radius:7px;margin-bottom:15px}
+.m-docs-title{font-size:12.5px;font-weight:800;color:#e6d9c2;margin-bottom:10px}
+.m-docs{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.m-docs li{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;line-height:2;color:#e4d7c0;
+  background:rgba(255,240,215,.028);border:1px solid rgba(255,240,215,.06);border-radius:9px;padding:9px 12px;
+  overflow-wrap:anywhere}
+.m-docs li::before{content:'';width:6px;height:6px;border-radius:50%;margin-top:10px;flex:0 0 auto;
+  background:linear-gradient(135deg,#f0dcaa,#a3762f);box-shadow:0 0 7px rgba(207,162,90,.6)}
+.m-note{background:rgba(207,162,90,.08);border:1px solid rgba(207,162,90,.3);border-radius:10px;
+  padding:12px 14px;font-size:12.5px;line-height:2.1;color:#efe0bd;margin-bottom:16px}
+.m-actions{display:flex;gap:10px;flex-wrap:wrap}
+.m-actions>*{flex:1;min-width:140px}
+.sh-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:380px){.sh-grid{grid-template-columns:repeat(2,1fr)}}
+.sh-opt{display:flex;flex-direction:column;align-items:center;gap:9px;padding:15px 8px;border-radius:13px;
+  border:1px solid var(--line);background:rgba(255,240,215,.028);cursor:pointer;color:var(--ink);
+  font-size:11.5px;font-weight:700;transition:all .3s var(--ease)}
+.sh-opt:hover{transform:translateY(-4px);border-color:rgba(207,162,90,.5);background:rgba(207,162,90,.09);
+  box-shadow:0 14px 28px -18px rgba(207,162,90,.55)}
+.sh-opt:active{transform:scale(.96)}
+.sh-ico{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 8px 18px -8px rgba(0,0,0,.55)}
+
+/* ===================== toast ===================== */
+.toast{position:fixed;bottom:calc(96px + env(safe-area-inset-bottom));left:50%;transform:translate(-50%,16px);
+  z-index:99;background:#2a1c10;border:1px solid rgba(207,162,90,.5);color:#f3ead2;
+  padding:11px 20px;border-radius:11px;font-size:13px;font-weight:700;opacity:0;pointer-events:none;
+  transition:all .4s var(--ease);box-shadow:0 16px 34px -12px rgba(0,0,0,.65);max-width:88vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ===================== guard overlay ===================== */
+.guard-warn{position:fixed;inset:0;z-index:9999;background:rgba(21,14,7,.97);
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;
+  direction:rtl;animation:loaderIn .4s var(--ease) both}
+.guard-warn .gw-box{max-width:360px;line-height:2.2;color:#f0dcaa}
+.guard-warn .gw-ico{font-size:38px;display:block;margin-bottom:12px}
+.guard-warn b{font-size:15px;display:block}
+.guard-warn p{font-size:12px;color:#b7a288;margin-top:8px}
+.guard-warn button{margin-top:16px;padding:10px 24px;border-radius:10px;border:none;cursor:pointer;
+  background:linear-gradient(135deg,#f0dcaa,#cfa25a);color:#241505;font-family:inherit;font-weight:800;font-size:13px;
+  box-shadow:0 10px 24px -12px rgba(207,162,90,.7)}
+
+/* ===================== reduced motion & print ===================== */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  [data-reveal]{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+@media print{
+  .dock,.bg,#fx,.toast,.overlay,.qr-scan,.loader,.guard-warn{display:none !important}
+  body{background:#fff;color:#111}
+  .page{padding-bottom:20px}
 }
 </style>
 </head>
-<body>
+<body class="is-loading">
 
-<!-- ═══════════════════════════════════════════════════════════════
-     ⚙️ تنظیمات سریع (همهٔ لینک‌ها و شماره‌ها در آبجکت CONFIG انتهای فایل)
-     ═══════════════════════════════════════════════════════════════ -->
-
-<div id="preloader" aria-hidden="true">
-  <div class="pre-inner">
-    <div class="pre-ring"><img class="pre-logo" src="https://uploadkon.ir/uploads/a1cb11_26g136bhl5.png" alt=""></div>
-    <h2>دفتر اسناد رسمی ۱۳۶ دالکی</h2>
-    <p>کارت ویزیت هوشمند</p>
-    <div class="pre-bar"><span></span></div>
+<!-- ===================== LOADING SCREEN ===================== -->
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="در حال بارگذاری کارت ویزیت">
+  <div class="loader-grid"></div>
+  <div class="loader-inner">
+    <div class="l-rule"></div>
+    <div class="l-logo">
+      <span class="l-halo"></span>
+      <span class="l-ring r1"></span>
+      <span class="l-ring r2"></span>
+      <div class="l-disc">
+        <img src="https://cdn.imgurl.ir/uploads/p3925_NewGBH05Profile256px.png" alt="نشان دفتر اسناد رسمی ۱۳۶ دالکی"
+             onerror="this.style.display='none';document.getElementById('lFb').classList.add('show')">
+        <div class="l-fb" id="lFb">۱۳۶</div>
+      </div>
+    </div>
+    <div class="l-title">دفتر اسناد رسمی <span class="gnum">۱۳۶</span> دالکی</div>
+    <div><span class="l-sub">کارت ویزیت هوشمند</span></div>
+    <div class="l-bar"><span class="l-fill" id="lFill"></span></div>
+    <div class="l-status">
+      <span class="l-pct" id="lPct">۰٪</span>
+      <span>—</span>
+      <span id="lMsg">در حال بارگذاری منابع</span>
+      <span class="l-dots"><i></i><i></i><i></i></span>
+    </div>
   </div>
+  <div class="loader-foot">با اطمینان خاطر، اسناد خود را رسمی کنید.<br>دفتر اسناد رسمی ۱۳۶ شهر دالکی — سردفتر: گوهر بحرینی</div>
+</div>
+<noscript><style>.loader{display:none !important}</style></noscript>
+
+<div class="bg" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <svg class="seal" viewBox="0 0 200 200" fill="none" stroke="currentColor">
+    <circle cx="100" cy="100" r="96" stroke-width="1.1" stroke-dasharray="3 6"/>
+    <circle cx="100" cy="100" r="80" stroke-width="1"/>
+    <g stroke-width="1">
+      <line x1="100" y1="6"  x2="100" y2="14"/><line x1="100" y1="186" x2="100" y2="194"/>
+      <line x1="6"   y1="100" x2="14"  y2="100"/><line x1="186" y1="100" x2="194" y2="100"/>
+      <line x1="33"  y1="33"  x2="39"  y2="39"/><line x1="161" y1="161" x2="167" y2="167"/>
+      <line x1="167" y1="33"  x2="161" y2="39"/><line x1="39"  y1="161" x2="33"  y2="167"/>
+    </g>
+    <circle cx="100" cy="100" r="62" stroke-width="1.1" stroke-dasharray="2 5"/>
+    <path d="M100 46 L111 89 L154 100 L111 111 L100 154 L89 111 L46 100 L89 89 Z" stroke-width="1.3"/>
+    <circle cx="100" cy="100" r="24" stroke-width="1.3"/>
+  </svg>
+  <canvas id="fx"></canvas>
 </div>
 
-<button class="theme-btn" type="button" id="themeToggle" aria-label="تغییر حالت روشن/تاریک">
-  <span class="ic-sun"><i data-icon="sun"></i></span>
-  <span class="ic-moon"><i data-icon="moon"></i></span>
-</button>
+<noscript><div class="noscript-bar">برای مشاهده کامل کارت ویزیت هوشمند، جاوااسکریپت مرورگر را فعال کنید.</div></noscript>
 
-<div class="wrap">
+<div class="page">
 
-  <!-- ===================== سربرگ ===================== -->
-  <header class="hero card">
-    <span class="badge">کارت ویزیت هوشمند</span>
-    <div class="logo-ring"><img class="logo" src="https://uploadkon.ir/uploads/a1cb11_26g136bhl5.png" alt="نشان دفتر اسناد رسمی ۱۳۶ دالکی"></div>
-    <h1>دفتر اسناد رسمی <span>۱۳۶ دالکی</span></h1>
-    <p class="sub">دفتر اسناد رسمی ۱۳۶ شهر دالکی — سردفتر: گوهر بحرینی</p>
-    <div class="status" role="status" aria-live="polite">
-      <span class="dot" id="officeDot"></span>
-      <span id="officeStatusText">وضعیت دفتر: در حال بررسی…</span>
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <span class="hero-rule"></span>
+    <span class="hero-corn c1"></span><span class="hero-corn c2"></span>
+
+    <div class="top-strip" data-reveal>
+      <div class="status" id="statusBox">
+        <span class="status-dot"></span>
+        <span id="statusText">وضعیت دفتر: در حال بررسی…</span>
+      </div>
+      <div class="datetime">
+        <span class="dt-item">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span id="clockDate">در حال بارگذاری…</span>
+        </span>
+        <span class="dt-sep"></span>
+        <span class="dt-item dt-time" id="clockTime">--:--:--</span>
+      </div>
     </div>
-    <div class="chips">
-      <span class="chip">ثبت و تنظیم اسناد رسمی</span>
-      <span class="chip">املاک</span>
-      <span class="chip">وکالت</span>
-      <span class="chip">وصیت</span>
-    </div>
-    <div class="hero-profile">
-      <a class="btn btn-gold btn-profile" id="profileBtn" data-link="profile" hidden target="_blank" rel="noopener noreferrer">
-        <i data-icon="idcard"></i> پروفایل رسمی دفتر
-      </a>
+
+    <div class="hero-body">
+      <div class="logo-wrap" data-reveal>
+        <span class="ring r1"></span><span class="ring r2"></span>
+        <div class="logo-disc">
+          <img id="logoImg" src="https://cdn.imgurl.ir/uploads/q362126_NewGBH05Profile512p.png" alt="نشان دفتر اسناد رسمی ۱۳۶ دالکی"
+               onerror="this.style.display='none';document.getElementById('logoFb').classList.add('show')">
+          <div class="logo-fb" id="logoFb">۱۳۶</div>
+        </div>
+        <span class="logo-chip" title="پروفایل رسمی دفتر">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+      </div>
+
+      <h1 data-reveal>دفتر اسناد رسمی <span class="gnum">۱۳۶</span> دالکی</h1>
+      <p class="sub" data-reveal>دفتر اسناد رسمی ۱۳۶ شهر دالکی — سردفتر: گوهر بحرینی</p>
+      <div data-reveal><span class="badge-smart">کارت ویزیت هوشمند</span></div>
+
+      <div class="chips stagger" data-reveal>
+        <span class="chip">ثبت و تنظیم اسناد رسمی</span>
+        <span class="chip">املاک</span>
+        <span class="chip">وکالت</span>
+        <span class="chip">وصیت</span>
+      </div>
     </div>
   </header>
 
-  <!-- ===================== ارسال سریع مدارک ===================== -->
-  <section class="panel reveal" id="send" aria-label="ارسال سریع مدارک">
-    <div class="panel-head">
-      <span class="head-icon"><i data-icon="send"></i></span>
-      <div>
-        <h2>ارسال سریع مدارک</h2>
-        <p class="panel-sub">بدون نیاز به ذخیره شماره، مستقیم وارد صفحه چت شوید:</p>
+  <!-- ===================== QUICK SEND ===================== -->
+  <section class="sec" id="send">
+    <div class="sec-card" data-reveal>
+      <div class="sec-head">
+        <span class="sec-ico">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </span>
+        <div>
+          <h2>ارسال سریع مدارک</h2>
+          <p>بدون نیاز به ذخیره شماره، مستقیم وارد صفحه چت شوید</p>
+        </div>
+      </div>
+      <div class="msg-list stagger">
+        <a class="msg-card featured ripple" href="https://splus.ir/Notary136bh" target="_blank" rel="noopener" data-reveal>
+          <span class="msg-tile" style="--c1:#3ab0e0;--c2:#1880b8">سـ</span>
+          <span class="msg-body">
+            <span class="msg-name">ارسال در سروش پلاس <span class="msg-flag">پیشنهاد ما — سریع و در دسترس</span></span>
+            <span class="msg-sub">پاسخگویی سریع در ساعات کاری</span>
+          </span>
+          <svg class="ic msg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </a>
+        <a class="msg-card ripple" href="https://eitaa.com/Notary136bh" target="_blank" rel="noopener" data-reveal>
+          <span class="msg-tile" style="--c1:#f08a3a;--c2:#d96a12">ای</span>
+          <span class="msg-body">
+            <span class="msg-name">ارسال در پیام‌رسان ایتا</span>
+            <span class="msg-sub">پیام‌رسان داخلی</span>
+          </span>
+          <svg class="ic msg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </a>
+        <a class="msg-card ripple" href="https://ble.ir/Notary136bh" target="_blank" rel="noopener" data-reveal>
+          <span class="msg-tile" style="--c1:#35c39e;--c2:#0f8f6c">بله</span>
+          <span class="msg-body">
+            <span class="msg-name">ارسال در پیام‌رسان بله</span>
+            <span class="msg-sub">پیام‌رسان داخلی</span>
+          </span>
+          <svg class="ic msg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </a>
+        <a class="msg-card ripple" href="https://wa.me/989391793112?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D9%85%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%87%D9%85%20%D9%85%D8%AF%D8%A7%D8%B1%DA%A9%20%D8%AE%D9%88%D8%AF%20%D8%B1%D8%A7%20%D8%A7%D8%B1%D8%B3%D8%A7%D9%84%20%DA%A9%D9%86%D9%85." target="_blank" rel="noopener" data-reveal>
+          <span class="msg-tile" style="--c1:#43c176;--c2:#1f9a50">وا</span>
+          <span class="msg-body">
+            <span class="msg-name">ارسال از طریق واتساپ</span>
+            <span class="msg-sub">شماره ثبت شده دفتر</span>
+          </span>
+          <svg class="ic msg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </a>
+        <a class="msg-card ripple" href="https://rubika.ir/Notary136bh" target="_blank" rel="noopener" data-reveal>
+          <span class="msg-tile" style="--c1:#8a6ff0;--c2:#5a3ed0">رو</span>
+          <span class="msg-body">
+            <span class="msg-name">ارسال از طریق روبیکا</span>
+            <span class="msg-sub">پیام‌رسان داخلی</span>
+          </span>
+          <svg class="ic msg-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </a>
       </div>
     </div>
-    <div class="mess-grid" data-stagger>
-      <a class="mess-item primary" data-link="eitaa" target="_blank" rel="noopener noreferrer">
-        <span class="tag">پیشنهاد ما — سریع و در دسترس</span>
-        <span class="m-ico bg-eitaa"><i data-icon="send"></i></span>
-        <span><span class="m-title">ارسال در پیام‌رسان ایتا</span><span class="m-note" style="display:block">پاسخگویی سریع در ساعات کاری</span></span>
-      </a>
-      <a class="mess-item" data-link="whatsapp" target="_blank" rel="noopener noreferrer">
-        <span class="m-ico bg-whats"><i data-icon="whatsapp"></i></span>
-        <span><span class="m-title">ارسال از طریق واتساپ</span><span class="m-note" style="display:block">شماره ثبت شده دفتر</span></span>
-      </a>
-      <a class="mess-item" data-link="rubika" target="_blank" rel="noopener noreferrer">
-        <span class="m-ico bg-rubi"><i data-icon="send"></i></span>
-        <span><span class="m-title">ارسال از طریق روبیکا</span><span class="m-note" style="display:block">پیام‌رسان داخلی</span></span>
-      </a>
-      <a class="mess-item" data-link="soroush" target="_blank" rel="noopener noreferrer">
-        <span class="m-ico bg-soru"><i data-icon="send"></i></span>
-        <span><span class="m-title">ارسال در سروش پلاس</span><span class="m-note" style="display:block">پیام‌رسان داخلی</span></span>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="sec" id="contact">
+    <div class="sec-card" data-reveal>
+      <div class="sec-head">
+        <span class="sec-ico">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 0 10h-3"/><path d="M9 17H6A5 5 0 0 1 6 7h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        </span>
+        <div>
+          <h2>پل‌های ارتباطی</h2>
+          <p>تمام راه‌های تماس با دفتر در یک نگاه</p>
+        </div>
+      </div>
+
+      <div class="c-grid stagger">
+        <div class="c-item" data-reveal>
+          <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span class="c-info"><span class="c-label">موبایل</span><span class="c-val">۰۹۳۹۱۷۹۳۱۱۲</span></span>
+          <span class="c-acts">
+            <a class="icobtn" href="tel:+989391793112" title="تماس" aria-label="تماس با موبایل"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+            <button class="icobtn js-copy" type="button" data-copy="09391793112" title="کپی شماره" aria-label="کپی شماره"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          </span>
+        </div>
+
+        <div class="c-item" data-reveal>
+          <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span class="c-info"><span class="c-label">تلفن دفتر</span><span class="c-val">۰۷۷۳۴۳۴۳۳۴۹</span></span>
+          <span class="c-acts">
+            <a class="icobtn" href="tel:+987734343349" title="تماس" aria-label="تماس با تلفن دفتر"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+            <button class="icobtn js-copy" type="button" data-copy="07734343349" title="کپی شماره" aria-label="کپی شماره"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          </span>
+        </div>
+
+        <div class="c-item" data-reveal>
+          <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+          <span class="c-info"><span class="c-label">اینستاگرام</span><span class="c-val">@notary136bh</span></span>
+          <span class="c-acts">
+            <a class="icobtn" href="https://instagram.com/notary136bh" target="_blank" rel="noopener" title="باز کردن" aria-label="باز کردن اینستاگرام"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <button class="icobtn js-copy" type="button" data-copy="notary136bh" title="کپی نام کاربری" aria-label="کپی نام کاربری"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          </span>
+        </div>
+
+        <div class="c-item" data-reveal>
+          <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>
+          <span class="c-info"><span class="c-label">تلگرام</span><span class="c-val">@Notary136bh</span></span>
+          <span class="c-acts">
+            <a class="icobtn" href="https://t.me/Notary136bh" target="_blank" rel="noopener" title="باز کردن" aria-label="باز کردن تلگرام"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <button class="icobtn js-copy" type="button" data-copy="Notary136bh" title="کپی نام کاربری" aria-label="کپی نام کاربری"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          </span>
+        </div>
+
+        <div class="c-item" data-reveal>
+          <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="c-info"><span class="c-label">وب‌سایت</span><span class="c-val">daftar136dalaki.ir</span></span>
+          <span class="c-acts">
+            <a class="icobtn" href="https://daftar136dalaki.ir" target="_blank" rel="noopener" title="باز کردن" aria-label="باز کردن وب‌سایت"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <button class="icobtn js-copy" type="button" data-copy="https://daftar136dalaki.ir" title="کپی آدرس" aria-label="کپی آدرس وب‌سایت"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          </span>
+        </div>
+
+        <div class="c-item" data-reveal>
+          <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+          <span class="c-info"><span class="c-label">ایمیل</span><span class="c-val">d136bh@gmail.com</span></span>
+          <span class="c-acts">
+            <a class="icobtn" href="mailto:d136bh@gmail.com" title="ارسال ایمیل" aria-label="ارسال ایمیل"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+            <button class="icobtn js-copy" type="button" data-copy="d136bh@gmail.com" title="کپی ایمیل" aria-label="کپی ایمیل"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+          </span>
+        </div>
+
+        <div class="c-item wide" data-reveal>
+          <button class="btn-gold btn-block ripple" type="button" id="btnVcard" style="border:none">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            ذخیره مخاطب — افزودن به مخاطبین گوشی
+          </button>
+        </div>
+      </div>
+
+      <a class="web-banner ripple" href="https://daftar136dalaki.ir" target="_blank" rel="noopener" data-reveal>
+        <span class="wb-txt">
+          <b>وب‌سایت رسمی دفتر اسناد رسمی ۱۳۶ دالکی</b>
+          <span>daftar136dalaki.ir — مشاهده فهرست کامل خدمات</span>
+        </span>
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
       </a>
     </div>
   </section>
 
-  <!-- ===================== پل‌های ارتباطی ===================== -->
-  <section class="panel reveal" aria-label="پل‌های ارتباطی">
-    <div class="panel-head">
-      <span class="head-icon"><i data-icon="phone"></i></span>
-      <div>
-        <h2>پل‌های ارتباطی</h2>
-        <p class="panel-sub">تمام راه‌های تماس با دفتر در یک نگاه</p>
+  <!-- ===================== LOCATION + MAP ===================== -->
+  <section class="sec" id="location">
+    <div class="sec-card" data-reveal>
+      <div class="sec-head">
+        <span class="sec-ico">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <div>
+          <h2>آدرس و مسیریابی</h2>
+          <p>موقعیت دقیق دفترخانه</p>
+        </div>
       </div>
-    </div>
-    <div class="grid-links" data-stagger>
-      <a class="link-card" data-link="tel">
-        <span class="lc-icon bg-mob"><i data-icon="mobile"></i></span>
-        <div class="lc-title">موبایل</div>
-        <div class="lc-sub" id="mobileNum">۰۹۳۹۱۷۹۳۱۱۲</div>
-      </a>
-      <a class="link-card" data-link="officetel">
-        <span class="lc-icon bg-call"><i data-icon="phone"></i></span>
-        <div class="lc-title">تلفن دفتر</div>
-        <div class="lc-sub" id="officeNum">۰۷۷۳۴۳۴۳۳۴۹</div>
-      </a>
-      <button class="link-card" type="button" id="saveContactBtn">
-        <span class="lc-icon bg-save"><i data-icon="userplus"></i></span>
-        <div class="lc-title">ذخیره مخاطب</div>
-        <div class="lc-sub">افزودن به مخاطبین گوشی</div>
-      </button>
-      <a class="link-card" data-link="instagram" target="_blank" rel="noopener noreferrer">
-        <span class="lc-icon bg-insta"><i data-icon="instagram"></i></span>
-        <div class="lc-title">اینستاگرام</div>
-        <div class="lc-sub ltr">@notary136bh</div>
-      </a>
-      <a class="link-card" data-link="telegram" target="_blank" rel="noopener noreferrer">
-        <span class="lc-icon bg-tg"><i data-icon="telegram"></i></span>
-        <div class="lc-title">تلگرام</div>
-        <div class="lc-sub ltr">@Notary136bh</div>
-      </a>
-      <a class="link-card" data-link="website" target="_blank" rel="noopener noreferrer">
-        <span class="lc-icon bg-web"><i data-icon="globe"></i></span>
-        <div class="lc-title">وب‌سایت</div>
-        <div class="lc-sub ltr">daftar136dalaki.ir</div>
-      </a>
-      <a class="link-card" data-link="email">
-        <span class="lc-icon bg-mail"><i data-icon="mail"></i></span>
-        <div class="lc-title">ایمیل</div>
-        <div class="lc-sub ltr" id="emailSub">d136bh@gmail.com</div>
-      </a>
-    </div>
-    <a class="banner-link" data-link="banner" target="_blank" rel="noopener noreferrer">
-      <span class="bl-icon"><i data-icon="globe"></i></span>
-      <span class="bl-text">
-        <span class="bl-title">وب‌سایت رسمی دفتر اسناد رسمی ۱۳۶ دالکی</span>
-        <span class="bl-sub"><span class="ltr">daftar136dalaki.ir</span> — مشاهده فهرست کامل خدمات</span>
-      </span>
-      <span class="bl-chev"><i data-icon="chevleft"></i></span>
-    </a>
-  </section>
 
-  <!-- ===================== آدرس و مسیریابی ===================== -->
-  <section class="panel reveal" aria-label="آدرس و مسیریابی">
-    <div class="panel-head">
-      <span class="head-icon"><i data-icon="pin"></i></span>
-      <div>
-        <h2>آدرس و مسیریابی</h2>
-        <p class="panel-sub">موقعیت دقیق دفترخانه</p>
+      <div class="map-frame" data-reveal>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4750.96890085867!2d51.29036259999999!3d29.428960200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb401d2383294b5%3A0x1bcf532d563ce821!2z2K_Zgdiq2LEg2KfYs9mG2KfYryDYsdiz2YXbjCDbsduz27Y!5e1!3m2!1sen!2s!4v1790780104571!5m2!1sen!2s"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin" title="نقشه موقعیت دفتر اسناد رسمی ۱۳۶ دالکی"></iframe>
       </div>
-    </div>
-    <div class="addr-box">
-      <div class="addr-row"><i data-icon="pin"></i><div><b>نشانی دفتر:</b> استان بوشهر، شهر دالکی، خیابان شهدا، جنب نانوایی.</div></div>
-      <div class="addr-row"><i data-icon="clock"></i><div><b>ساعات کاری دفتر:</b> شنبه تا چهارشنبه: ۷ صبح تا ۱۴ — پنجشنبه و جمعه: تعطیل</div></div>
-    </div>
-    <div class="map-frame">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1030.500537683835!2d51.2890555!3d29.4296738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fb401d2383294b5%3A0x1bcf532d563ce821!2z2K_Zgdiq2LEg2KfYs9mG2KfYryDYsdiz2YXbjCDbsduz27Y!5e1!3m2!1sen!2s!4v1748949562278!5m2!1sen!2s"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="نقشه گوگل — دفتر اسناد رسمی ۱۳۶ دالکی"></iframe>
-      <a class="map-btn" data-link="map" target="_blank" rel="noopener noreferrer">مسیریابی دقیق <i data-icon="external"></i></a>
-    </div>
-    <div class="addr-actions">
-      <a class="btn btn-ghost" href="#send"><i data-icon="send"></i> ارسال سریع مدارک</a>
+      <p class="map-cap">📍 نقشه زنده موقعیت دفترخانه روی گوگل‌مپ</p>
+
+      <div class="loc-row">
+        <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span class="txt"><b>نشانی دفتر:</b> استان بوشهر، شهر دالکی، خیابان شهدا، جنب نانوایی.</span>
+      </div>
+      <div class="loc-row">
+        <span class="c-ico"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <span class="txt"><b>ساعات کاری دفتر:</b> شنبه تا چهارشنبه: ۷ صبح تا ۱۴ — پنجشنبه و جمعه: تعطیل</span>
+      </div>
+      <div class="loc-actions">
+        <a class="btn-gold ripple" href="https://www.google.com/maps/search/?api=1&query=%D8%AF%D9%81%D8%AA%D8%B1%20%D8%A7%D8%B3%D9%86%D8%A7%D8%AF%20%D8%B1%D8%B3%D9%85%DB%8C%20%DB%B1%DB%B3%DB%B6%20%D8%AF%D8%A7%D9%84%DA%A9%DB%8C%20%D8%AE%DB%8C%D8%A7%D8%A8%D8%A7%D9%86%20%D8%B4%D9%87%D8%AF%D8%A7" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          مسیریابی دقیق
+        </a>
+        <a class="btn-ghost ripple" href="#send">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          ارسال سریع مدارک
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ===================== خدمات حقوقی ثبتی (آکاردئونی) ===================== -->
-  <section class="panel reveal" aria-label="خدمات حقوقی ثبتی">
-    <div class="panel-head">
-      <span class="head-icon"><i data-icon="filetext"></i></span>
-      <div>
-        <h2>خدمات حقوقی ثبتی</h2>
-        <p class="panel-sub">دسته موردنظر را انتخاب کنید تا فهرست خدمات و مدارک مورد نیاز آن باز شود</p>
+  <!-- ===================== SERVICES ===================== -->
+  <section class="sec" id="services">
+    <div class="sec-card" data-reveal>
+      <div class="sec-head">
+        <span class="sec-ico">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </span>
+        <div>
+          <h2>خدمات حقوقی ثبتی</h2>
+          <p>دسته موردنظر را انتخاب کنید تا فهرست خدمات و مدارک مورد نیاز آن باز شود</p>
+        </div>
       </div>
-    </div>
-    <div class="search">
-      <i data-icon="search"></i>
-      <input type="search" id="serviceSearch" placeholder="جستجوی خدمت… (مثلاً: وکالت، صلح، گواهی)" autocomplete="off" aria-label="جستجوی خدمت">
-    </div>
-    <div class="cats" id="catsHolder"></div>
-    <div class="empty" id="emptyState">موردی مطابق جستجوی شما یافت نشد.</div>
-  </section>
 
-  <!-- ===================== معرفی دفتر + ویدیوی آپارات ===================== -->
-  <section class="panel reveal" aria-label="معرفی دفتر">
-    <div class="panel-head">
-      <span class="head-icon"><i data-icon="pen"></i></span>
-      <div>
-        <h2>معرفی دفتر</h2>
-        <p class="panel-sub">با اطمینان خاطر، اسناد خود را رسمی کنید.</p>
+      <div class="svc-search">
+        <input type="text" id="svcSearch" placeholder="جست‌وجوی خدمت… (مثلاً: وکالت، سند، وصیت)" autocomplete="off">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </div>
-    </div>
-    <p class="intro-text">✒️ دفتر اسناد رسمی ۱۳۶ دالکی | ثبت و تنظیم اسناد رسمی | املاک، وکالت، وصیت — ارائه مشاوره‌های تخصصی ثبتی</p>
-    <div class="video-frame" id="videoZone"></div>
-  </section>
 
-  <!-- ===================== اسکن بارکد ===================== -->
-  <section class="panel reveal" aria-label="اسکن بارکد">
-    <div class="panel-head">
-      <span class="head-icon"><i data-icon="qr"></i></span>
-      <div>
-        <h2>اسکن بارکد</h2>
-        <p class="panel-sub">برای دریافت اطلاعات، با دوربین گوشی اسکن کنید</p>
+      <div id="svcAcc"></div>
+      <div id="svcResults"></div>
+      <div class="svc-empty" id="svcEmpty">
+        <span class="big">🔍</span>
+        موردی مطابق جستجوی شما یافت نشد.
       </div>
-    </div>
-    <div class="qr-zone">
-      <div class="qr-card"><div id="qrHolder" aria-label="بارکد نشانی وب‌سایت دفتر"></div></div>
-      <p class="qr-note">این بارکد حاوی نشانی وب‌سایت رسمی دفتر است؛ با اسکن آن، وب‌سایت دفتر به‌صورت خودکار در گوشی مخاطب باز می‌شود.</p>
-      <button class="btn btn-gold" type="button" id="shareOpenBtn"><i data-icon="shareshare"></i> ارسال کارت ویزیت</button>
     </div>
   </section>
 
-  <footer class="reveal">
+  <!-- ===================== QR ===================== -->
+  <section class="sec" id="qrsec">
+    <div class="sec-card" data-reveal>
+      <div class="sec-head">
+        <span class="sec-ico">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </span>
+        <div>
+          <h2>اسکن بارکد</h2>
+          <p class="lead">برای دریافت اطلاعات، با دوربین گوشی اسکن کنید</p>
+        </div>
+      </div>
+      <div class="qr-flex">
+        <div class="qr-frame">
+          <span class="qr-corn t1"></span><span class="qr-corn t2"></span>
+          <span class="qr-corn b1"></span><span class="qr-corn b2"></span>
+          <div class="qr-box" id="qrBox">
+            <div class="qr-scan"></div>
+            <a class="qr-fallback" href="https://daftar136dalaki.ir" target="_blank" rel="noopener">daftar136dalaki.ir</a>
+          </div>
+        </div>
+        <div class="qr-info">
+          <p>این بارکد حاوی نشانی وب‌سایت رسمی دفتر است؛ با اسکن آن، وب‌سایت دفتر به‌صورت خودکار در گوشی مخاطب باز می‌شود.</p>
+          <button class="btn-gold btn-block ripple js-share" type="button" style="margin-top:12px">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            ارسال کارت ویزیت
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRACT (تراکت رسمی دفتر) — انتهای کارت ===================== -->
+  <section class="sec" id="tract">
+    <div class="sec-card" data-reveal>
+      <div class="sec-head">
+        <span class="sec-ico">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </span>
+        <div>
+          <h2>تراکت رسمی دفتر</h2>
+          <p>با اطمینان خاطر، اسناد خود را رسمی کنید.</p>
+        </div>
+      </div>
+
+      <a class="tract-frame ripple" href="https://cdn.imgurl.ir/uploads/r55355_Notary136Dalaki-GBH.png" target="_blank" rel="noopener" title="مشاهده و دانلود تراکت رسمی دفتر">
+        <img id="tractImg" src="https://cdn.imgurl.ir/uploads/r55355_Notary136Dalaki-GBH.png" alt="تراکت رسمی دفتر اسناد رسمی ۱۳۶ دالکی" loading="lazy"
+             onerror="this.style.display='none';document.getElementById('tractFb').classList.add('show')">
+        <span class="tract-zoom" aria-hidden="true">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </span>
+        <div class="tract-fb" id="tractFb">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          تراکت رسمی دفتر اسناد رسمی ۱۳۶ دالکی
+          <small style="font-size:11px">برای مشاهده و دانلود، روی این بخش بزنید</small>
+        </div>
+      </a>
+      <p class="tract-cap">✒️ دفتر اسناد رسمی ۱۳۶ دالکی | ثبت و تنظیم اسناد رسمی | املاک، وکالت، وصیت — ارائه مشاوره‌های تخصصی ثبتی</p>
+
+      <div class="tract-actions">
+        <a class="btn-gold btn-block ripple" href="https://cdn.imgurl.ir/uploads/r55355_Notary136Dalaki-GBH.png" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          مشاهده و دانلود تراکت رسمی دفتر
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer data-reveal>
+    <div class="line"></div>
     © ۱۴۰۵ — دفتر اسناد رسمی ۱۳۶ دالکی | با مدیریت سرکار خانم گوهر بحرینی —
-    <a href="https://daftar136dalaki.ir" target="_blank" rel="noopener noreferrer"><span class="ltr">daftar136dalaki.ir</span></a>
+    <a href="https://daftar136dalaki.ir" target="_blank" rel="noopener">daftar136dalaki.ir</a>
   </footer>
 </div>
 
-<!-- ===================== نوار شناور ===================== -->
-<div class="fab-bar">
-  <div class="fab-inner">
-    <a class="fab fab-gold" data-link="tel"><i data-icon="phone"></i><span>تماس</span></a>
-    <a class="fab fab-wa" data-link="whatsapp" target="_blank" rel="noopener noreferrer"><i data-icon="whatsapp"></i><span>پیام در واتساپ</span></a>
-    <button class="fab" type="button" id="fabShareBtn"><i data-icon="shareshare"></i><span>اشتراک</span></button>
-  </div>
-</div>
+<!-- ===================== DOCK BAR ===================== -->
+<nav class="dock" aria-label="دسترسی سریع">
+  <a href="tel:+987734343349">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    تماس
+  </a>
+  <a href="https://wa.me/989391793112" target="_blank" rel="noopener" class="primary">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    پیام در واتساپ
+  </a>
+  <button type="button" class="js-share">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+    اشتراک
+  </button>
+</nav>
 
-<!-- ===================== مودال خدمت ===================== -->
-<div class="overlay" id="serviceOverlay" role="dialog" aria-modal="true" aria-labelledby="svcModalTitle">
-  <div class="modal">
-    <div class="modal-head">
-      <h3 id="svcModalTitle">عنوان خدمت</h3>
-      <button class="modal-close" type="button" data-close="serviceOverlay" aria-label="بستن"><i data-icon="xmark"></i></button>
+<!-- ===================== SERVICE MODAL ===================== -->
+<div class="overlay" id="modalService" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="m-head">
+      <div>
+        <div class="m-overline">عنوان خدمت</div>
+        <div class="m-title" id="mTitle">—</div>
+        <div style="margin-top:10px"><span class="m-cat-chip" id="mCat">—</span></div>
+      </div>
+      <button class="m-close" type="button" data-close aria-label="بستن">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
     </div>
-    <ul class="docs-list" id="svcDocsList"></ul>
-    <div class="modal-note">پیش از مراجعه، مدارک خود را از بخش «ارسال سریع مدارک» برای دفتر بفرستید تا پیش‌بررسی شود.</div>
-    <div class="modal-actions">
-      <button class="btn btn-ghost" type="button" data-close="serviceOverlay">متوجه شدم</button>
-      <a class="btn btn-gold" data-link="whatsapp" target="_blank" rel="noopener noreferrer"><i data-icon="whatsapp"></i> مشاوره در واتساپ</a>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== مودال اشتراک‌گذاری ===================== -->
-<div class="overlay" id="shareOverlay" role="dialog" aria-modal="true" aria-label="ارسال کارت ویزیت">
-  <div class="modal">
-    <div class="modal-head">
-      <h3>دفتر اسناد رسمی ۱۳۶ دالکی — انتخاب روش اشتراک‌گذاری:</h3>
-      <button class="modal-close" type="button" data-close="shareOverlay" aria-label="بستن"><i data-icon="xmark"></i></button>
-    </div>
-    <div class="share-grid">
-      <button class="share-item" type="button" data-share="whatsapp"><i data-icon="whatsapp"></i>واتساپ</button>
-      <button class="share-item" type="button" data-share="telegram"><i data-icon="telegram"></i>تلگرام</button>
-      <button class="share-item" type="button" data-share="sms"><i data-icon="sms"></i>پیامک</button>
-      <button class="share-item" type="button" data-share="email"><i data-icon="mail"></i>ایمیل</button>
-      <button class="share-item" type="button" data-share="copy"><i data-icon="copy"></i>کپی لینک</button>
-      <button class="share-item" type="button" data-share="native"><i data-icon="appsgrid"></i>سایر برنامه‌ها</button>
+    <div class="m-docs-title">📋 مدارک مورد نیاز:</div>
+    <ul class="m-docs" id="mDocs"></ul>
+    <div class="m-note">پیش از مراجعه، مدارک خود را از بخش «ارسال سریع مدارک» برای دفتر بفرستید تا پیش‌بررسی شود.</div>
+    <div class="m-actions">
+      <button class="btn-gold ripple" type="button" data-close>متوجه شدم</button>
+      <a class="btn-ghost ripple" id="mWa" href="#" target="_blank" rel="noopener">مشاوره در واتساپ</a>
     </div>
   </div>
 </div>
 
-<div class="toast-root" id="toastRoot"></div>
-<noscript><div style="padding:20px;text-align:center">برای مشاهده کامل کارت ویزیت هوشمند، جاوااسکریپت مرورگر را فعال کنید.</div></noscript>
+<!-- ===================== SHARE MODAL ===================== -->
+<div class="overlay" id="modalShare" role="dialog" aria-modal="true" aria-labelledby="shTitle">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="m-head">
+      <div>
+        <div class="m-overline">اشتراک‌گذاری</div>
+        <div class="m-title" id="shTitle">دفتر اسناد رسمی ۱۳۶ دالکی — انتخاب روش اشتراک‌گذاری:</div>
+      </div>
+      <button class="m-close" type="button" data-close aria-label="بستن">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="sh-grid stagger">
+      <button class="sh-opt" type="button" id="shWa">
+        <span class="sh-ico" style="background:linear-gradient(150deg,#43c176,#1f9a50)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+        واتساپ
+      </button>
+      <button class="sh-opt" type="button" id="shTg">
+        <span class="sh-ico" style="background:linear-gradient(150deg,#45a9d8,#1f7fca)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>
+        تلگرام
+      </button>
+      <button class="sh-opt" type="button" id="shSms">
+        <span class="sh-ico" style="background:linear-gradient(150deg,#e8ac56,#c9821f)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        پیامک
+      </button>
+      <button class="sh-opt" type="button" id="shMail">
+        <span class="sh-ico" style="background:linear-gradient(150deg,#d8786a,#b8452f)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+        ایمیل
+      </button>
+      <button class="sh-opt" type="button" id="shCopy">
+        <span class="sh-ico" style="background:linear-gradient(150deg,#f0dcaa,#a3762f)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#241505" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></span>
+        کپی لینک
+      </button>
+      <button class="sh-opt" type="button" id="shNative">
+        <span class="sh-ico" style="background:linear-gradient(150deg,#8a6ff0,#5a3ed0)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2.4"/><circle cx="19" cy="6" r="2.4"/><circle cx="5" cy="18" r="2.4"/><circle cx="19" cy="18" r="2.4"/><line x1="6.8" y1="7.4" x2="9.8" y2="10"/><line x1="17.2" y1="7.4" x2="14.2" y2="10"/><line x1="6.8" y1="16.6" x2="9.8" y2="14"/><line x1="17.2" y1="16.6" x2="14.2" y2="14"/></svg></span>
+        سایر برنامه‌ها
+      </button>
+    </div>
+    <noscript><p style="text-align:center;color:var(--muted);font-size:12px;margin-top:14px">برای مشاهده کامل کارت ویزیت هوشمند، جاوااسکریپت مرورگر را فعال کنید.</p></noscript>
+  </div>
+</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
 <script>
-/* =================================================================
-   کارت ویزیت هوشمند — دفتر اسناد رسمی ۱۳۶ دالکی
-   تمامی حقوق این اثر محفوظ است؛ کپی‌برداری بدون مجوز ممنوع.
-================================================================= */
 (function(){
 'use strict';
+var $  = function(s,c){ return (c||document).querySelector(s); };
+var $$ = function(s,c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); };
+var FA = '۰۱۲۳۴۵۶۷۸۹';
+function faNum(x){ return String(x).replace(/\d/g,function(d){return FA[d];}); }
 
-/* ═══════════ ⚙️ تنظیمات کاربر ═══════════ */
-var CONFIG = {
-  APARAT_VIDEO_URL: 'https://www.aparat.com/video/video/embed/videohash/gqqsuxn/vt/frame', /* لینک ویدیوی آپارات — خالی = پوستر */
-  OFFICE_PROFILE_URL: 'https://uploadkon.ir/uploads/a1cb11_26g136bhl5.png',
-  QR_TARGET_URL: 'https://gmd136bh.github.io/ecard/',
-  EMAIL: 'd136bh@gmail.com',
-  MOBILE_DISPLAY: '۰۹۳۹۱۷۹۳۱۱۲',
-  MOBILE_TEL_E164: '+989391793112',
-  OFFICE_TEL_DISPLAY: '۰۷۳۴۳۴۳۳۴۹',
-  OFFICE_TEL_E164: '+987734343349',
-  LINKS: {
-    whatsapp: 'https://wa.me/989391793112',
-    eitaa: 'https://eitaa.com/Notary136bh',
-    rubika: 'https://rubika.ir/Notary136bh',
-    soroush: 'https://splus.ir/Notary136bh',
-    instagram: 'https://www.instagram.com/notary136bh',
-    telegram: 'https://t.me/Notary136bh',
-    website: 'https://daftar136dalaki.ir',
-    map: 'https://maps.app.goo.gl/LwdjDDoFV9YozdVn6',
-    banner: 'https://mahzarchi.ir/category/document/notary-service/'
-  },
-  POSTER_IMG: 'https://image.qwenlm.ai/public_source/4f6a977c-6853-4e2b-ac10-4579aa8ea5e4/19412fb36-ee40-4516-983e-1a13e0a813db.png'
-};
-
-var qs = function(sel){ return document.querySelector(sel); };
-var qsa = function(sel){ return Array.prototype.slice.call(document.querySelectorAll(sel)); };
-var faNum = function(val){ return String(val).replace(/\d/g, function(d){ return '۰۱۲۳۴۵۶۷۸۹'[+d]; }); };
-var normalizeFa = function(str){ return (str||'').replace(/ي/g,'ی').replace(/ك/g,'ک').trim(); };
-var PAGE_TITLE = 'کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی';
-
-/* ---------- آیکن‌ها ---------- */
-var STROKE_ICONS = {
-  phone:'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
-  mobile:'<rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>',
-  userplus:'<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>',
-  instagram:'<rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>',
-  telegram:'<path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9 22 2"/>',
-  globe:'<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
-  mail:'<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
-  chevleft:'<polyline points="15 18 9 12 15 6"/>',
-  chevdown:'<polyline points="6 9 12 15 18 9"/>',
-  external:'<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>',
-  pin:'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
-  clock:'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
-  search:'<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>',
-  shareshare:'<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>',
-  xmark:'<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
-  check:'<polyline points="20 6 9 17 4 12"/>',
-  send:'<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>',
-  sms:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
-  copy:'<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
-  appsgrid:'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>',
-  filetext:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>',
-  pen:'<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 4 1-4L16.5 3.5z"/>',
-  qr:'<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><line x1="14" y1="14" x2="14" y2="21"/><line x1="14" y1="17" x2="21" y2="17"/>',
-  sun:'<circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.07" y2="4.93"/>',
-  moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
-  idcard:'<rect x="2" y="5" width="20" height="14" rx="3"/><circle cx="8" cy="11" r="2"/><path d="M6 15c.5-1.5 3.5-1.5 4 0"/><line x1="14" y1="9" x2="19" y2="9"/><line x1="14" y1="13" x2="18" y2="13"/>'
-};
-var FILL_ICONS = {
-  whatsapp:'<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>'
-};
-function svgFor(keyName){
-  if (FILL_ICONS[keyName]) return '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' + FILL_ICONS[keyName] + '</svg>';
-  if (STROKE_ICONS[keyName]) return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + STROKE_ICONS[keyName] + '</svg>';
-  return '';
-}
-function injectIcons(){
-  qsa('[data-icon]').forEach(function(holder){ holder.innerHTML = svgFor(holder.getAttribute('data-icon')); });
+/* ============ toast ============ */
+var toastEl = $('#toast'), toastTimer = null;
+function toast(msg){
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2400);
 }
 
-/* ---------- توست ---------- */
-function showToast(msg){
-  var t = document.createElement('div');
-  t.className = 'toast'; t.textContent = msg;
-  qs('#toastRoot').appendChild(t);
-  setTimeout(function(){ t.style.opacity='0'; t.style.transition='opacity .3s'; }, 2300);
-  setTimeout(function(){ if (t.parentNode) t.parentNode.removeChild(t); }, 2700);
-}
+/* ============ clock: ساعت و تاریخ شمسی ============ */
+var clockTimeEl = $('#clockTime'), clockDateEl = $('#clockDate');
+var fmtDate = null;
+try{ fmtDate = new Intl.DateTimeFormat('fa-IR-u-ca-persian',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); }catch(e){ fmtDate = null; }
 
-/* ---------- تم روشن/تاریک (خودکار + دستی، پایدار) ---------- */
-function bindTheme(){
-  var toggleBtn = qs('#themeToggle');
-  var mediaQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: light)') : null;
-  toggleBtn.addEventListener('click', function(){
-    var current = document.documentElement.getAttribute('data-theme');
-    var next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('n136-theme', next); } catch (e) {}
-    showToast(next === 'dark' ? 'حالت تاریک فعال شد' : 'حالت روشن فعال شد');
-  });
-  if (mediaQuery && mediaQuery.addEventListener) {
-    mediaQuery.addEventListener('change', function(ev){
-      var saved = null; try { saved = localStorage.getItem('n136-theme'); } catch (e) {}
-      if (!saved) document.documentElement.setAttribute('data-theme', ev.matches ? 'light' : 'dark');
-    });
-  }
+function updateStatus(now){
+  var wd = now.getDay();
+  var isWeekend = (wd === 4 || wd === 5);
+  var mins = now.getHours()*60 + now.getMinutes();
+  var box = $('#statusBox'), txt = $('#statusText');
+  var cls, msg;
+  if(isWeekend){ cls='closed'; msg='تعطیل (پنجشنبه و جمعه)'; }
+  else if(mins >= 420 && mins < 840){ cls='open'; msg='باز — آماده پاسخگویی (۷ تا ۱۴)'; }
+  else { cls='closed'; msg='بسته — ساعت کاری: ۷ صبح تا ۱۴'; }
+  box.classList.remove('open','closed');
+  box.classList.add(cls);
+  txt.textContent = 'وضعیت دفتر: ' + msg;
 }
-
-/* ---------- لودینگ ---------- */
-function bindPreloader(){
-  var preBox = qs('#preloader');
-  var hidePre = function(){ preBox.classList.add('done'); };
-  window.addEventListener('load', function(){ setTimeout(hidePre, 650); });
-  setTimeout(hidePre, 5000);
-}
-
-/* ---------- وضعیت باز/تعطیل دفتر (دقیق، به وقت تهران، ۷ تا ۱۴) ---------- */
-function tehranNow(){
-  var fmt = new Intl.DateTimeFormat('en-US', { timeZone:'Asia/Tehran', weekday:'short', hour:'numeric', minute:'numeric', hourCycle:'h23' });
-  var parts = fmt.formatToParts(new Date());
-  var wd='', h=0, m=0;
-  parts.forEach(function(p){ if(p.type==='weekday') wd=p.value; if(p.type==='hour') h=parseInt(p.value,10); if(p.type==='minute') m=parseInt(p.value,10); });
-  return { wd: wd, mins: h*60+m };
-}
-function faDuration(mins){
-  var hh = Math.floor(mins/60), mm = mins%60;
-  if (hh>0 && mm>0) return faNum(hh)+' ساعت و '+faNum(mm)+' دقیقه';
-  if (hh>0) return faNum(hh)+' ساعت';
-  return faNum(mm)+' دقیقه';
-}
-function computeOfficeStatus(){
+function tickClock(){
+  var now = new Date();
   try{
-    var now = tehranNow();
-    var OPEN_START = 7*60, OPEN_END = 14*60;
-    var workDays = ['Sat','Sun','Mon','Tue','Wed'];
-    var isWork = workDays.indexOf(now.wd) > -1;
-    var dotEl = qs('#officeDot'), txtEl = qs('#officeStatusText');
-    dotEl.className = 'dot';
-    if (isWork && now.mins >= OPEN_START && now.mins < OPEN_END) {
-      dotEl.classList.add('open');
-      txtEl.textContent = 'وضعیت دفتر: باز — ' + faDuration(OPEN_END - now.mins) + ' تا پایان کار';
-    } else if (isWork && now.mins < OPEN_START) {
-      dotEl.classList.add('wait');
-      txtEl.textContent = 'وضعیت دفتر: بسته — امروز ساعت ۷:۰۰ باز می‌شود';
-    } else {
-      dotEl.classList.add('closed');
-      if (now.wd === 'Thu' || now.wd === 'Fri' || (now.wd === 'Wed' && now.mins >= OPEN_END)) {
-        txtEl.textContent = 'وضعیت دفتر: تعطیل — بازگشایی شنبه ساعت ۷:۰۰ صبح';
-      } else {
-        txtEl.textContent = 'وضعیت دفتر: بسته — فردا ساعت ۷:۰۰ صبح باز می‌شود';
-      }
-    }
-  }catch(err){ qs('#officeStatusText').textContent = 'ساعات کاری: شنبه تا چهارشنبه ۷ صبح تا ۱۴'; }
+    clockTimeEl.textContent = now.toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+  }catch(e){ clockTimeEl.textContent = faNum(now.toLocaleTimeString('en-GB')); }
+  try{
+    if(fmtDate){ clockDateEl.textContent = fmtDate.format(now); }
+    else { clockDateEl.textContent = now.toLocaleDateString('fa-IR',{weekday:'long',day:'numeric',month:'long',year:'numeric'}); }
+  }catch(e2){ clockDateEl.textContent = now.toLocaleDateString('fa-IR'); }
+  updateStatus(now);
+}
+tickClock();
+setInterval(tickClock, 1000);
+
+/* ============ LOADING SCREEN ============ */
+var loaderEl = $('#loader'), lFill = $('#lFill'), lPct = $('#lPct'), lMsg = $('#lMsg');
+var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var minReadyAt = Date.now() + (reducedMotion ? 350 : 1500);
+var loaderDone = false, prog = 0, ticker = null;
+var MSGS = [[0,'در حال بارگذاری منابع'],[45,'در حال آماده‌سازی کارت ویزیت'],[80,'تقریباً آماده است']];
+
+function setMsg(p){
+  var m = MSGS[0][1];
+  for(var i=0;i<MSGS.length;i++){ if(p >= MSGS[i][0]) m = MSGS[i][1]; }
+  lMsg.textContent = m;
+}
+function setProg(v){
+  prog = Math.max(prog, Math.min(100, v));
+  lFill.style.width = prog + '%';
+  lPct.textContent = faNum(Math.round(prog)) + '٪';
+  setMsg(prog);
+}
+setProg(reducedMotion ? 40 : 6);
+if(!reducedMotion){
+  ticker = setInterval(function(){
+    if(prog < 88) setProg(prog + 2 + Math.random()*7);
+  }, 240);
 }
 
-/* ---------- لینک‌ها ---------- */
-function applyLinks(){
-  qs('#mobileNum').textContent = CONFIG.MOBILE_DISPLAY;
-  qs('#officeNum').textContent = CONFIG.OFFICE_TEL_DISPLAY;
-  if (CONFIG.EMAIL) qs('#emailSub').textContent = CONFIG.EMAIL;
-  qsa('[data-link]').forEach(function(el){
-    var keyName = el.getAttribute('data-link');
-    var url = '';
-    if (keyName === 'tel') url = 'tel:' + CONFIG.MOBILE_TEL_E164;
-    else if (keyName === 'officetel') url = 'tel:' + CONFIG.OFFICE_TEL_E164;
-    else if (keyName === 'email') url = CONFIG.EMAIL ? 'mailto:' + CONFIG.EMAIL : '';
-    else if (keyName === 'profile') url = CONFIG.OFFICE_PROFILE_URL || '';
-    else url = CONFIG.LINKS[keyName] || '';
-    if (!url) { if (keyName === 'profile') el.hidden = true; return; }
-    el.href = url;
-    if (keyName === 'profile') el.hidden = false;
-  });
+function initReveals(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  },{threshold:0.12, rootMargin:'0px 0px -6% 0px'});
+  $$('[data-reveal]').forEach(function(el){ io.observe(el); });
 }
 
-/* ---------- ویدیوی آپارات ---------- */
-function aparatEmbedSrc(rawUrl){
-  if (!rawUrl) return '';
-  if (rawUrl.indexOf('embed') > -1) return rawUrl;
-  var m = rawUrl.match(/aparat\.com\/(?:v|video\/video\/embed\/videohash)\/([A-Za-z0-9]+)/);
-  if (m) return 'https://www.aparat.com/video/video/embed/videohash/' + m[1] + '/vt/frame';
-  return rawUrl;
+function finishLoader(){
+  if(loaderDone) return;
+  var wait = minReadyAt - Date.now();
+  if(wait > 0){ setTimeout(finishLoader, wait); return; }
+  loaderDone = true;
+  if(ticker){ clearInterval(ticker); ticker = null; }
+  setProg(100);
+  setTimeout(function(){
+    loaderEl.classList.add('done');
+    document.body.classList.remove('is-loading');
+    document.body.classList.add('loaded');
+    initReveals();
+    setTimeout(function(){ loaderEl.style.display = 'none'; }, 750);
+  }, reducedMotion ? 80 : 300);
 }
-function buildVideoZone(){
-  var zone = qs('#videoZone');
-  var src = aparatEmbedSrc(CONFIG.APARAT_VIDEO_URL);
-  if (src) {
-    zone.innerHTML = '<iframe src="' + src + '" title="ویدیوی معرفی دفتر اسناد رسمی ۱۳۶ دالکی" allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe>';
-  } else {
-    zone.innerHTML = '<img src="' + CONFIG.POSTER_IMG + '" alt="ویدیوی معرفی دفتر اسناد رسمی ۱۳۶ دالکی">' +
-      '<div class="video-cap"><b>ویدیوی معرفی دفتر</b><span>ویدیوی تبلیغاتی دفتر اسناد رسمی ۱۳۶ دالکی</span></div>';
+window.addEventListener('load', finishLoader);
+if(document.readyState === 'complete'){ finishLoader(); }
+setTimeout(finishLoader, 5000); /* سوپاپ اطمینان: حداکثر ۵ ثانیه */
+
+/* ============ warm gold dust particles ============ */
+var cv = $('#fx'), ctx = cv.getContext('2d');
+var parts = [], W = 0, H = 0;
+function spawn(init){
+  return { x:Math.random()*W, y:init?Math.random()*H:H+14, r:0.5+Math.random()*1.5,
+           s:0.08+Math.random()*0.28, a:0.1+Math.random()*0.32, ph:Math.random()*Math.PI*2 };
+}
+function sizeFx(){
+  var dpr = Math.min(window.devicePixelRatio||1, 1.6);
+  W = window.innerWidth; H = window.innerHeight;
+  cv.width = W*dpr; cv.height = H*dpr;
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  var n = Math.max(14, Math.min(30, Math.round(W*H/42000)));
+  parts = [];
+  for(var i=0;i<n;i++){ parts.push(spawn(true)); }
+}
+var lastT = 0;
+function loop(t){
+  requestAnimationFrame(loop);
+  if(document.hidden){ return; }
+  var dt = Math.min(34, t - lastT); lastT = t;
+  ctx.clearRect(0,0,W,H);
+  for(var i=0;i<parts.length;i++){
+    var p = parts[i];
+    p.y -= p.s*dt*0.06;
+    p.x += Math.sin(t*0.0005 + p.ph)*0.11;
+    if(p.y < -16){ parts[i] = spawn(false); continue; }
+    var tw = 0.55 + 0.45*Math.sin(t*0.0018 + p.ph);
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, 6.283);
+    ctx.fillStyle = 'rgba(232,205,150,'+(p.a*tw)+')';
+    ctx.shadowBlur = 7;
+    ctx.shadowColor = 'rgba(207,162,90,.85)';
+    ctx.fill();
+    ctx.shadowBlur = 0;
   }
 }
+sizeFx();
+window.addEventListener('resize', sizeFx);
+requestAnimationFrame(loop);
 
-/* ---------- داده‌های مدارک مورد نیاز هر خدمت ---------- */
-var docsData = {
-  'v-kari': { title: 'مدارک وکالتنامه کاری', items: ['اصل شناسنامه و کارت ملی موکل', 'کپی یا اطلاعات دقیق هویتی وکیل (نام، نام خانوادگی، کدملی، تاریخ تولد)', 'در صورت وکالت برای ارگان خاص، نام دقیق ارگان یا شعبه', 'حضور موکل در دفترخانه جهت امضا الزامی است'] },
-  'v-forosh': { title: 'مدارک وکالتنامه فروش (ملک/خودرو)', items: ['اصل شناسنامه و کارت ملی مالک (موکل)', 'کپی کارت ملی و شناسنامه وکیل', 'برای ملک: اصل سند تک‌برگ یا منگوله‌دار ملک', 'برای خودرو: اصل برگ سبز خودرو و سند کمپانی', 'حضور موکل جهت ثبت اثر انگشت و امضا'] },
-  'q-melk': { title: 'مدارک انتقال قطعی ملک', items: ['اصل سند مالکیت (تک برگ یا بنچاق)', 'اصل شناسنامه و کارت ملی خریدار و فروشنده', 'پاسخ استعلام ثبت (توسط دفترخانه اخذ می‌شود)', 'مفاصا حساب دارایی (مالیات نقل و انتقال)', 'مفاصا حساب شهرداری (پایان‌کار یا عدم خلاف)', 'در صورت تجاری بودن: مفاصا حساب تامین اجتماعی'] },
-  'q-khodro': { title: 'مدارک انتقال قطعی خودرو', items: ['برگ سبز جدید صادر شده توسط مرکز تعویض پلاک بنام خریدار', 'تاییدیه نقل و انتقال (صادره از مرکز تعویض پلاک)', 'اصل شناسنامه و کارت ملی خریدار و فروشنده', 'بیمه‌نامه شخص ثالث معتبر', 'مفاصا حساب عوارض سالانه شهرداری خودرو', 'رسید پرداخت مالیات نقل و انتقال خودرو'] },
-  'taahod-daneshjoo': { title: 'مدارک تعهدنامه دانشجویی', items: ['اصل شناسنامه و کارت ملی دانشجو', 'اصل شناسنامه و کارت ملی ضامن', 'آخرین حکم کارگزینی ضامن (اگر کارمند است) یا جواز کسب معتبر / فیش حقوقی بازنشستگی', 'فرم مخصوص تعهدنامه دریافت شده از دانشگاه', 'حضور همزمان دانشجو و ضامن'] },
-  'taahod-general': { title: 'مدارک تعهدنامه/رضایت‌نامه', items: ['اصل شناسنامه و کارت ملی شخص متعهد/رضایت دهنده', 'متن دقیق تعهد یا نام ارگانی که تعهد به آن داده می‌شود', 'حضور شخص متعهد در دفترخانه'] },
-  'eqrar-mehrie': { title: 'مدارک اقرارنامه وصول/بذل مهریه', items: ['اصل شناسنامه و کارت ملی زوجه (زن)', 'اصل سند ازدواج (عقدنامه) یا رونوشت برابر اصل آن', 'شناسنامه و کارت ملی زوج (مرد) - جهت درج مشخصات', 'نامه از دفتر ازدواج تنظیم‌کننده سند مبنی بر عدم صدور اجراییه', 'حضور زوجه در دفترخانه الزامی است'] },
-  'eqrar-general': { title: 'مدارک انواع اقرارنامه', items: ['اصل شناسنامه و کارت ملی شخص اقرار کننده', 'اسناد مرتبط با موضوع اقرار (در صورت وجود)', 'حضور شخص اقرار کننده'] },
-  'govahi-emza': { title: 'مدارک گواهی امضاء', items: ['اصل شناسنامه و کارت ملی متقاضی', 'متن یا فرمی که قرار است امضا در ذیل آن گواهی شود', 'حضور شخص امضا کننده (برای اسناد مالی گواهی امضا انجام نمی‌شود)'] },
-  'copy-barabar': { title: 'مدارک تصدیق کپی (برابر اصل)', items: ['اصل مدرکی که قصد برابر اصل کردن آن را دارید (شناسنامه، کارت ملی، مدارک تحصیلی و...)', 'کپی خوانا از مدرک مربوطه'] },
-  'rahni': { title: 'مدارک تنظیم سند رهنی بانکی', items: ['اصل سند مالکیت ملک', 'اصل شناسنامه و کارت ملی وام‌گیرنده و راهن (مالک ملک)', 'قرارداد یا معرفی‌نامه رسمی از بانک مربوطه', 'پاسخ استعلام ثبت و مفاصا حساب دارایی و شهرداری (همانند قطعی)'] },
-  'sarghofli': { title: 'مدارک صلح‌نامه سرقفلی', items: ['اصل مدارک هویتی انتقال دهنده و انتقال گیرنده', 'سند اجاره‌نامه قبلی', 'رضایت‌نامه کتبی مالکیت (ارباب قلم) در صورت نیاز طبق قرارداد', 'مفاصا حساب مالیات بر درآمد مشاغل و نقل و انتقال', 'مفاصا حساب بیمه تامین اجتماعی'] },
-  'vesayat': { title: 'مدارک تنظیم وصیت‌نامه', items: ['اصل شناسنامه و کارت ملی وصیت‌کننده (موصی)', 'اطلاعات هویتی دقیق شخص یا اشخاصی که به نفع آنها وصیت می‌شود (موصی‌له)', 'اصل اسناد مالکیت اموالی که مورد وصیت قرار می‌گیرد', 'حضور موصی در کمال سلامت عقل'] },
-  'vaghf': { title: 'مدارک تنظیم وقف‌نامه', items: ['اصل مدارک هویتی واقف', 'اصل سند مالکیت ملک مورد وقف', 'تاییدیه و مجوز از اداره اوقاف (در صورت نیاز)', 'تعیین دقیق متولی و موقوف‌علیهم'] },
-  'hothoot': { title: 'مدارک صدور اجرائیه', items: ['اصل سند رسمی که تعهد در آن قید شده (مانند عقدنامه برای مهریه یا سند رهنی)', 'اصل شناسنامه و کارت ملی متقاضی (بستانکار)', 'تکمیل فرم تقاضای صدور اجراییه'] },
-  'sana': { title: 'مدارک دریافت کد ثنا', items: ['اصل کارت ملی هوشمند یا شناسنامه جدید', 'شماره موبایل روشن و فعال به نام شخص متقاضی', 'حضور شخص جهت اخذ تصویر و اثر انگشت الکترونیک'] },
-  'mobaye': { title: 'مدارک مبایعه‌نامه / قولنامه', items: ['اصل مدارک هویتی خریدار و فروشنده', 'اصل اسناد مالکیت مورد معامله', 'تعیین دقیق شرایط پرداخت و تحویل'] },
-  'ejare': { title: 'مدارک تنظیم اجاره‌نامه رسمی', items: ['اصل شناسنامه و کارت ملی موجر و مستاجر', 'اصل سند مالکیت ملک مورد اجاره', 'تعیین مبلغ دقیق رهن و اجاره و مدت زمان قرارداد'] },
-  'tarikhe-sanad': { title: 'مدارک گواهی عدم انجام معامله', items: ['اصل شناسنامه و کارت ملی متقاضی', 'اصل مبایعه‌نامه یا قراردادی که تاریخ محضر در آن قید شده', 'حضور در روز مقرر در قرارداد به همراه چک بانکی یا مانده حساب (برای خریدار) یا استعلامات آماده (برای فروشنده)'] },
-  'solh': { title: 'مدارک اسناد صلح (عمری/محاباتی)', items: ['اصل شناسنامه و کارت ملی مصالح (صلح کننده) و متصالح (صلح گیرنده)', 'اصل سند مالکیت ملک', 'استعلامات ثبت، دارایی و شهرداری (مشابه انتقال قطعی)'] }
-};
-var FALLBACK_DOCS = { title: 'مدارک مورد نیاز این خدمت', items: ['اصل و کپی شناسنامه و کارت ملی طرفین', 'سند مالکیت / برگ سبز خودرو / مدارک مورد معامله', 'حضور دو شاهد همراه با مدارک شناسایی', 'کارت بانکی جهت پرداخت هزینه‌های ثبتی'] };
-
-/* ---------- فهرست خدمات با کلید مدارک ---------- */
-var svcCatalog = [
-  { cat:'وکالت‌نامه‌ها', items:[ {t:'تنظیم وکالتنامه کاری',k:'v-kari'}, {t:'وکالتنامه فروش ملک / خودرو',k:'v-forosh'} ] },
-  { cat:'انتقال و معاملات', items:[ {t:'انتقال قطعی ملک',k:'q-melk'}, {t:'انتقال قطعی خودرو',k:'q-khodro'}, {t:'تنظیم مبایعه‌نامه / قولنامه',k:'mobaye'}, {t:'تنظیم اجاره‌نامه رسمی',k:'ejare'}, {t:'گواهی عدم انجام معامله',k:'tarikhe-sanad'} ] },
-  { cat:'تعهد، اقرار و رضایت‌نامه', items:[ {t:'تعهدنامه دانشجویی',k:'taahod-daneshjoo'}, {t:'تعهدنامه و رضایت‌نامه عمومی',k:'taahod-general'}, {t:'اقرارنامه وصول / بذل مهریه',k:'eqrar-mehrie'}, {t:'انواع اقرارنامه',k:'eqrar-general'} ] },
-  { cat:'صلح، وصیت و وقف', items:[ {t:'صلح‌نامه سرقفلی',k:'sarghofli'}, {t:'اسناد صلح (عمری / محاباتی)',k:'solh'}, {t:'تنظیم وصیت‌نامه',k:'vesayat'}, {t:'تنظیم وقف‌نامه',k:'vaghf'} ] },
-  { cat:'اسناد بانکی، گواهی و تصدیق', items:[ {t:'تنظیم سند رهنی بانکی',k:'rahni'}, {t:'گواهی امضاء',k:'govahi-emza'}, {t:'تصدیق کپی (برابر اصل)',k:'copy-barabar'}, {t:'صدور اجرائیه',k:'hothoot'}, {t:'دریافت کد ثنا',k:'sana'} ] }
-];
-function toggleCat(catCard){
-  var wasOpen = catCard.classList.contains('open');
-  qsa('#catsHolder .cat-card.open').forEach(function(other){ other.classList.remove('open'); });
-  if (!wasOpen) catCard.classList.add('open');
-}
-function renderServices(filterText){
-  var holder = qs('#catsHolder'), emptyBox = qs('#emptyState');
-  holder.innerHTML = '';
-  var query = normalizeFa(filterText);
-  var totalFound = 0;
-  svcCatalog.forEach(function(group){
-    var matched = group.items.filter(function(item){
-      if (!query) return true;
-      return normalizeFa(item.t).indexOf(query) > -1 || normalizeFa(group.cat).indexOf(query) > -1;
-    });
-    if (!matched.length) return;
-    totalFound += matched.length;
-    var catCard = document.createElement('div'); catCard.className = 'cat-card';
-    if (query) catCard.classList.add('open');
-    var head = document.createElement('button'); head.type = 'button'; head.className = 'cat-head';
-    head.setAttribute('aria-expanded', query ? 'true' : 'false');
-    head.innerHTML = '<span class="cat-title"></span><span class="cat-count">' + faNum(matched.length) + ' خدمت</span><span class="chev">' + svgFor('chevdown') + '</span>';
-    head.querySelector('.cat-title').textContent = group.cat;
-    head.addEventListener('click', function(){
-      toggleCat(catCard);
-      head.setAttribute('aria-expanded', catCard.classList.contains('open') ? 'true' : 'false');
-    });
-    var body = document.createElement('div'); body.className = 'cat-body';
-    var list = document.createElement('div'); list.className = 'svc-list';
-    matched.forEach(function(item){
-      var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'svc-item';
-      var label = document.createElement('span'); label.textContent = item.t;
-      var arrow = document.createElement('span'); arrow.innerHTML = svgFor('chevleft');
-      btn.appendChild(label); btn.appendChild(arrow);
-      btn.addEventListener('click', function(){ openServiceModal(item.k); });
-      list.appendChild(btn);
-    });
-    body.appendChild(list);
-    catCard.appendChild(head); catCard.appendChild(body);
-    holder.appendChild(catCard);
-  });
-  emptyBox.classList.toggle('show', totalFound === 0);
-}
-
-/* ---------- مودال‌ها ---------- */
-function openOverlay(overlayId){ qs('#'+overlayId).classList.add('open'); document.body.classList.add('no-scroll'); }
-function closeOverlay(overlayId){ qs('#'+overlayId).classList.remove('open'); if (!qsa('.overlay.open').length) document.body.classList.remove('no-scroll'); }
-function openServiceModal(docKey){
-  var docs = docsData[docKey] || FALLBACK_DOCS;
-  qs('#svcModalTitle').textContent = docs.title;
-  var listEl = qs('#svcDocsList'); listEl.innerHTML = '';
-  docs.items.forEach(function(docLine, idx){
-    var li = document.createElement('li');
-    li.style.animationDelay = (idx * 60) + 'ms';
-    li.innerHTML = svgFor('check');
-    var spanTxt = document.createElement('span'); spanTxt.textContent = docLine;
-    li.appendChild(spanTxt); listEl.appendChild(li);
-  });
-  openOverlay('serviceOverlay');
-}
-
-/* ---------- ذخیره مخاطب ---------- */
-function downloadVcard(){
-  var vcfLines = ['BEGIN:VCARD','VERSION:3.0','FN:دفتر اسناد رسمی ۱۳۶ دالکی','ORG:دفتر اسناد رسمی ۱۳۶ دالکی','TITLE:سردفتر اسناد رسمی — گوهر بحرینی','TEL;TYPE=CELL,VOICE:' + CONFIG.MOBILE_TEL_E164,'TEL;TYPE=WORK,VOICE:' + CONFIG.OFFICE_TEL_E164];
-  if (CONFIG.EMAIL) vcfLines.push('EMAIL;TYPE=WORK:' + CONFIG.EMAIL);
-  vcfLines = vcfLines.concat(['ADR;TYPE=WORK:;;خیابان شهدا، جنب نانوایی;دالکی;بوشهر;;ایران','URL:https://daftar136dalaki.ir','NOTE:کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی','END:VCARD']);
-  var blob = new Blob([vcfLines.join('\r\n')], { type:'text/vcard;charset=utf-8' });
-  var tempLink = document.createElement('a');
-  tempLink.href = URL.createObjectURL(blob);
-  tempLink.download = 'notary-136-dalaki.vcf';
-  document.body.appendChild(tempLink); tempLink.click(); document.body.removeChild(tempLink);
-  setTimeout(function(){ URL.revokeObjectURL(tempLink.href); }, 4000);
-  showToast('مخاطب با موفقیت آماده دانلود شد');
-}
-
-/* ---------- اشتراک‌گذاری ---------- */
-function pageUrl(){ return window.location.href; }
-function handleShareAction(kind){
-  var encodedUrl = encodeURIComponent(pageUrl());
-  var encodedTxt = encodeURIComponent(PAGE_TITLE + ' ' + pageUrl());
-  if (kind === 'whatsapp') window.open('https://wa.me/?text=' + encodedTxt, '_blank', 'noopener');
-  else if (kind === 'telegram') window.open('https://t.me/share/url?url=' + encodedUrl + '&text=' + encodeURIComponent(PAGE_TITLE), '_blank', 'noopener');
-  else if (kind === 'sms') window.open('sms:?body=' + encodedTxt);
-  else if (kind === 'email') window.open('mailto:?subject=' + encodeURIComponent(PAGE_TITLE) + '&body=' + encodedTxt);
-  else if (kind === 'copy') {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(pageUrl()).then(function(){ showToast('نشانی کارت کپی شد'); }, function(){ showToast('کپی انجام نشد؛ لطفاً دستی کپی کنید'); });
-    } else {
-      var tempArea = document.createElement('textarea');
-      tempArea.value = pageUrl(); document.body.appendChild(tempArea); tempArea.select();
-      try { document.execCommand('copy'); showToast('نشانی کارت کپی شد'); } catch (e) { showToast('کپی انجام نشد'); }
-      document.body.removeChild(tempArea);
-    }
-  }
-  else if (kind === 'native') {
-    if (navigator.share) navigator.share({ title: PAGE_TITLE, text: PAGE_TITLE, url: pageUrl() }).catch(function(){});
-    else showToast('اشتراک‌گذاری سیستمی در مرورگر شما در دسترس نیست');
-  }
-}
-
-/* ---------- بارکد QR ---------- */
-function qrTargetUrl(){ return CONFIG.QR_TARGET_URL || pageUrl(); }
-function buildQr(){
-  var holderEl = qs('#qrHolder');
-  if (typeof QRCode !== 'undefined') {
-    new QRCode(holderEl, { text: qrTargetUrl(), width: 176, height: 176, colorDark: '#101826', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
-  } else { holderEl.textContent = 'بارکد در دسترس نیست'; }
-}
-
-/* ---------- انیمیشن ریویل ---------- */
-function bindReveal(){
-  qsa('[data-stagger]').forEach(function(groupBox){
-    Array.prototype.forEach.call(groupBox.children, function(childEl, idx){ childEl.style.transitionDelay = (idx * 70) + 'ms'; childEl.classList.add('reveal'); });
-  });
-  if (!('IntersectionObserver' in window)) { qsa('.reveal').forEach(function(el){ el.classList.add('in'); }); return; }
-  var observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){ if (entry.isIntersecting) { entry.target.classList.add('in'); observer.unobserve(entry.target); } });
-  }, { threshold: 0.12 });
-  qsa('.reveal').forEach(function(el){ observer.observe(el); });
-}
-
-/* ---------- لایه‌های بازدارندهٔ امنیتی ---------- */
-function bindSecurityLayers(){
-  document.addEventListener('contextmenu', function(ev){ if (!ev.target.closest('input, textarea')) { ev.preventDefault(); showToast('منوی راست برای حفاظت از محتوا غیرفعال است'); } });
-  document.addEventListener('keydown', function(ev){
-    var k = ev.key || '';
-    if (k === 'F12') { ev.preventDefault(); return; }
-    if (ev.ctrlKey && ev.shiftKey && ['I','J','C','i','j','c'].indexOf(k) > -1) { ev.preventDefault(); return; }
-    if (ev.ctrlKey && ['u','U','s','S'].indexOf(k) > -1) { ev.preventDefault(); }
-  });
-  document.addEventListener('dragstart', function(ev){ ev.preventDefault(); });
-  document.addEventListener('selectstart', function(ev){ if (!ev.target.closest('input, textarea')) ev.preventDefault(); });
-  try { console.clear(); console.log('%c⛔ دسترسی به این بخش فقط برای توسعه‌دهندگان مجاز است.', 'color:#d3a95c;font-size:14px;font-weight:bold'); } catch (e) {}
-}
-
-/* ---------- رویدادها ---------- */
-function bindEvents(){
-  qs('#serviceSearch').addEventListener('input', function(ev){ renderServices(ev.target.value); });
-  qs('#saveContactBtn').addEventListener('click', downloadVcard);
-  qs('[data-link="email"]').addEventListener('click', function(ev){
-    if (!CONFIG.EMAIL) { ev.preventDefault(); showToast('نشانی ایمیل دفتر از طریق پیام‌رسان‌ها قابل استعلام است'); }
-  });
-  qs('#shareOpenBtn').addEventListener('click', function(){ openOverlay('shareOverlay'); });
-  qs('#fabShareBtn').addEventListener('click', function(){ openOverlay('shareOverlay'); });
-  qsa('[data-close]').forEach(function(btn){ btn.addEventListener('click', function(){ closeOverlay(btn.getAttribute('data-close')); }); });
-  qsa('.overlay').forEach(function(ov){ ov.addEventListener('click', function(ev){ if (ev.target === ov) closeOverlay(ov.id); }); });
-  document.addEventListener('keydown', function(ev){ if (ev.key === 'Escape') qsa('.overlay.open').forEach(function(ov){ closeOverlay(ov.id); }); });
-  qsa('[data-share]').forEach(function(btn){ btn.addEventListener('click', function(){ handleShareAction(btn.getAttribute('data-share')); }); });
-}
-
-/* ---------- شروع ---------- */
-document.addEventListener('DOMContentLoaded', function(){
-  injectIcons();
-  applyLinks();
-  bindTheme();
-  bindPreloader();
-  computeOfficeStatus();
-  setInterval(computeOfficeStatus, 30000);
-  renderServices('');
-  buildVideoZone();
-  bindEvents();
-  bindReveal();
-  bindSecurityLayers();
-  buildQr();
+/* ============ ripple ============ */
+document.addEventListener('pointerdown', function(e){
+  var b = e.target.closest('.ripple');
+  if(!b) return;
+  var r = b.getBoundingClientRect();
+  var s = document.createElement('span');
+  var d = Math.max(r.width, r.height)*2;
+  s.className = 'ripple-ink';
+  s.style.width = s.style.height = d+'px';
+  s.style.left = (e.clientX - r.left - d/2)+'px';
+  s.style.top  = (e.clientY - r.top  - d/2)+'px';
+  b.appendChild(s);
+  setTimeout(function(){ if(s.parentNode) s.parentNode.removeChild(s); }, 680);
 });
+
+/* ============ services data ============ */
+var CHEV = '<svg class="ic svc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+var SERVICES = [
+ {icon:'🏛️', title:'املاک', items:[
+   {n:'سند قطعی خرید و فروش ملک', d:['اصل سند مالکیت (ترجیحاً تک‌برگ)','کارت ملی و شناسنامه خریدار و فروشنده','مفاصا حساب عوارض نوسازی و دارایی','گواهی پایان‌کار (در صورت نیاز)']},
+   {n:'صلح عمری ملک', d:['سند مالکیت شش‌دانگ','مدارک هویتی مصالح و متصالح','تعیین دقیق شرایط انتفاع']},
+   {n:'اجاره‌نامه و رهن رسمی', d:['سند مالکیت موجر','مدارک هویتی طرفین و شهود','صدور کد رهگیری و هولوگرام']},
+   {n:'فک رهن و اقاله معامله', d:['سند یا مبایعه‌نامه قبلی','مدارک هویتی طرفین','حضور یا وکالت رسمی طرفین']}
+ ]},
+ {icon:'✍️', title:'وکالت‌نامه‌ها', items:[
+   {n:'وکالت کاری و اداری', d:['کارت ملی موکل و وکیل','شرح دقیق حدود اختیارات']},
+   {n:'وکالت بلاعزل', d:['مدارک هویتی طرفین','ذکر دقیق مورد و حدود وکالت','اسقاط حق عزل ضمن عقد لازم']},
+   {n:'وکالت فروش ملک یا خودرو', d:['سند مالکیت یا برگ سبز خودرو','مدارک هویتی موکل و وکیل']},
+   {n:'وکالت تعویض پلاک و امور خودرو', d:['برگ سبز و کارت خودرو','مدارک هویتی طرفین']}
+ ]},
+ {icon:'📜', title:'وصیت و ارث', items:[
+   {n:'وصیت‌نامه رسمی', d:['مدارک هویتی موصی','متن وصیت (تا سقف ثلث اموال بدون نیاز به اذن وراث)']},
+   {n:'صورت‌برداری از اموال و ترکه', d:['گواهی انحصار وراثت','مدارک هویتی وراث','اسناد و مدارک اموال']},
+   {n:'تقسیم‌نامه اموال مشترک', d:['اسناد مالکیت اموال','مدارک هویتی تمام شرکا','حضور یا وکالت رسمی همه طرفین']}
+ ]},
+ {icon:'⚖️', title:'سایر اسناد رسمی', items:[
+   {n:'اقرارنامه و تعهدنامه', d:['مدارک هویتی اقرارکننده / متعهد','متن دقیق موضوع تعهد']},
+   {n:'گواهی و تصدیق امضا', d:['کارت ملی امضاکننده','حضور شخص در دفتر']},
+   {n:'رضایت‌نامه محضری', d:['مدارک هویتی','مستندات موضوع رضایت']},
+   {n:'کپی مصدق و تطبیق اسناد', d:['اصل سند یا مدرک','کارت ملی متقاضی']}
+ ]}
+];
+
+var accWrap = $('#svcAcc'), resWrap = $('#svcResults'), emptyEl = $('#svcEmpty'), searchEl = $('#svcSearch');
+
+function buildServices(){
+  accWrap.innerHTML = SERVICES.map(function(c, ci){
+    return '<div class="svc-cat">'
+      + '<button class="svc-head ripple" type="button" aria-expanded="false">'
+      + '<span class="svc-emoji">'+c.icon+'</span>'
+      + '<span><span class="svc-title">'+c.title+'</span><span class="svc-count">'+faNum(c.items.length)+' خدمت رسمی</span></span>'
+      + CHEV
+      + '</button>'
+      + '<div class="svc-body"><div class="svc-body-in">'
+      + c.items.map(function(it, ii){
+          return '<button class="svc-item ripple" type="button" data-ci="'+ci+'" data-ii="'+ii+'">'
+               + '<span class="svc-dot"></span><span class="svc-name">'+it.n+'</span><small>مشاهده مدارک</small></button>';
+        }).join('')
+      + '</div></div></div>';
+  }).join('');
+}
+buildServices();
+
+accWrap.addEventListener('click', function(e){
+  var head = e.target.closest('.svc-head');
+  if(head){
+    var cat = head.parentElement;
+    var open = cat.classList.toggle('open');
+    head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    return;
+  }
+  var item = e.target.closest('.svc-item');
+  if(item){ openService(+item.getAttribute('data-ci'), +item.getAttribute('data-ii')); }
+});
+resWrap.addEventListener('click', function(e){
+  var item = e.target.closest('.svc-item');
+  if(item){ openService(+item.getAttribute('data-ci'), +item.getAttribute('data-ii')); }
+});
+
+function norm(s){ return s.replace(/ي/g,'ی').replace(/ك/g,'ک').trim(); }
+searchEl.addEventListener('input', function(){
+  var q = norm(searchEl.value);
+  if(!q){ accWrap.style.display=''; resWrap.style.display='none'; emptyEl.style.display='none'; return; }
+  var results = [];
+  SERVICES.forEach(function(c, ci){
+    c.items.forEach(function(it, ii){
+      if(norm(it.n + ' ' + c.title).indexOf(q) !== -1){ results.push({ci:ci, ii:ii}); }
+    });
+  });
+  accWrap.style.display = 'none';
+  if(!results.length){ resWrap.style.display='none'; emptyEl.style.display='block'; return; }
+  emptyEl.style.display = 'none';
+  resWrap.style.display = 'block';
+  resWrap.innerHTML = results.map(function(r){
+    var c = SERVICES[r.ci], it = c.items[r.ii];
+    return '<button class="svc-item ripple" type="button" data-ci="'+r.ci+'" data-ii="'+r.ii+'">'
+         + '<span class="svc-dot"></span><span class="svc-name">'+it.n+'</span><small>'+c.title+'</small></button>';
+  }).join('');
+});
+
+/* ============ modals ============ */
+function openModal(ov){ ov.classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModal(ov){ ov.classList.remove('open'); document.body.style.overflow=''; }
+$$('.overlay').forEach(function(ov){
+  ov.addEventListener('click', function(e){ if(e.target === ov) closeModal(ov); });
+});
+$$('[data-close]').forEach(function(b){
+  b.addEventListener('click', function(){ closeModal(b.closest('.overlay')); });
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){ $$('.overlay.open').forEach(closeModal); }
+});
+
+var modalService = $('#modalService');
+function openService(ci, ii){
+  var c = SERVICES[ci], it = c.items[ii];
+  $('#mTitle').textContent = it.n;
+  $('#mCat').textContent = c.icon + ' ' + c.title;
+  $('#mDocs').innerHTML = it.d.map(function(d){ return '<li>'+d+'</li>'; }).join('');
+  $('#mWa').href = 'https://wa.me/989391793112?text=' + encodeURIComponent('سلام، درباره خدمت «' + it.n + '» نیاز به مشاوره دارم.');
+  openModal(modalService);
+}
+
+/* ============ share ============ */
+var SHARE_URL  = 'https://daftar136dalaki.ir';
+var SHARE_TEXT = 'کارت ویزیت هوشمند دفتر اسناد رسمی ۱۳۶ دالکی | ثبت و تنظیم اسناد رسمی، املاک، وکالت، وصیت — سردفتر: گوهر بحرینی';
+var modalShare = $('#modalShare');
+$$('.js-share').forEach(function(b){
+  b.addEventListener('click', function(){ openModal(modalShare); });
+});
+function popup(url){ window.open(url, '_blank', 'noopener'); }
+$('#shWa').addEventListener('click', function(){ popup('https://wa.me/?text=' + encodeURIComponent(SHARE_TEXT + '\n' + SHARE_URL)); closeModal(modalShare); });
+$('#shTg').addEventListener('click', function(){ popup('https://t.me/share/url?url=' + encodeURIComponent(SHARE_URL) + '&text=' + encodeURIComponent(SHARE_TEXT)); closeModal(modalShare); });
+$('#shSms').addEventListener('click', function(){ window.location.href = 'sms:?body=' + encodeURIComponent(SHARE_TEXT + '\n' + SHARE_URL); });
+$('#shMail').addEventListener('click', function(){
+  window.location.href = 'mailto:?subject=' + encodeURIComponent('معرفی دفتر اسناد رسمی ۱۳۶ دالکی') + '&body=' + encodeURIComponent(SHARE_TEXT + '\n' + SHARE_URL);
+});
+function copyText(t){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    return navigator.clipboard.writeText(t).then(function(){ return true; }).catch(function(){ return legacyCopy(t); });
+  }
+  return Promise.resolve(legacyCopy(t));
+}
+function legacyCopy(t){
+  var ta = document.createElement('textarea');
+  ta.value = t;
+  ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  var ok = false;
+  try{ ok = document.execCommand('copy'); }catch(err){ ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+$('#shCopy').addEventListener('click', function(){
+  copyText(SHARE_URL).then(function(ok){ toast(ok ? 'لینک کارت ویزیت کپی شد ✓' : 'کپی انجام نشد؛ لینک: ' + SHARE_URL); });
+  closeModal(modalShare);
+});
+$('#shNative').addEventListener('click', function(){
+  if(navigator.share){
+    navigator.share({ title: document.title, text: SHARE_TEXT, url: SHARE_URL })
+      .then(function(){ closeModal(modalShare); })
+      .catch(function(){ /* کاربر لغو کرد */ });
+  }else{
+    copyText(SHARE_URL).then(function(){ toast('اشتراک سیستمی در دسترس نیست؛ لینک کپی شد ✓'); });
+  }
+});
+
+/* ============ copy buttons ============ */
+$$('.js-copy').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    copyText(btn.getAttribute('data-copy')).then(function(ok){ toast(ok ? 'کپی شد ✓' : 'کپی انجام نشد'); });
+  });
+});
+
+/* ============ vCard ============ */
+$('#btnVcard').addEventListener('click', function(){
+  var lines = [
+    'BEGIN:VCARD','VERSION:3.0',
+    'FN:دفتر اسناد رسمی ۱۳۶ دالکی',
+    'N:;دفتر اسناد رسمی ۱۳۶ دالکی;;;',
+    'ORG:دفتر اسناد رسمی ۱۳۶ دالکی',
+    'TITLE:سردفتر: گوهر بحرینی',
+    'TEL;TYPE=CELL:+989391793112',
+    'TEL;TYPE=WORK,VOICE:+987734343349',
+    'EMAIL:d136bh@gmail.com',
+    'URL:https://daftar136dalaki.ir',
+    'ADR;TYPE=WORK:;;خیابان شهدا، جنب نانوایی;دالکی;استان بوشهر;;ایران',
+    'NOTE:ثبت و تنظیم اسناد رسمی، املاک، وکالت، وصیت — شنبه تا چهارشنبه ۷ تا ۱۴',
+    'END:VCARD'
+  ];
+  var blob = new Blob(['\uFEFF' + lines.join('\r\n')], {type:'text/vcard;charset=utf-8'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url; a.download = 'notary136-dalaki.vcf';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 2500);
+  toast('فایل مخاطب در حال دانلود است ✓');
+});
+
+/* ============ QR code ============ */
+(function initQR(){
+  var box = $('#qrBox');
+  try{
+    if(typeof window.qrcode !== 'function'){ return; }
+    var qr = window.qrcode(0, 'M');
+    qr.addData('https://daftar136dalaki.ir');
+    qr.make();
+    var img = new Image();
+    img.alt = 'بارکد وب‌سایت رسمی دفتر';
+    img.src = qr.createDataURL(8, 3);
+    img.onload = function(){
+      var scan = box.querySelector('.qr-scan');
+      box.innerHTML = '';
+      box.appendChild(img);
+      if(scan) box.appendChild(scan);
+    };
+  }catch(err){ /* fallback link remains */ }
+})();
+
+/* ============ logo fallback ============ */
+var logoImg = $('#logoImg');
+if(logoImg && !logoImg.complete){
+  logoImg.addEventListener('error', function(){
+    logoImg.style.display = 'none';
+    $('#logoFb').classList.add('show');
+  });
+}
+})();
+</script>
+
+<!-- ===================== SECURITY GUARD LAYER ===================== -->
+<script>
+(function(){
+'use strict';
+/* محافظت از سورس‌کد کارت ویزیت — لایه امنیتی */
+var warned = false;
+function showGuard(){
+  if(warned || document.getElementById('guardWarn')) return;
+  warned = true;
+  var d = document.createElement('div');
+  d.className = 'guard-warn';
+  d.id = 'guardWarn';
+  d.innerHTML = '<div class="gw-box">'
+    + '<span class="gw-ico">🔒</span>'
+    + '<b>دسترسی غیرمجاز مسدود شد</b>'
+    + '<p>سورس‌کد این کارت ویزیت محافظت‌شده است و امکان مشاهده یا کپی آن وجود ندارد.</p>'
+    + '<button type="button" onclick="var g=document.getElementById(\'guardWarn\');if(g)g.remove();">بستن و بازگشت</button>'
+    + '</div>';
+  document.body.appendChild(d);
+  setTimeout(function(){ warned = false; }, 4000);
+}
+
+/* مسدودسازی کلیدهای دسترسی به سورس و ابزار توسعه */
+document.addEventListener('keydown', function(e){
+  var k = (e.key || '').toUpperCase();
+  if(k === 'F12' || e.keyCode === 123){ e.preventDefault(); showGuard(); return false; }
+  if((e.ctrlKey || e.metaKey) && e.shiftKey && (k==='I' || k==='J' || k==='C' || k==='K')){ e.preventDefault(); showGuard(); return false; }
+  if((e.ctrlKey || e.metaKey) && (k==='U' || k==='S' || k==='P')){ e.preventDefault(); showGuard(); return false; }
+}, true);
+
+/* مسدودسازی راست‌کلیک، کپی، برش و درگ تصاویر */
+document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+document.addEventListener('copy',  function(e){ e.preventDefault(); });
+document.addEventListener('cut',   function(e){ e.preventDefault(); });
+document.addEventListener('dragstart', function(e){ e.preventDefault(); });
+
+/* پاک‌سازی کنسول برای جلوگیری از استخراج اطلاعات */
+try{
+  console.clear();
+  setInterval(function(){ try{ console.clear(); }catch(err){} }, 4000);
+}catch(err){}
+
+/* تشخیص باز بودن ابزار توسعه (تغییر ابعاد پنجره) */
+setInterval(function(){
+  try{
+    var gapW = window.outerWidth  - window.innerWidth  > 190;
+    var gapH = window.outerHeight - window.innerHeight > 190;
+    if(gapW || gapH){ showGuard(); }
+  }catch(err){}
+}, 1500);
+
+/* تله دیباگر: اگر ابزار توسعه باز باشد، اجرای کد متوقف می‌شود */
+setInterval(function(){
+  try{
+    var t0 = performance.now();
+    (function(){ debugger; })();
+    if(performance.now() - t0 > 120){ showGuard(); }
+  }catch(err){}
+}, 2500);
 })();
 </script>
 </body>
